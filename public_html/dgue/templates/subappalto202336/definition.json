@@ -1,0 +1,16 @@
+{
+  "_0": {
+    "0": {
+      "id": "7f18c64e-ae09-4646-9400-f3666d50af51",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "999c7fe2-61cd-4e86-b76f-e280304dc8c9",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  }
+}

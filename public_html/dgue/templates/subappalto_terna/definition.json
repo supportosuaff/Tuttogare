@@ -1,0 +1,64 @@
+{
+  "_0": {
+    "0": {
+      "id": "7f18c64e-ae09-4646-9400-f3666d50af51",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "999c7fe2-61cd-4e86-b76f-e280304dc8c9",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "2": {
+      "id": "PERS_DESCRIZIONE_SUBAPPALTO",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "PERS_RAGIONE_SOCIALE_1",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "PERS_PARTITA_IVA_1",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_02": {
+    "0": {
+      "id": "PERS_RAGIONE_SOCIALE_2",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "PERS_PARTITA_IVA_2",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_03": {
+    "0": {
+      "id": "PERS_RAGIONE_SOCIALE_3",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "PERS_PARTITA_IVA_3",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  }
+}

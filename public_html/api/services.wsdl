@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions targetNamespace="" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <types>
+        <xsd:schema targetNamespace="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+            <xsd:complexType name="parameters">
+                <xsd:sequence>
+                    <xsd:element minOccurs="1" name="token" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="tipologia" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="modalita" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="criterio" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="procedura" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="codice" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="cod_minimo" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="cod_massimo" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="stato" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="stato_minimo" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="stato_massimo" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="cup" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="cig" type="xsd:integer"/>
+                    <xsd:element minOccurs="0" name="data" type="tns:dateType"/>
+                    <xsd:element minOccurs="0" name="avvisi" type="xsd:boolean"/>
+                    <xsd:element minOccurs="0" name="quesiti" type="xsd:boolean"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="dateType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="1" name="typeDate" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="startDate" type="xsd:string"/>
+                    <xsd:element minOccurs="0" name="endDate" type="xsd:string"/>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:schema>
+    </types>
+    <message name="getGare">
+        <part name="params" type="tns:parameters"/>
+    </message>
+    <message name="getGareResponse">
+        <part name="json" type="xsd:string"/>
+    </message>
+    <portType name="getGarePortType">
+        <operation name="getGare">
+            <input message="tns:getGare"/>
+            <output message="tns:getGareResponse"/>
+        </operation>
+    </portType>
+    <binding name="getGareBinding" type="tns:getGarePortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getGare">
+            <soap:operation soapAction="service.php/getGare"/>
+            <input>
+                <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="" use="encoded"/>
+            </input>
+            <output>
+                <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="" use="encoded"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="getGareService">
+        <port binding="tns:getGareBinding" name="getGarePort">
+            <soap:address location="service.php"/>
+        </port>
+    </service>
+</definitions>

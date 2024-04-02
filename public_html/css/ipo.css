@@ -1,0 +1,155 @@
+/* skin per il layout ad alta accessibilità */
+
+html {
+
+	font-size:100%!important; /* !important serve per non avere l'influenza del JavaScript per il ridimensionamento dei caratteri */
+
+}
+
+
+body {
+
+  background: #333;
+  color: #FFF;
+  font: 120% arial, verdana, helvetica, sans-serif;
+  margin:0;
+  padding:1em;
+
+}
+.clear {
+	clear:both;
+	margin:0px;
+	padding:0px;
+}
+
+a:link, #contenuto_top a:link { background: #333;color: #0FF }
+
+a:visited, #contenuto_top a:visited { background: #333;color: #F0F }
+
+a:hover,a:active, #contenuto_top a:hover, , #contenuto_top a:active { background: #900;color:#ff0 }
+
+
+h6 { font-size:1.0em }
+
+h5 { font-size:1.2em }
+
+h4 { font-size:1.3em }
+
+h3 { font-size:1.5em }
+
+h2 { font-size:1.8em }
+
+h1 { font-size:2.0em }
+
+h6,h5,h4,h3,h2,h1 { background: #333;color: #FF0 }
+
+.note {
+	font-size:100%;
+	color:#FFF;
+}
+
+label {
+
+	font-size:100%;
+	color:#FFF;
+
+}
+
+.label {
+
+  		color:#fff;
+
+	}
+
+
+#contenuto_top {
+	background-color:transparent;
+}
+
+
+#menu {
+	background-color:#444;
+}
+
+#logo_ente {
+	background-color:transparent;
+}
+
+.descr_ente {
+	color: #FFFFFF;
+}
+
+.descr_ente a {
+	color: #FFF;
+}
+
+.add_new {
+
+	background-color:transparent;
+	-webkit-box-shadow: 0;
+	box-shadow: 0;
+}
+
+.add_new:hover {
+	background-color: inherit;
+	}
+
+
+.box {
+
+		background-color:transparent;
+		border-bottom:1px solid #FFF;
+
+	}
+
+
+
+/*	-----------	EDIT CLASS	------------- */
+
+
+th {
+	font-weight:normal;
+}
+
+.etichetta {
+	background-color:transparent;
+	font-size:100%;
+}
+
+
+a.precedente, a.successivo {
+	display:block;
+	padding:10px;
+	background-color:#F60;
+	color:#FFF !important;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a.precedente:hover, a.successivo:hover {
+	background-color:#999;
+}
+
+
+thead tr {
+	background-color:transparent;
+}
+
+th {
+	background-color:#transparent;
+	color: #FFF !important;
+
+}
+
+tr.odd {
+	background-color:transparent;
+}
+
+tr.even {
+
+	background-color:transparent;
+}
+
+td table * {
+	font-size:100%;
+}

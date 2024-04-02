@@ -1,0 +1,42 @@
+{
+  "_0": {
+    "0": {
+      "id": "42db0eaa-d2dd-48cb-83ac-38d73cab9b50",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "42db0eaa-d2dd-48cb-83ac-38d73cab9b50",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "9dae5670-cb75-4c97-901b-96ddac5a633a",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "03bb1954-13ae-47d8-8ef8-b7fe0f22d700",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "e2d863a0-60cb-4e58-8c14-4c1595af48b7",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

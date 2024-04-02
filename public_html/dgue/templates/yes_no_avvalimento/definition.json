@@ -1,0 +1,22 @@
+{
+  "_0": {
+    "0": {
+      "id": "7f18c64e-ae09-4646-9400-f3666d50af51",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "PERS_ID_AVVALIMENTO_1",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "2": {
+      "id": "PERS_ID_AVVALIMENTO_2",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "P": {
+    "titolo":"Proporzionale diretta",
+    "formula": "<math><mi>P<sub>i</sub></mi><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mrow><mrow><mi>O<sub>i</sub></mi></mrow><mo>/</mo><mrow><mi>O<sub>Max</sub></mi></mrow></mrow></math>",
+    "tipo": "N"
+  },
+  "I": {
+    "titolo":"Proporzionale Inversa",
+    "formula": "<math><mi>P<sub>i</sub></mi><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mrow><mrow><mi>O<sub>min</sub></mi></mrow><mo>/</mo><mrow><mi>O<sub>i</sub></mi></mrow></mrow></math>",
+    "tipo": "N"
+  },
+  "E": {
+    "titolo":"Elenco prezzi",
+    "tipo": "N"
+  },
+  "O": {
+    "titolo":"ON / OFF",
+    "tipo": "N"
+  },
+  "S": {
+    "titolo":"Tabellare",
+    "tipo": "N"
+  },
+  "B": {
+    "titolo":"Bilineare",
+    "formula": "<math><mi>P<sub>i</sub></mi><mo>(</mo><mi>if O<sub>i</sub></mi><mo>&le;</mo><mi>O<sub>soglia</sub></mi><mo>)</mo><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mo>(</mo><mi>Coef</mi><mo>&times;</mo><mrow><mi>O<sub>i</sub></mrow><mo>/</mo><mrow><mi>O<sub>soglia</sub></mi></mrow><mo>)</mo></math><br><br><math><mi>P<sub>i</sub></mi><mo>(</mo><mi>if O<sub>i</sub></mi><mo>&gt;</mo><mi>O<sub>soglia</sub>)</mi><mo>)</mo><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mo>[</mo><mi>Coef</mi><mo>+</mo><mo>(</mo><mi>1</mi><mo>-</mo><mi>Coef</mi><mo>)</mo><mo>&times;</mo><mo>(</mo><mrow><mo>(</mo><mi>O<sub>i</sub></mi><mo>-</mo><mi>O<sub>soglia</sub></mi><mo>)</mo></mrow><mo>/</mo><mrow><mo>(</mo><mi>O<sub>max</sub></mi><mo>-</mo><mi>O<sub>soglia</sub></mi><mo>)</mo></mrow><mo>)</mo><mo>]</mo></math>",
+    "tipo": "N"
+  },
+  "Q": {
+    "titolo":"Quadratica",
+    "formula": "<math><mi>P<sub>i</sub></mi><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mo  stretchy=\"false\">[</mo><mrow><mi>O<sub>i</sub></mi></mrow><mo>/</mo><mrow><mi>O<sub>Max</sub></mi></mrow><msup><mo stretchy=\"false\">]</mo><mn>&alpha;</mn></msup></math>",
+    "tipo": "N"
+  },
+  "K": {
+    "titolo":"Parabolica su prezzo",
+    "formula": "<math><mi>P<sub>i</sub></mi><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mo>{1-[1-(1-</mo><mrow><mi>O<sub>i</sub></mi></mrow><mo>/</mo><mrow><mi>PrezzoBase</mi></mrow><mo>)]</mo><msup><mo stretchy=\"false\"></mo><mn>K</mn></msup><mo stretchy=\"false\">}</mo></math>",
+    "tipo": "N"
+  },
+  "W": {
+    "titolo":"Parabolica su ribasso percentuale",
+    "formula": "<math><mi>P<sub>i</sub></mi><mo>=</mo><mi>P<sub>max</sub></mi><mo>&times;</mo><mo>{1-[1-</mo><mrow><mi>O<sub>i</sub></mi></mrow><mo>/</mo><mrow><mi>100</mi></mrow><mo>]</mo><msup><mo stretchy=\"false\"></mo><mn>K</mn></msup><mo stretchy=\"false\">}</mo></math>",
+    "tipo": "N"
+  }
+}

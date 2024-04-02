@@ -1,0 +1,52 @@
+{
+  "_0": {
+    "0": {
+      "id": "974c8196-9d1c-419c-9ca9-45bb9f5fd59a",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "PERS_VIOLAZIONI_CONCORDATO_1",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "2": {
+      "id": "PERS_VIOLAZIONI_CONCORDATO_2",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "3": {
+      "id": "PERS_VIOLAZIONI_CONCORDATO_3",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "c1347b74-1872-4060-a6db-f4044edcd7c4",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "f4313bb6-21b6-499e-bdff-debe10e11d2c",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "1f1cd18e-3e01-4ca2-af4c-e2981924ba8d",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:types="http://serviziCUP.mef.it/types/"
+	targetNamespace="http://serviziCUP.mef.it/types/">
+
+	<!-- ELEMENTS -->
+	<xsd:element name="richiesta_RichiestaRispostaSincrona_RichiestaDettaglioCUP"
+		type="types:richiesta_RichiestaRispostaSincrona_RichiestaDettaglioCUP_Type"/>
+
+	<xsd:element name="risposta_RichiestaRispostaSincrona_RisultatoDettaglioCUP"
+		type="types:risposta_RichiestaRispostaSincrona_RisultatoDettaglioCUP_Type"/>
+
+	<xsd:element name="richiesta_RichiestaRispostaSincrona_RichiestaListaCUP"
+		type="types:richiesta_RichiestaRispostaSincrona_RichiestaListaCUP_Type"/>
+
+	<xsd:element name="risposta_RichiestaRispostaSincrona_ListaCUP"
+		type="types:risposta_RichiestaRispostaSincrona_ListaCUP_Type"/>
+
+	<xsd:element name="richiesta_RichiestaRispostaSincrona_RichiestaGenerazioneCUP"
+		type="types:richiesta_RichiestaRispostaSincrona_RichiestaGenerazioneCUP_Type"/>
+
+	<xsd:element name="risposta_RichiestaRispostaSincrona_EsitoGenerazioneCUP"
+		type="types:risposta_RichiestaRispostaSincrona_EsitoGenerazioneCUP_Type"/>
+
+	<xsd:element name="richiesta_RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP"
+		type="types:richiesta_RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP_Type"/>
+
+	<xsd:element name="risposta_RichiestaRispostaSincrona_RisultatoChiusuraRevocaCUP"
+		type="types:risposta_RichiestaRispostaSincrona_RisultatoChiusuraRevocaCUP_Type"/>
+
+	<!-- COMPLEX TYPES -->
+	<xsd:complexType name="richiesta_RichiestaRispostaSincrona_RichiestaDettaglioCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRichiesta" type="xsd:string"/>
+			<xsd:element name="richiesta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="risposta_RichiestaRispostaSincrona_RisultatoDettaglioCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRisposta" type="xsd:string"/>
+			<xsd:element name="EsitoElaborazione" type="types:esitoElaborazioneCUP_Type"/>
+			<xsd:element name="risposta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="richiesta_RichiestaRispostaSincrona_RichiestaListaCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRichiesta" type="xsd:string"/>
+			<xsd:element name="richiesta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="risposta_RichiestaRispostaSincrona_ListaCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRisposta" type="xsd:string"/>
+			<xsd:element name="EsitoElaborazione" type="types:esitoElaborazioneCUP_Type"/>
+			<xsd:element name="risposta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="richiesta_RichiestaRispostaSincrona_RichiestaGenerazioneCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRichiesta" type="xsd:string"/>
+			<xsd:element name="richiesta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="risposta_RichiestaRispostaSincrona_EsitoGenerazioneCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRisposta" type="xsd:string"/>
+			<xsd:element name="EsitoElaborazione" type="types:esitoElaborazioneCUP_Type"/>
+			<xsd:element name="risposta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="richiesta_RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRichiesta" type="xsd:string"/>
+			<xsd:element name="richiesta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="risposta_RichiestaRispostaSincrona_RisultatoChiusuraRevocaCUP_Type">
+		<xsd:sequence>
+			<xsd:element name="TitoloRisposta" type="xsd:string"/>
+			<xsd:element name="EsitoElaborazione" type="types:esitoElaborazioneCUP_Type"/>
+			<xsd:element name="risposta" type="xsd:base64Binary"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<!-- SIMPLE TYPES -->
+	<xsd:simpleType name="esitoElaborazioneCUP_Type">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="ELABORAZIONE_ESEGUITA"/>
+			<xsd:enumeration value="ERRORE_NELLA_ELABORAZIONE_DEL_MESSAGGIO"/>
+			<xsd:enumeration value="RICHIESTA_NON_PRESENTE"/>
+			<xsd:enumeration value="ERRORE_APPLICATIVO"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

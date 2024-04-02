@@ -1,0 +1,2105 @@
+{
+  "profilo":{
+    "IT": "profilo",
+    "EN": "profile",
+    "note": "user profile"
+  },
+  "totale appalto": {
+    "IT": "totale appalto",
+    "EN": "total contract",
+    "note": ""
+  },
+  "comunicazioni":{
+    "IT": "comunicazioni",
+    "EN": "messages",
+    "note": "platform communications"
+  },
+  "bozze":{
+    "IT": "bozze",
+    "EN": "drafts",
+    "note": ""
+  },
+  "gare attive":{
+    "IT": "gare attive",
+    "EN": "active tenders",
+    "note": ""
+  },
+  "archivio gare":{
+    "IT": "archivio gare",
+    "EN": "tender archive",
+    "note": ""
+  },
+  "concorsi attivi":{
+    "IT": "concorsi attivi",
+    "EN": "active competitions",
+    "note": ""
+  },
+  "registrazione-oe":{
+    "IT": "registrazione operatore economico",
+    "EN": "economic operator registration",
+    "note": "company registration"
+  },
+  "accedi":{
+    "IT": "accedi",
+    "EN": "access",
+    "note": "login to platform"
+  },
+  "gare":{
+    "IT": "gare",
+    "EN": "tenders",
+    "note": "tender procedures"
+  },
+  "pannello di partecipazione":{
+    "IT": "pannello di partecipazione",
+    "EN": "participation panel",
+    "note": ""
+  },
+  "pannello di gara":{
+    "IT": "pannello di gara",
+    "EN": "tender panel",
+    "note": ""
+  },
+  "partecipa":{
+    "IT": "partecipa",
+    "EN": "participate",
+    "note": ""
+  },
+  "revoca partecipazione":{
+    "IT": "revoca partecipazione",
+    "EN": "revoke participation",
+    "note": ""
+  },
+  "compila documento di gara unico europeo": {
+    "IT": "compila documento di gara unico europeo",
+    "EN": "fill in single European tender document",
+    "note": ""
+  },
+  "integrazioni": {
+    "IT": "integrazioni",
+    "EN": "integrations",
+    "note": ""
+  },
+  "registrati": {
+    "IT": "registrati",
+    "EN": "register",
+    "note": ""
+  },
+  "gara":{
+    "IT": "gara",
+    "EN": "tender",
+    "note": "tender procedures"
+  },
+  "avvisi di gara":{
+    "IT": "avvisi di gara",
+    "EN": "tender notices",
+    "note": "notices relative to tender procedures"
+  },
+  "avvisi di concorso":{
+    "IT": "avvisi di concorso",
+    "EN": "competition notices",
+    "note": "notices relative to design competitions"
+  },
+  "avvisi concorso":{
+    "IT": "avvisi concorso",
+    "EN": "competition notices",
+    "note": "notices relative to design competitions"
+  },
+  "supporto":{
+    "IT": "supporto",
+    "EN": "help",
+    "note": ""
+  },
+  "segnala tutti come letti": {
+    "IT": "segnala tutti come letti",
+    "EN": "flag all as read",
+    "note": ""
+  },
+  "protocollo": {
+    "IT": "protocollo",
+    "EN": "protocol",
+    "note": ""
+  },
+  "gennaio": {
+    "IT": "gennaio",
+    "EN": "January",
+    "note": ""
+  },
+  "febbraio": {
+    "IT": "febbraio",
+    "EN": "February",
+    "note": ""
+  },
+  "marzo": {
+    "IT": "marzo",
+    "EN": "March",
+    "note": ""
+  },
+  "aprile": {
+    "IT": "aprile",
+    "EN": "April",
+    "note": ""
+  },
+  "maggio": {
+    "IT": "maggio",
+    "EN": "May",
+    "note": ""
+  },
+  "giugno": {
+    "IT": "giugno",
+    "EN": "June",
+    "note": ""
+  },
+  "luglio": {
+    "IT": "luglio",
+    "EN": "July",
+    "note": ""
+  },
+  "agosto": {
+    "IT": "agosto",
+    "EN": "August",
+    "note": ""
+  },
+  "settembre": {
+    "IT": "settembre",
+    "EN": "September",
+    "note": ""
+  },
+  "ottobre": {
+    "IT": "ottobre",
+    "EN": "October",
+    "note": ""
+  },
+  "novembre": {
+    "IT": "novembre",
+    "EN": "November",
+    "note": ""
+  },
+  "dicembre": {
+    "IT": "dicembre",
+    "EN": "December",
+    "note": ""
+  },
+  "notizie": {
+    "IT": "notizie",
+    "EN": "news",
+    "note": ""
+  },
+  "guida online": {
+    "IT": "guida online",
+    "EN": "online guide",
+    "note": ""
+  },
+  "obbligatorio": {
+    "IT": "obbligatorio",
+    "EN": "mandatory",
+    "note": ""
+  },
+  "scadenza": {
+    "IT": "scadenza",
+    "EN": "deadline",
+    "note": ""
+  },
+  "ipovedenti": {
+    "IT": "ipovedenti",
+    "EN": "visually impaired",
+    "note": ""
+  },
+  "normale": {
+    "IT": "normale",
+    "EN": "normal",
+    "note": ""
+  },
+  "oggi": {
+    "IT": "oggi",
+    "EN": "today",
+    "note": ""
+  },
+  "grande": {
+    "IT": "grande",
+    "EN": "big",
+    "note": ""
+  },
+  "testo": {
+    "IT": "testo",
+    "EN": "text",
+    "note": ""
+  },
+  "scadenze": {
+    "IT": "scadenze",
+    "EN": "deadlines",
+    "note": ""
+  },
+  "tipologia": {
+    "IT": "tipologia",
+    "EN": "type",
+    "note": "type of contract (service, supply, works)"
+  },
+  "criterio": {
+    "IT": "criterio",
+    "EN": "parameter",
+    "note": "award parameter"
+  },
+  "procedura": {
+    "IT": "procedura",
+    "EN": "procedure",
+    "note": "tender procedure (open/negotiated/…)"
+  },
+  "lavori": {
+    "IT": "lavori",
+    "EN": "works",
+    "note": "construction works"
+  },
+  "la partecipazione e stata ricevuta con successo": {
+    "IT": "la partecipazione &egrave; stata ricevuta con successo",
+    "EN": "Participation has been received successfully",
+    "note": ""
+  },
+  "partecipazione-conferma-pec": {
+    "IT": "Un messaggio di posta elettronica certificata &egrave; stato inviato per confermare l'operazione",
+    "EN": "A certified electronic mail message has been sent for confirmation",
+    "note": ""
+  },
+  "partecipazione-conferma-no-pec": {
+    "IT": "Si &egrave; verificato un errore durante l'invio del messaggio di posta elettronica certificata per confermare l'operazione",
+    "EN": "An error occurred while sending the certified electronic mail message confirmation",
+    "note": ""
+  },
+  "invia la partecipazione": {
+    "IT": "INVIA LA PARTECIPAZIONE",
+    "EN": "SEND PARTICIPATION",
+    "note": ""
+  },
+  "costi di sicurezza aziendale interni": {
+    "IT": "costi di sicurezza aziendale interni",
+    "EN": "corporate internal security costs",
+    "note": ""
+  },
+  "costo della manodopera": {
+    "IT": "costo della manodopera",
+    "EN": "labor cost",
+    "note": ""
+  },
+  "errore di configurazione": {
+    "IT": "errore di configurazione",
+    "EN": "configuration error",
+    "note": ""
+  },
+  "quantita": {
+    "IT": "quantit&agrave;",
+    "EN": "quantity",
+    "note": ""
+  },
+  "risposta": {
+    "IT": "risposta",
+    "EN": "answer",
+    "note": ""
+  },
+  "richiesta offerta": {
+    "IT": "richiesta offerta",
+    "EN": "request offer",
+    "note": ""
+  },
+  "rialzo": {
+    "IT": "rialzo",
+    "EN": "upward",
+    "note": ""
+  },
+  "ribasso": {
+    "IT": "ribasso",
+    "EN": "downward",
+    "note": ""
+  },
+
+  "offerto": {
+    "IT": "offerto",
+    "EN": "offered",
+    "note": ""
+  },
+  "unita": {
+    "IT": "unit&agrave;",
+    "EN": "unit",
+    "note": "unit of measure"
+  },
+  "partecipazione inviata": {
+    "IT": "partecipazione inviata",
+    "EN": "participation sent",
+    "note": ""
+  },
+  "ritorna alla scelta lotto": {
+    "IT": "ritorna alla scelta lotto",
+    "EN": "go back to allotment choice",
+    "note": ""
+  },
+  "gara scaduta": {
+    "IT":"gara scaduta",
+    "EN": "tender expired",
+    "note":""
+  },
+  "msg-check-buste": {
+    "IT":"E' necessario caricare tutte le buste prima di inviare la partecipazione",
+    "EN": "It is necessary to upload all bids before sending participation",
+    "note":""
+  },
+  "servizi": {
+    "IT": "servizi",
+    "EN": "services",
+    "note": ""
+  },
+  "forniture": {
+    "IT": "forniture",
+    "EN": "supplies",
+    "note": ""
+  },
+  "servizi tecnici": {
+    "IT": "servizi tecnici",
+    "EN": "technical services",
+    "note": ""
+  },
+  "qualita prezzo": {
+    "IT": "qualit&agrave; prezzo",
+    "EN": "quality; price",
+    "note": ""
+  },
+  "visualizza invio": {
+    "IT": "visualizza invio",
+    "EN": "view sent documents",
+    "note": ""
+  },
+  "chiave personalizzata": {
+    "IT": "chiave personalizzata",
+    "EN": "personalized key",
+    "note": ""
+  },
+  "scarica": {
+    "IT": "scarica",
+    "EN": "download",
+    "note": ""
+  },
+  "apri busta": {
+    "IT": "apri busta",
+    "EN": "open bid",
+    "note": ""
+  },
+  "aperta": {
+    "IT": "aperta",
+    "EN": "opened",
+    "note": ""
+  },
+  "non ammesso alle fasi successive": {
+    "IT": "non ammesso alle fasi successive",
+    "EN": "not admitted to next stages",
+    "note": ""
+  },
+  "non aperta": {
+    "IT": "non aperta",
+    "EN": "not opened",
+    "note": ""
+  },
+  "offerta": {
+    "IT": "offerta",
+    "EN": "offer",
+    "note": ""
+  },
+  "offerta tecnica": {
+    "IT": "offerta tecnica",
+    "EN": "technical offer",
+    "note": ""
+  },
+  "offerta economica": {
+    "IT": "offerta economica",
+    "EN": "economic offer",
+    "note": ""
+  },
+  "prima di proseguire e necessario generare e firmare digitalmente i seguenti file di offerta": {
+    "IT": "Prima di proseguire &egrave; necessario generare e firmare digitalmente i seguenti file di offerta",
+    "EN": "Before proceeding, it is necessary to generate and digitally sign the following offer files",
+    "note": ""
+  },
+  "prima e necessario generare il file di offerta": {
+    "IT": "Prima &egrave; necessario generare il file di offerta",
+    "EN": "It is necessary to generate the offer file first",
+    "note": ""
+  },
+  "partecipazione-offerta-mancante": {
+    "IT": "Impossibile trovare la copia firmata digitalmente del file d'offerta generato dal sistema - <strong>Attenzione: Non aprire l'offerta direttamente dal browser ma seleziona il file originale dalla cartella di download</strong>",
+    "EN": "The digitally signed copy of the system-generated offer file cannot be found - <strong>Attention: Do not open the offer directly from the browser but select the original file from the download folder</strong>",
+    "note": ""
+  },
+  "genera": {
+    "IT": "genera",
+    "EN": "generate",
+    "note": "create offer file"
+  },
+  "rigenera": {
+    "IT": "rigenera",
+    "EN": "re-generate",
+    "note": "replace offer file"
+  },
+  "sostitisci documentazione": {
+    "IT": "sostitisci documentazione",
+    "EN": "replace documentation",
+    "note": ""
+  },
+  "carica documentazione": {
+    "IT": "carica documentazione",
+    "EN": "upload documentation",
+    "note": ""
+  },
+  "carica busta": {
+    "IT": "carica busta",
+    "EN": "upload bid",
+    "note": ""
+  },
+  "caricata": {
+    "IT": "caricata",
+    "EN": "uploaded",
+    "note": ""
+  },
+  "in preparazione": {
+    "IT": "in preparazione",
+    "EN": "in preparation",
+    "note": ""
+  },
+  "non inviata": {
+    "IT": "non inviata",
+    "EN": "not sent",
+    "note": ""
+  },
+  "minor prezzo": {
+    "IT": "minor prezzo",
+    "EN": "lowest price",
+    "note": ""
+  },
+  "msg-modifica-raggruppamento": {
+    "IT": "La modifica del raggruppamento comporta le necessit&agrave; di rigenerare eventuali offerte tecniche e/o economiche gi&agrave; formulate con conseguente revoca delle eventuali trasmissioni o partecipazioni gi&agrave; inviate.",
+    "EN": " The change in the grouping involves the need to re-generate any technical and / or economic offers already generated, with the consequent revocation of any transmissions or participations already sent.",
+    "note": ""
+  },
+  "busta a - documentazione amministrativa": {
+    "IT": "Busta A - Documentazione Amministrativa",
+    "EN": "Bid A – Administrative documentation",
+    "note": ""
+  },
+  "busta b - offerta tecnica": {
+    "IT": "Busta B - Offerta Tecnica",
+    "EN": "Bid B – Techincal offer",
+    "note": ""
+  },
+  "busta c - offerta economica e temporale": {
+    "IT": "Busta C - Offerta economica e temporale",
+    "EN": "Bid C – Economic and temporal offer",
+    "note": ""
+  },
+  "busta a - documentazione amministrativa": {
+    "IT": "Busta A - Documentazione Amministrativa",
+    "EN": "Bid A – Administrative documentation ",
+    "note": ""
+  },
+  "busta b - offerta economica": {
+    "IT": "Busta B - Offerta economica",
+    "EN": "Bid B – Economic offer ",
+    "note": ""
+  },
+  "aperta": {
+    "IT": "aperta",
+    "EN": "opened",
+    "note": ""
+  },
+  "negoziata": {
+    "IT":  "negoziata",
+    "EN": "negotiated",
+    "note":""
+  },
+  "ristretta": {
+    "IT":  "ristretta",
+    "EN": "restricted",
+    "note":""
+  },
+  "sistema dinamico di acquisizione": {
+    "IT":  "sistema dinamico di acquisizione",
+    "EN": "dynamic acquisition system",
+    "note":""
+  },
+  "s.d.a.": {
+    "IT":  "S.D.A.",
+    "EN": "D.A.S.",
+    "note":" anagram of dynamic acquisition system"
+  },
+  "dialogo competitivo": {
+    "IT":  "dialogo competitivo",
+    "EN": "competitive dialogue",
+    "note":""
+  },
+  "accordo quadro": {
+    "IT":  "accordo quadro",
+    "EN": "framework agreement",
+    "note":""
+  },
+  "negoziata previa pubblicazione del bando": {
+    "IT":  "negoziata previa pubblicazione del bando",
+    "EN": "negotiated after tender notice publication",
+    "note":""
+  },
+  "rdo - richiesta di offerta": {
+    "IT":  "rdo - richiesta di offerta",
+    "EN": "or - offer request",
+    "note":""
+  },
+  "confronto competitivo in adesione ad accordo quadro": {
+    "IT":  "confronto competitivo in adesione ad accordo quadro",
+    "EN": "competitive dialogue in compliance with the framework agreement ",
+    "note":""
+  },
+  "affidamento diretto": {
+    "IT":  "affidamento diretto",
+    "EN": "direct assignment",
+    "note":""
+  },
+  "concorsi progettazione": {
+    "IT": "concorsi progettazione",
+    "EN": "design competitions",
+    "note": ""
+  },
+  "concorsi": {
+    "IT": "concorsi",
+    "EN": "competitions",
+    "note": ""
+  },
+  "concorso": {
+    "IT": "concorso",
+    "EN": "competition",
+    "note": ""
+  },
+  "dettagli": {
+    "IT": "dettagli",
+    "EN": "details",
+    "note": ""
+  },
+  "albo dei fornitori": {
+    "IT": "albo dei fornitori",
+    "EN": "register of suppliers",
+    "note": ""
+  },
+  "mercato elettronico": {
+    "IT": "mercato elettronico",
+    "EN": "electronic market",
+    "note": ""
+  },
+  "indagini di mercato": {
+    "IT": "indagini di mercato",
+    "EN": "market surveys",
+    "note": ""
+  },
+  "aggiornamenti normativi": {
+    "IT": "aggiornamenti normativi",
+    "EN": "regulatory updates",
+    "note": ""
+  },
+  "nessuna iniziativa attiva": {
+    "IT": "nessuna iniziativa attiva",
+    "EN": "no active initiatives",
+    "note": ""
+  },
+  "scadenzario": {
+    "IT": "scadenzario",
+    "EN": "due register",
+    "note": ""
+  },
+  "catalogo": {
+    "IT": "catalogo",
+    "EN": "catalogue",
+    "note": ""
+  },
+  "dgue": {
+    "IT": "DGUE",
+    "EN": "ESPD",
+    "note": ""
+  },
+  "contratti": {
+    "IT": "contratti",
+    "EN": "contracts",
+    "note": ""
+  },
+  "lunedi": {
+    "IT": "lunedi",
+    "EN": "Monday",
+    "note": ""
+  },
+  "martedi": {
+    "IT": "martedi",
+    "EN": "Tuesday",
+    "note": ""
+  },
+  "mercoledi": {
+    "IT": "mercoledi",
+    "EN": "Wednesday",
+    "note": ""
+  },
+  "giovedi": {
+    "IT": "giovedi",
+    "EN": "Thursday",
+    "note": ""
+  },
+  "venerdi": {
+    "IT": "venerdi",
+    "EN": "Friday",
+    "note": ""
+  },
+  "sabato": {
+    "IT": "sabato",
+    "EN": "Saturday",
+    "note": ""
+  },
+  "domenica": {
+    "IT": "domenica",
+    "EN": "Sunday",
+    "note": ""
+  },
+  "norme tecniche di utilizzo": {
+    "IT": "norme tecniche di utilizzo",
+    "EN": "technical usage rules",
+    "note": ""
+  },
+  "policy privacy": {
+    "IT": "policy privacy",
+    "EN": "policy privacy",
+    "note": ""
+  },
+  "help desk": {
+    "IT": "help desk",
+    "EN": "help desk",
+    "note": ""
+  },
+  "cerca": {
+    "IT": "cerca",
+    "EN": "search",
+    "note": ""
+  },
+  "avanzata": {
+    "IT": "avanzata",
+    "EN": "advanced",
+    "note": ""
+  },
+  "descrizione": {
+    "IT": "descrizione",
+    "EN": "description",
+    "note": ""
+  },
+  "contatti": {
+    "IT": "contatti",
+    "EN": "contacts",
+    "note": ""
+  },
+  "oggetto": {
+    "IT": "oggetto",
+    "EN": "object",
+    "note": ""
+  },
+  "orari-helpdesk": {
+    "IT": "Attivo dal Luned&igrave; al Venerd&igrave; dalle 09:00 alle 18:00",
+    "EN": "Monday to Friday: 9am-6pm",
+    "note": ""
+  },
+  "avviso-registrazione": {
+    "IT": "La pre-iscrizione permette l'inserimento dei dati minimi per la generazione delle credenziali utili alla gestione della procedura di iscrizione alla piattaforma.",
+    "EN": "The pre-registration allows to enter minimum data necessary for the generation of credentials needed for the management of the registration procedure to the platform.",
+    "note": ""
+  },
+  "attenzione": {
+    "IT": "attenzione",
+    "EN": "attention",
+    "note": ""
+  },
+  "avviso-registrazione-2": {
+    "IT": "Al salvataggio l&#39;operatore ricever&agrave; all&#39;indirizzo PEC indicato, una mail contenente il link di conferma della registrazione. Solo dopo aver cliccato sul link e aver verificato la propria utenza l&#39;operatore sar&agrave; abilitato e potr&agrave; effettuare il login.",
+    "EN": "After saving, the operator will receive an e-mail to the certified e-mail address containing the link to confirm the registration. Only after clicking on the link and verifying the registration, the operator is enabled and can login.",
+    "note": ""
+  },
+  "pre-iscrizione": {
+    "IT": "pre-iscrizione",
+    "EN": "pre-registration",
+    "note": "user pre-registration to the platform"
+  },
+  "alert-dati-obbligatori": {
+    "IT": "ATTENZIONE: Tutti i dati contrassegnati dal simbolo (*) sono obbligatori.",
+    "EN": "ATTENTION: All data marked with (*) are mandatory",
+    "note": ""
+  },
+  "credenziali": {
+    "IT":"credenziali",
+    "EN": "credentials",
+    "note": ""
+  },
+  "nome": {
+    "IT":"nome",
+    "EN": "name",
+    "note": ""
+  },
+  "cognome": {
+    "IT":"cognome",
+    "EN": "surname",
+    "note": ""
+  },
+  "e-mail": {
+    "IT":"e-mail",
+    "EN": "e-mail",
+    "note": ""
+  },
+  "ripeti": {
+    "IT":"ripeti",
+    "EN": "repeat",
+    "note": ""
+  },
+  "password": {
+    "IT":"password",
+    "EN": "password",
+    "note": ""
+  },
+  "referente": {
+    "IT": "referente",
+    "EN": "contact person",
+    "note": ""
+  },
+  "altri dati": {
+    "IT": "altri dati",
+    "EN": "other data",
+    "note": ""
+  },
+  "denominazione": {
+    "IT": "denominazione",
+    "EN": "denomination",
+    "note": ""
+  },
+  "codice fiscale": {
+    "IT": "codice fiscale",
+    "EN": "tax code",
+    "note": ""
+  },
+  "partita iva": {
+    "IT": "partita iva",
+    "EN": "VAT number",
+    "note": ""
+  },
+  "pec": {
+    "IT": "P.E.C.",
+    "EN": "certified e-mail",
+    "note": ""
+  },
+  "facoltativo": {
+    "IT": "facoltativo",
+    "EN": "optional",
+    "note": ""
+  },
+  "categorie merceologiche": {
+    "IT": "categorie merceologiche",
+    "EN": "product categories",
+    "note": ""
+  },
+  "tipo utente": {
+    "IT": "tipo utente",
+    "EN": "user type",
+    "note": ""
+  },
+  "azienda": {
+    "IT": "azienda",
+    "EN": "company",
+    "note": ""
+  },
+  "professionista": {
+    "IT": "professionista",
+    "EN": "professional",
+    "note": ""
+  },
+  "dichiarazione-privacy": {
+    "IT": "Dichiaro di aver preso visione dell'informativa sul trattamento dei dati personali e la ",
+    "EN": "I declare to accept the information on the processing of personal data and the ",
+    "note": ""
+  },
+  "dichiarazione-norme-tecniche": {
+    "IT": "Dichiaro di accettare le ",
+    "EN": "I declare to accept the ",
+    "note": ""
+  },
+  "informativa sul trattamento dei dati personali": {
+    "IT": "Informativa sul trattamento dei dati personali",
+    "EN": "Information on the processing of personal data",
+    "note": ""
+  },
+  "impossibile accedere": {
+    "IT": "impossibile accedere",
+    "EN": "access denied",
+    "note": ""
+  },
+  "la registrazione non e ancora stata confermata": {
+    "IT": "La registrazione non &egrave; ancora stata confermata",
+    "EN": "Registration has not been confirmed yet",
+    "note": ""
+  },
+  "completa-profilo": {
+    "IT": "Prima di procedere &egrave; necessario completare le informazioni del proprio profilo",
+    "EN": "Before proceeding, it is necessary to complete profile information",
+    "note": ""
+  },
+  "organizzazione": {
+    "IT": "organizzazione",
+    "EN": "organization",
+    "note": ""
+  },
+  "committenti": {
+    "IT": "committenti",
+    "EN": "clients",
+    "note": ""
+  },
+  "certificazioni": {
+    "IT": "certificazioni",
+    "EN": "certifications",
+    "note": ""
+  },
+  "brevetti": {
+    "IT": "brevetti",
+    "EN": "patents",
+    "note": ""
+  },
+  "autenticazione a due fattori": {
+    "IT": "Autenticazione a due fattori",
+    "EN": "Two-factor authentication",
+    "note": ""
+  },
+  "gestisci": {
+    "IT": "gestisci",
+    "EN": "manage",
+    "note": ""
+  },
+  "modifica": {
+    "IT": "gestisci",
+    "EN": "modify",
+    "note": ""
+  },
+  "dati anagrafici": {
+    "IT": "dati anagrafici",
+    "EN": "personal data",
+    "note": ""
+  },
+  "luogo nascita": {
+    "IT": "luogo nascita",
+    "EN": "place of birth",
+    "note": ""
+  },
+  "provincia nascita": {
+    "IT": "provincia nascita",
+    "EN": "province of birth",
+    "note": ""
+  },
+  "data nascita": {
+    "IT": "data nascita",
+    "EN": "date of birth",
+    "note": ""
+  },
+  "sesso": {
+    "IT": "sesso",
+    "EN": "gender",
+    "note": ""
+  },
+  "calcola": {
+    "IT": "calcola",
+    "EN": "calculate",
+    "note": ""
+  },
+  "calcola": {
+    "IT": "calcola",
+    "EN": "calculate",
+    "note": ""
+  },
+  "identificativo fiscale estero": {
+    "IT": "identificativo fiscale estero",
+    "EN": "foreign tax ID",
+    "note": ""
+  },
+  "amministratore delegato":
+  {
+    "IT": "amministratore delegato",
+    "EN": "CEO",
+    "note": ""
+  },
+  "amministratore unico":
+  {
+    "IT": "amministratore unico",
+    "EN": "Single Administrator",
+    "note": ""
+  },
+  "consigliere delegato":
+  {
+    "IT": "consigliere delegato",
+    "EN": "Managing Director",
+    "note": ""
+  },
+  "presidente del consiglio":
+  {
+    "IT": "presidente del consiglio",
+    "EN": "Chairman of the Board of Directors",
+    "note": ""
+  },
+  "socio accomandatario":
+  {
+    "IT": "socio accomandatario",
+    "EN": "General Partner",
+    "note": ""
+  },
+  "legale rappresentante":
+  {
+    "IT": "legale rappresentante",
+    "EN": "Legal Representative",
+    "note": ""
+  },
+  "procuratore speciale":
+  {
+    "IT": "procuratore speciale",
+    "EN": "Special Company Attorney",
+    "note": ""
+  },
+  "direttore tecnico":
+  {
+    "IT": "direttore tecnico",
+    "EN": "Technical Director",
+    "note": ""
+  },
+  "procura": {
+    "IT": "procura",
+    "EN": "power of attorney",
+    "note": ""
+  },
+  "procura": {
+    "IT": "procura",
+    "EN": "power of attorney",
+    "note": ""
+  },
+  "nessuna": {
+    "IT": "nessuna",
+    "EN": "none",
+    "note": ""
+  },
+  "normale": {
+    "IT": "normale",
+    "EN": "normal",
+    "note": ""
+  },
+  "speciale": {
+    "IT": "speciale",
+    "EN": "special",
+    "note": ""
+  },
+  "numero": {
+    "IT": "numero",
+    "EN": "number",
+    "note": ""
+  },
+  "data pubblicazione": {
+    "IT": "data pubblicazione",
+    "EN": "date of publication",
+    "note": ""
+  },
+  "termine richieste chiarimenti": {
+    "IT": "termine richieste chiarimenti",
+    "EN": "deadline for requests of clarification",
+    "note": "time limit for requests"
+  },
+  "scadenza presentazione offerte": {
+    "IT": "scadenza presentazione offerte",
+    "EN": "deadline for offer submissions",
+    "note": ""
+  },
+  "scadenza presentazione istanze": {
+    "IT": "scadenza presentazione istanze",
+    "EN": "deadline for request submissions",
+    "note": ""
+  },
+  "presentazione istanza": {
+    "IT": "presentazione istanza",
+    "EN": "request submission",
+    "note": ""
+  },
+  "elenco": {
+    "IT": "elenco",
+    "EN": "list",
+    "note": ""
+  },
+  "visualizza l'elenco completo degli operatori ammessi": {
+    "IT": "Visualizza l'elenco completo degli operatori ammessi",
+    "EN": "View the complete list of authorized operators",
+    "note": ""
+  },
+  "apertura delle offerte": {
+    "IT": "apertura delle offerte",
+    "EN": "opening of offers",
+    "note": ""
+  },
+  "struttura proponente": {
+    "IT": "struttura proponente",
+    "EN": "proponent party",
+    "note": "proponent office or department"
+  },
+  "responsabile del servizio": {
+    "IT": "responsabile del servizio",
+    "EN": "head of department",
+    "note": ""
+  },
+  "responsabile del procedimento": {
+    "IT": "responsabile del procedimento",
+    "EN": "head of procedure",
+    "note": "administrative procedure"
+  },
+  "allegati": {
+    "IT": "allegati",
+    "EN": "attachments",
+    "note": ""
+  },
+  "allegato": {
+    "IT": "allegato",
+    "EN": "attachment",
+    "note": ""
+  },
+  "richiesta dgue": {
+    "IT": "richiesta DGUE",
+    "EN": "ESPD request",
+    "note": ""
+  },
+  "calcolo offerte anomale": {
+    "IT": "calcolo offerte anomale",
+    "EN": "calculation of irregular offers",
+    "note": ""
+  },
+  "soglia di anomalia individuata": {
+    "IT": "soglia di anomalia individuata",
+    "EN": "detected irregularity threshold",
+    "note": ""
+  },
+  "partecipanti": {
+    "IT": "partecipanti",
+    "EN": "participants",
+    "note": ""
+  },
+  "raggruppamento": {
+    "IT": "raggruppamento",
+    "EN": "grouping",
+    "note": "business grouping"
+  },
+  "data": {
+    "IT": "data",
+    "EN": "date",
+    "note": ""
+  },
+  "percentuale": {
+    "IT": "percentuale",
+    "EN": "percentage",
+    "note": ""
+  },
+  "riduzione percentuale sui tempi di ultimazione": {
+    "IT": "riduzione percentuale sui tempi di ultimazione",
+    "EN": "percentage reduction on completion times",
+    "note": ""
+  },
+  "valori quantificabili automaticamente dell'offerta tecnica": {
+    "IT": "valori quantificabili automaticamente dell'offerta tecnica",
+    "EN": "automatically quantifiable values of the technical offer",
+    "note": ""
+  },
+  "errore nella revoca": {
+    "IT": "errore nella revoca",
+    "EN": "revocation error",
+    "note": ""
+  },
+  "partecipante non riconosciuto": {
+    "IT": "partecipante non riconosciuto",
+    "EN": "participant not recognized",
+    "note": ""
+  },
+  "minimo 12 caratteri": {
+    "IT": "minimo 12 caratteri",
+    "EN": "minimum of 12 characters",
+    "note": ""
+  },
+  "memo-chiave": {
+    "IT": "Si prega di appuntare e conservare la chiave personalizzata, eccezionalemente potrebbe essere richiesta dalla Stazione Appaltante per accedere ai files inviati",
+    "EN": "Please, take note and store the personalized key, it could be exceptionally requested by the Contracting Authority to access the files sent",
+    "note": ""
+  },
+  "revoca effettuata con successo": {
+    "IT": "revoca effettuata con successo",
+    "EN": "revocation successfully done",
+    "note": ""
+  },
+  "totale offerta": {
+    "IT": "totale offerta",
+    "EN": "total offer",
+    "note": ""
+  },
+  "totale lotto": {
+    "IT": "totale lotto",
+    "EN": "total allotment",
+    "note": ""
+  },
+  "giorni": {
+    "IT": "giorni",
+    "EN": "days",
+    "note": ""
+  },
+  "mesi": {
+    "IT": "mesi",
+    "EN": "months",
+    "note": ""
+  },
+  "ulteriori informazioni": {
+    "IT": "ulteriori informazioni",
+    "EN": "further information",
+    "note": ""
+  },
+  "lotto deserto": {
+    "IT": "lotto deserto",
+    "EN": "desert allotment",
+    "note": "allotment for which no participants applied"
+  },
+  "invitati": {
+    "IT": "invitati",
+    "EN": "invites",
+    "note": "economic operators invited to the procedure"
+  },
+  "commissione valutatrice": {
+    "IT": "commissione valutatrice",
+    "EN": "Evaluation Committee",
+    "note": ""
+  },
+  "seggio di gara": {
+    "IT": "seggio di gara",
+    "EN": "tendering place",
+    "note": ""
+  },
+  "atto di costituzione": {
+    "IT": "atto di costituzione",
+    "EN": "constitution act",
+    "note": ""
+  },
+  "chiarimenti": {
+    "IT": "chiarimenti",
+    "EN": "clarifications",
+    "note": ""
+  },
+  "allega un file": {
+    "IT": "allega un file",
+    "EN": "attach file",
+    "note": ""
+  },
+  "invia quesito": {
+    "IT": "invia quesito",
+    "EN": "send question",
+    "note": ""
+  },
+  "richiesta di chiarimenti": {
+    "IT": "richiesta di chiarimenti",
+    "EN": "clarification request",
+    "note": ""
+  },
+  "impossibile partecipare a piu lotti": {
+    "IT": "Impossibile partecipare a pi&ugrave; lotti",
+    "EN": "It is not possible to participate in multiple allotments",
+    "note": ""
+  },
+  "obbligatorio-tutti-lotti": {
+    "IT": "E' obbligatorio partecipare a tutti i lotti di gara",
+    "EN": "It is mandatory to participate in all allotments",
+    "note": ""
+  },
+  "visualizza": {
+    "IT": "visualizza",
+    "EN": "view",
+    "note": ""
+  },
+  "aggiungi partecipante al raggruppamento": {
+    "IT": "aggiungi partecipante al raggruppamento",
+    "EN": "add participant to the grouping",
+    "note":""
+  },
+  "errore nell'esportazione pdf dell'offerta": {
+    "IT": "errore nell'esportazione PDF dell'offerta",
+    "EN": "unable to export the offer to PDF",
+    "note":""
+  },
+  "errore nel salvataggio del dettaglio offerta": {
+    "IT": "errore nel salvataggio del dettaglio offerta",
+    "EN": "unable to save the offer detail",
+    "note":""
+  },
+  "errore nel salvataggio dell'offerta": {
+    "IT": "errore nel salvataggio dell'offerta",
+    "EN": "unable to save the offer",
+    "note":""
+  },
+  "errore nella criptazione dell'offerta": {
+    "IT": "errore nella criptazione dell'offerta",
+    "EN": "unable to encrypt the offer",
+    "note":""
+  },
+  "errore nella criptazione del file": {
+    "IT": "errore nella criptazione del file",
+    "EN": "unable to encrypt the file",
+    "note":""
+  },
+  "ritorna al pannello": {
+    "IT": "ritorna al pannello",
+    "EN": "go back to panel",
+    "note": ""
+  },
+  "partecipazione gia inviata": {
+    "IT": "partecipazione gi&agrave; inviata",
+    "EN": "participation already sent",
+    "nome": ""
+  },
+  "documentazione non caricata": {
+    "IT": "documentazione non caricata",
+    "EN": "documentation not uploaded",
+    "note": ""
+  },
+  "termini scaduti": {
+    "IT": "termini scaduti",
+    "EN": "expired terms",
+    "note": ""
+  },
+  "msg-conferma-revoca": {
+    "IT": "Questa operazione revocher&agrave; eventuali istanze precedenti. Vuoi continuare?",
+    "EN": "This operation will revoke any previous requests. Do you wish to continue?",
+    "note": ""
+  },
+  "salva": {
+    "IT": "salva",
+    "EN": "save",
+    "note": ""
+  },
+  "salva ed invia": {
+    "IT": "salva ed invia",
+    "EN": "save and send",
+    "note": ""
+  },
+  "salva raggruppamento": {
+    "IT": "salva raggruppamento",
+    "EN": "save grouping",
+    "note": ""
+  },
+  "formula quesito": {
+    "IT": "formula quesito",
+    "EN": "ask question",
+    "note": ""
+  },
+  "durata": {
+    "IT": "durata",
+    "EN": "duration",
+    "note": ""
+  },
+  "durata contrattuale": {
+    "IT": "durata contrattuale",
+    "EN": "contract duration",
+    "note": ""
+  },
+  "dati professionali": {
+    "IT": "dati professionali",
+    "EN": "professional data",
+    "note": ""
+  },
+  "titolo di studio": {
+    "IT": "titolo di studio",
+    "EN": "level of education",
+    "note": ""
+  },
+  "ordine professionale": {
+    "IT": "ordine professionale",
+    "EN": "professional order",
+    "note": ""
+  },
+  "archeologi": {
+    "IT": "archeologi",
+    "EN": "archeologist",
+    "note": ""
+  },
+  "architetti": {
+    "IT": "architetti",
+    "EN": "architect",
+    "note": ""
+  },
+  "commercialisti": {
+    "IT": "commercialisti",
+    "EN": "accountant",
+    "note": ""
+  },
+  "geometri": {
+    "IT": "geometri",
+    "EN": "surveyor",
+    "note": ""
+  },
+  "geologi": {
+    "IT": "geologi",
+    "EN": "geologist",
+    "note": ""
+  },
+  "ingegneri": {
+    "IT": "ingegneri",
+    "EN": "engineer",
+    "note": ""
+  },
+  "periti industriali": {
+    "IT": "periti industriali",
+    "EN": "industrial expert",
+    "note": ""
+  },
+  "medici": {
+    "IT": "medici",
+    "EN": "physician",
+    "note": ""
+  },
+  "altro": {
+    "IT": "altro",
+    "EN": "other",
+    "note": ""
+  },
+  "iscrizione": {
+    "IT": "iscrizione",
+    "EN": "registration",
+    "note": ""
+  },
+  "curriculum": {
+    "IT": "curriculum",
+    "EN": "curriculum",
+    "note": ""
+  },
+  "recapiti": {
+    "IT": "recapiti",
+    "EN": "contact information",
+    "note": ""
+  },
+  "indirizzo": {
+    "IT": "indirizzo",
+    "EN": "address",
+    "note": ""
+  },
+  "citta": {
+    "IT": "citta",
+    "EN": "city",
+    "note": ""
+  },
+  "provincia": {
+    "IT": "provincia",
+    "EN": "province",
+    "note": ""
+  },
+  "regione": {
+    "IT": "regione",
+    "EN": "region",
+    "note": ""
+  },
+  "seleziona": {
+    "IT": "seleziona",
+    "EN": "select",
+    "note": ""
+  },
+  "nazione": {
+    "IT": "nazione",
+    "EN": "country",
+    "note": ""
+  },
+  "telefono": {
+    "IT": "telefono",
+    "EN": "telephone",
+    "note": ""
+  },
+  "cellulare": {
+    "IT": "cellulare",
+    "EN": "mobile phone",
+    "note": ""
+  },
+  "precedente": {
+    "IT": "precedente",
+    "EN": "previous",
+    "note": ""
+  },
+  "successivo": {
+    "IT": "successivo",
+    "EN": "next",
+    "note": ""
+  },
+  "numero dipendenti": {
+    "IT": "numero dipendenti",
+    "EN": "number of employees",
+    "note": ""
+  },
+  "codice attivita": {
+    "IT": "codice attivit&grave;",
+    "EN": "business activity code",
+    "note": ""
+  },
+  "capitale sociale": {
+    "IT": "capitale sociale",
+    "EN": "nominal capital",
+    "note": ""
+  },
+  "capitale versato": {
+    "IT": "capitale versato",
+    "EN": "paid-in capital",
+    "note": ""
+  },
+  "dimesione": {
+    "IT": "dimesione",
+    "EN": "size",
+    "note": ""
+  },
+  "micro": {
+    "IT": "micro",
+    "EN": "micro",
+    "note": ""
+  },
+  "piccola": {
+    "IT": "piccola",
+    "EN": "small",
+    "note": ""
+  },
+  "media": {
+    "IT": "media",
+    "EN": "medium",
+    "note": ""
+  },
+  "grande": {
+    "IT": "grande",
+    "EN": "big",
+    "note": ""
+  },
+  "sede": {
+    "IT": "sede",
+    "EN": "headquarters",
+    "note": ""
+  },
+  "sede legale": {
+    "IT": "sede legale",
+    "EN": "registered office",
+    "note": ""
+  },
+  "sede operativa": {
+    "IT": "sede operativa",
+    "EN": "operational headquarters",
+    "note": ""
+  },
+  "camera di commercio": {
+    "IT": "camera di commercio",
+    "EN": "Chamber of Commerce",
+    "note": ""
+  },
+  "certificato camerale": {
+    "IT": "certificato camerale",
+    "EN": "Chamber certificate",
+    "note": ""
+  },
+  "matricola": {
+    "IT": "matricola",
+    "EN": "serial number",
+    "note": "code"
+  },
+  "codice": {
+    "IT": "codice",
+    "EN": "code",
+    "note": ""
+  },
+  "dati bancari": {
+    "IT": "dati bancari",
+    "EN": "bank data",
+    "note": ""
+  },
+  "banca": {
+    "IT": "banca",
+    "EN": "bank",
+    "note": ""
+  },
+  "intestatario": {
+    "IT": "intestatario",
+    "EN": "account holder",
+    "note": ""
+  },
+  "organizzazione": {
+    "IT": "organizzazione",
+    "EN": "organization",
+    "note": "company organization"
+  },
+  "rappresentanti legali": {
+    "IT": "rappresentanti legali",
+    "EN": "Legal Representatives",
+    "note": ""
+  },
+  "cap": {
+    "IT": "C.A.P.",
+    "EN": "ZIP code",
+    "note": "Codice avviamento postale"
+  },
+  "atto": {
+    "IT": "atto",
+    "EN": "act",
+    "note": ""
+  },
+  "importo": {
+    "IT": "importo",
+    "EN": "amount",
+    "note": ""
+  },
+  "inizio": {
+    "IT": "inizio",
+    "EN": "start",
+    "note": ""
+  },
+  "fine": {
+    "IT": "fine",
+    "EN": "end",
+    "note": ""
+  },
+  "aggiungi": {
+    "IT": "aggiungi",
+    "EN": "add",
+    "note": ""
+  },
+  "certificazioni di qualita": {
+    "IT": "certificazioni di qualit&agrave;",
+    "EN": "quality certifications",
+    "note": ""
+  },
+  "certificazioni di gestione ambientale": {
+    "IT": "certificazioni di gestione ambientale",
+    "EN": "environmental management certifications",
+    "note": ""
+  },
+  "alert-filtro-gara": {
+    "IT": "Il dato potr&agrave; essere utilizzato come criterio di selezione per l'invito a procedure di gara",
+    "EN": "The data can be used as a selection parameter for the invitation to tender procedures",
+    "note": ""
+  },
+  "msg-reg-fatturati": {
+    "IT": "In assenza di attestazioni SOA &egrave; possibile inserire il fatturato degli ultimi 5 anni suddiviso per lavorazioni.",
+    "EN": "In the absence of SOA attestations, it is possible to enter the turnover of the last 5 years divided by works.",
+    "note": ""
+  },
+  "fatturati": {
+    "IT": "fatturati",
+    "EN": "turnovers",
+    "note": ""
+  },
+  "fatturato": {
+    "IT": "fatturato",
+    "EN": "turnover",
+    "note": ""
+  },
+  "progettazione": {
+    "IT": "progettazione",
+    "EN": "design",
+    "note": ""
+  },
+  "altre certificazioni": {
+    "IT": "altre certificazioni",
+    "EN": "other certifications",
+    "note": ""
+  },
+  "ente": {
+    "IT": "ente",
+    "EN": "public authority",
+    "note": "public authority"
+  },
+  "stazione appaltante": {
+    "IT": "stazione appaltante",
+    "EN": "contracting authority",
+    "note": ""
+  },
+  "ente beneficiario": {
+    "IT": "ente beneficiario",
+    "EN": "beneficiary body",
+    "note": ""
+  },
+  "ente committente": {
+    "IT": "ente committente",
+    "EN": "commissioning body",
+    "note": ""
+  },
+  "lotti": {
+    "IT": "lotti",
+    "EN": "allotments",
+    "note": "allotments of contracts"
+  },
+  "annullata": {
+    "IT": "annullata",
+    "EN": "canceled",
+    "note": ""
+  },
+  "deserta": {
+    "IT": "deserta",
+    "EN": "desert",
+    "note": ""
+  },
+  "ente certificatore": {
+    "IT": "ente certificatore",
+    "EN": "certification body",
+    "note": ""
+  },
+  "certificazione": {
+    "IT": "certificazione",
+    "EN": "certification",
+    "note": ""
+  },
+  "settore": {
+    "IT": "settore",
+    "EN": "industry",
+    "note": ""
+  },
+  "norma": {
+    "IT": "norma",
+    "EN": "regulation",
+    "note": "regulation"
+  },
+  "certificato": {
+    "IT": "certificato",
+    "EN": "certificate",
+    "note": ""
+  },
+  "categoria": {
+    "IT": "categoria",
+    "EN": "category",
+    "note": ""
+  },
+  "percentuale esecuzione": {
+    "IT": "percentuale esecuzione",
+    "EN": "percentage of execution",
+    "note": ""
+  },
+  "percentuale": {
+    "IT": "percentuale",
+    "EN": "percentage",
+    "note": ""
+  },
+  "promemoria": {
+    "IT": "promemoria",
+    "EN": "reminder",
+    "note": ""
+  },
+  "scadenza gara": {
+    "IT": "scadenza gara",
+    "EN": "tender deadline",
+    "note": ""
+  },
+  "termine chiarimenti": {
+    "IT": "termine chiarimenti",
+    "EN": "clarification deadline",
+    "note": ""
+  },
+  "apertura buste": {
+    "IT": "apertura buste",
+    "EN": "bids opening",
+    "note": ""
+  },
+  "apertura": {
+    "IT": "apertura",
+    "EN": "opening",
+    "note": ""
+  },
+  "trasmissione effettuata": {
+    "IT": "trasmissione effettuata",
+    "EN": "transmission completed",
+    "note": ""
+  },
+  "avvio seconda fase": {
+    "IT": "avvio seconda fase",
+    "EN": "second phase start",
+    "note": ""
+  },
+  "avvio asta": {
+    "IT": "avvio asta",
+    "EN": "auction start",
+    "note": ""
+  },
+  "scadenza asta": {
+    "IT": "scadenza asta",
+    "EN": "auction deadline",
+    "note": ""
+  },
+  "scadenza integrazioni": {
+    "IT": "scadenza integrazioni",
+    "EN": "integration deadline",
+    "note": ""
+  },
+  "scadenza s.d.a.": {
+    "IT": "scadenza s.d.a.",
+    "EN": "a.d.s deadline",
+    "note": ""
+  },
+  "scadenza mercato elettronico": {
+    "IT": "scadenza mercato elettronico",
+    "EN": "electronic market deadline",
+    "note": ""
+  },
+  "scadenza fabbisogno": {
+    "IT": "scadenza fabbisogno",
+    "EN": "requirement deadline",
+    "note": ""
+  },
+  "termine contratto": {
+    "IT": "termine contratto",
+    "EN": "contract term",
+    "note": ""
+  },
+  "promemoria termine contratto": {
+    "IT": "promemoria termine contratto",
+    "EN": "contract term reminder",
+    "note": ""
+  },
+  "appuntamento consegna lavori": {
+    "IT": "appuntamento consegna lavori",
+    "EN": "works delivery date",
+    "note": ""
+  },
+  "scadenza albo fornitori": {
+    "IT": "scadenza albo fornitori",
+    "EN": "register of suppliers deadline",
+    "note": ""
+  },
+  "scadenza dialogo competitivo": {
+    "IT": "scadenza dialogo competitivo",
+    "EN": "competitive dialogue deadline",
+    "note": ""
+  },
+  "errore nella procedura di conferma": {
+    "IT": "errore nella procedura di conferma",
+    "EN": "error in the confirmation procedure",
+    "note": ""
+  },
+  "errore-conferma-scaduto": {
+    "IT": "Sono passate pi&ugrave; di 48h dalla data di registrazione.",
+    "EN": "More than 48h have passed since registration.",
+    "note": ""
+  },
+  "errore nella registrazione": {
+    "IT": "errore nella registrazione",
+    "EN": "registration error",
+    "note": ""
+  },
+  "gare": {
+    "IT": "gare",
+    "EN": "tenders",
+    "note": "tenders"
+  },
+  "scaduti": {
+    "IT": "scaduti",
+    "EN": "expired",
+    "noti": ""
+  },
+  "attivi": {
+    "IT": "attivi",
+    "EN": "active",
+    "note": ""
+  },
+  "tutti": {
+    "IT": "tutti",
+    "EN": "all",
+    "note": ""
+  },
+  "tutte": {
+    "IT": "tutte",
+    "EN": "all",
+    "note": ""
+  },
+  "scadute": {
+    "IT": "scadute",
+    "EN": "expired",
+    "note": ""
+  },
+  "attive": {
+    "IT": "attive",
+    "EN": "active",
+    "note": ""
+  },
+  "esiti di gara": {
+    "IT": "esiti di gara",
+    "EN": "tender results",
+    "note": "tender results"
+  },
+  "esiti di concorso": {
+    "IT": "esiti di concorso",
+    "EN": "competition results",
+    "note": ""
+  },
+  "stato": {
+    "IT": "stato",
+    "EN": "status",
+    "note": ""
+  },
+  "send-new-link": {
+    "IT": "per richiedere un nuovo link di accesso",
+    "EN": "to request a new access link",
+    "note": ""
+  },
+  "clicca qui": {
+    "IT": "clicca qui",
+    "EN": "click here",
+    "note": ""
+  },
+  "per partecipare": {
+    "IT": "per partecipare",
+    "EN": "to participate",
+    "note": ""
+  },
+  "riferimento": {
+    "IT": "riferimento",
+    "EN": "reference",
+    "note": ""
+  },
+  "msg-confermato-accedi": {
+    "IT": "L'utente ha gi&agrave; effettuato la conferma, &egrave; possibile procedere al login",
+    "EN": "User already confirmed. Please, proceed with login.",
+    "note": ""
+  },
+  "contattare-helpdesk-numero": {
+    "IT": "si prega di contattare l'help desk tecnico al numero",
+    "EN": "please, call the technical help desk at [number]",
+    "note": ""
+  },
+  "alert-errori-registrazione": {
+    "IT": "La tua registrazione non pu&ograve; essere validata per l'assenza dei dati seguenti:",
+    "EN": "Your registration cannot be validated due to the following missing data:",
+    "note": ""
+  },
+  "alert-generico-registrazione": {
+    "IT": "L'errore pu&ograve; dipendere da uno o pi&ugrave; seguenti fattori: <ul><li>Il link di conferma &egrave; errato</li><li>L'utente non esiste all'interno del portale</li></ul>",
+    "EN": "Error can be due to one or more of the following reasons: Confirmation link is wrong. User cannot be found.",
+    "note": ""
+  },
+  "conferma-invio-link-accesso": {
+    "IT": "Il link &egrave; stato reinviato correttamente. Si prega di verificare il proprio indirizzo pec e di procedere cliccando sul nuovo link ricevuto.",
+    "EN": "New link successfully sent. Please, check your PEC address and click on the new link.",
+    "note": ""
+  },
+  "controllare i dati obbligatori": {
+    "IT": "controllare i dati obbligatori",
+    "EN": "check mandatory data",
+    "note": ""
+  },
+  "gia presente": {
+    "IT": "gi&agrave; presente",
+    "EN": "already present",
+    "note": ""
+  },
+  "errore-invio-pec-conferma": {
+    "IT": "Si &egrave; verificato un errore durante l&#39;invio della mail di conferma.",
+    "EN": "An error occurred while sending the confirmation e-mail.",
+    "note": ""
+  },
+  "salvataggio riuscito con successo": {
+    "IT": "salvataggio riuscito con successo",
+    "EN": "saved successfully",
+    "note": ""
+  },
+  "la richiesta di abilitazione e stata inviata correttamente": {
+    "IT": "la richiesta di abilitazione &egrave; stata inviata correttamente",
+    "EN": "authorization request sent correctly",
+    "note": ""
+  },
+  "guida all'invio della documentazione di gara": {
+    "IT": "guida all'invio della documentazione di gara",
+    "EN": "tender documentation sending guide",
+    "note": ""
+  },
+  "partecipazione-step-1": {
+    "IT": "Firmare digitalmente in formato <strong>P7M (CAdES)</strong> tutta la documentazione richiesta",
+    "EN": "Digitally sign all required documentation in CAdES format",
+    "note": ""
+  },
+  "incluso il file pdf generato dal sistema": {
+    "IT": "incluso il file PDF generato dal sistema",
+    "EN": "including the system-generated PDF file",
+    "note": ""
+  },
+  "partecipazione-step-2": {
+    "IT": "Creare un archivio compresso di tipo <strong>ZIP</strong> contenente tutti i files firmati digitalmente",
+    "EN": "Create a ZIP archive containing all the digitally signed files",
+    "note": ""
+  },
+  "inclusa la copia firmata digitalmente del file generato dal sistema": {
+    "IT": "inclusa la copia firmata digitalmente del file generato dal sistema",
+    "EN": "including the digitally signed copy of the system-generated PDF file",
+    "note": ""
+  },
+  "partecipazione-step-3": {
+    "IT": "Firmare digitalmente in formato <strong>P7M (CAdES)</strong> l'archivio ZIP creato.",
+    "EN": "Digitally sign the ZIP archive in CAdES format",
+    "note": ""
+  },
+  "partecipazione-step-4": {
+    "IT": "Selezionare l'archivio firmato digitalmente, inserire una chiave personalizzata di almeno 12 caratteri e cliccare su <strong>CARICA</strong>",
+    "EN": "Select the digitally signed archive, type the personalized key of at least 12 characters and click <strong>UPLOAD</strong>",
+    "note": ""
+  },
+  "errore-salvataggio": {
+    "IT": "Si &egrave; verificato un errore durante il salvataggio. Si prega di riprovare.",
+    "EN": "Saving error. Please, try again.",
+    "note": ""
+  },
+  "firma del file non valida": {
+    "IT": "firma del file non valida",
+    "EN": "file signature not valid",
+    "note": ""
+  },
+  "errore nella procedura di upload": {
+    "IT": "errore nella procedura di upload",
+    "EN": "uploading procedure error",
+    "note": ""
+  },
+  "modifica effettuata con successo": {
+    "IT": "modifica effettuata con successo",
+    "EN": "modified successfully",
+    "note": ""
+  },
+  "conferma della registrazione avvenuta con successo": {
+    "IT": "CONFERMA DELLA REGISTRAZIONE AVVENUTA CON SUCCESSO",
+    "EN": "REGISTRATION CONFIRMED SUCCESSFULLY",
+    "note": ""
+  },
+  "msg-conferma-registrazione": {
+    "IT": "Puoi procedere nell'utilizzo del portale effettuando il login",
+    "EN": "You can use the portal after login",
+    "note": ""
+  },
+  "msg-albi-conferma-1": {
+    "IT": "La registrazione al portale non &egrave; sufficiente ai fini dell'iscrizione negli elenchi dei fornitori.",
+    "EN": "Registration to the portal is not sufficient for signing up in the list of suppliers.",
+    "note": ""
+  },
+  "msg-albi-conferma-2": {
+    "IT": "Per presentare la propria candidatura consulta le ",
+    "EN": "To submit your application, refer to the ",
+    "note": "continuing with ‘active initiatives’"
+  },
+  "preliminare": {
+    "IT": "preliminare",
+    "EN": "preliminary",
+    "note": ""
+  },
+  "elaborazione": {
+    "IT": "elaborazione",
+    "EN": "processing",
+    "note": ""
+  },
+  "pubblicazione": {
+    "IT": "pubblicazione",
+    "EN": "publication",
+    "note": ""
+  },
+  "annullata": {
+    "IT": "annullata",
+    "EN": "canceled",
+    "note": ""
+  },
+  "deserta": {
+    "IT": "deserta",
+    "EN": "desert",
+    "note": ""
+  },
+  "proposta di aggiudicazione": {
+    "IT": "proposta di aggiudicazione",
+    "EN": "award proposal",
+    "note": ""
+  },
+  "verifica anomalie": {
+    "IT": "verifica anomalie",
+    "EN": "verify irregularities",
+    "note": ""
+  },
+
+  "conclusa": {
+    "IT": "conclusa",
+    "EN": "concluded",
+    "note": ""
+  },
+  "sorteggio": {
+    "IT": "sorteggio",
+    "EN": "draw",
+    "note": ""
+  },
+  "aggiudicazione definitiva": {
+    "IT": "aggiudicazione definitiva",
+    "EN": "final award",
+    "note": ""
+  },
+  "inviato esito di gara": {
+    "IT": "inviato esito di gara",
+    "EN": "tender result sent",
+    "note": ""
+  },
+  "non aggiudicata": {
+    "IT": "non aggiudicata",
+    "EN": "not awarded",
+    "note": ""
+  },
+  "msg-download-sign-upload": {
+    "IT": "Scarica e firma digitalmente il file di offerta generato dal sistema, ricorda che &egrave; obbligatorio inserire il file P7M dell'offerta insieme al resto della documentazione",
+    "EN": "Download and digitally sign the system-generated offer file. Remember that it is mandatory to include the P7M offer file within the documentation.",
+    "note": ""
+  },
+  "seleziona il file": {
+    "IT": "seleziona il file",
+    "EN": "select file",
+    "note": ""
+  },
+  "inserire una chiave personalizzata": {
+    "IT": "inserire una chiave personalizzata",
+    "EN": "type a personalized key",
+    "note": ""
+  },
+  "nota-firmatari": {
+    "IT": "N.B.: Le indicazioni riguardo i firmatari della documentazione sono analoghe a quanto previsto dalle tradizionali gare cartacee.",
+    "EN": "Note: Indications about the signers of documentation are similar to those of traditional paper tenders.",
+    "note": ""
+  },
+  "cliccare su invia": {
+    "IT": "cliccare su invia",
+    "EN": "click send",
+    "note": ""
+  },
+  "richiedi abilitazione": {
+    "IT": "richiedi abilitazione",
+    "EN": "request authorization",
+    "note": ""
+  },
+  "aggiorna i dati": {
+    "IT": "aggiorna i dati",
+    "EN": "update data",
+    "note": ""
+  },
+  "modulistica richiesta": {
+    "IT": "modulistica richiesta",
+    "EN": "forms requested",
+    "note": ""
+  },
+  "modulo": {
+    "IT": "modulo",
+    "EN": "form",
+    "note": ""
+  },
+  "indagine di mercato": {
+    "IT": "indagine di mercato",
+    "EN": "market survey",
+    "note": ""
+  },
+  "elenco dei fornitori": {
+    "IT": "elenco dei fornitori",
+    "EN": "supplier list",
+    "note": ""
+  },
+  "integrazioni": {
+    "IT": "integrazioni",
+    "EN": "integrations",
+    "note": ""
+  },
+  "recupera password": {
+    "IT": "recupera password",
+    "EN": "password recovery"
+  },
+  "salva iscrizione": {
+    "IT": "SALVA ISCRIZIONE",
+    "EN": "SAVE REGISTRATION"
+  }
+}

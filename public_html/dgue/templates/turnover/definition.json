@@ -1,0 +1,141 @@
+{
+  "_00": {
+    "0": {
+      "id": "5aacceb3-280e-42f1-b2da-3d8ac7877fe9",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "42db0eaa-d2dd-48cb-83ac-38d73cab9b50",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "42db0eaa-d2dd-48cb-83ac-38d73cab9b50",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "49a57870-7fb8-451f-a7af-fa0e7f8b97e7",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "4acd0a02-c267-4d05-b456-c0565c2ffd46",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "4acd0a02-c267-4d05-b456-c0565c2ffd46",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_02": {
+    "0": {
+      "id": "9d0cf1cb-27bc-4747-8579-47dce4d8d490",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "28fb4b41-5178-4b79-ba24-d9a62fa4a658",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "28fb4b41-5178-4b79-ba24-d9a62fa4a658",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_03": {
+    "0": {
+      "id": "17a7353d-a7a4-43ee-9cc8-b9db83eeafb3",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "9f278e42-aa1d-4b2e-97cd-832248aa5393",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "9f278e42-aa1d-4b2e-97cd-832248aa5393",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_04": {
+    "0": {
+      "id": "34825634-5151-4e31-af1b-7eafadcf15be",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "cc1a0b1e-dbfd-4313-a4fb-2e543b05549b",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "cc1a0b1e-dbfd-4313-a4fb-2e543b05549b",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "9dae5670-cb75-4c97-901b-96ddac5a633a",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "03bb1954-13ae-47d8-8ef8-b7fe0f22d700",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "e2d863a0-60cb-4e58-8c14-4c1595af48b7",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

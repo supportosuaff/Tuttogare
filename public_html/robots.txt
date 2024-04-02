@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accesso.php
+Disallow: /documenti/
+Allow: /

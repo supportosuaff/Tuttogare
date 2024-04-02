@@ -1,0 +1,1 @@
+<div id="more_lots_award"></div>

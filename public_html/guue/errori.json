@@ -1,0 +1,734 @@
+{
+	"R013" : {
+		"section" : "Common",
+		"message" : "Duplicate NO_DOC_EXT, a notice with the same identifier has already been received."
+	},
+	"R388" : {
+		"section" : "Common",
+		"message" : "S2-01-02: Main CPV code inconsistent with the type of contract: Supplies corresponds to CPV code starting from 0 to 44 and with 48, Works with 45, Services from 49 to 98."
+	},
+  "R012" : {
+    "section" : "Common",
+    "message" : "CUSTOMER_LOGIN element does not match the real customer login."
+  },
+	"R100" : {
+		"section" : "Common",
+		"message" : "Document under validation."
+	},
+	"R101" : {
+		"section" : "Common",
+		"message" : "Different values found in CURRENCY elements."
+	},
+	"R102" : {
+		"section" : "Common",
+		"message" : "Extraction of SENDER/USER emails."
+	},
+	"R104" : {
+		"section" : "Common",
+		"message" : "The ITEM value of the XML element must start with 1 and be incremented by 1."
+	},
+	"R106" : {
+		"section" : "Common",
+		"message" : "The end date should be later than the start date."
+	},
+	"R107" : {
+		"section" : "Common",
+		"message" : "The notice number pattern must be 20yy/S sss-nnnnnn, with yy for the year, sss for the OJS number between 001 and 259, and nnnnnn a six digits number."
+	},
+	"R115" : {
+		"section" : "Common",
+		"message" : "Statistique, presence of multiple CPV."
+	},
+	"R116" : {
+		"section" : "Common",
+		"message" : "Statistique, presence of multiple lots."
+	},
+	"R158" : {
+		"section" : "Common",
+		"message" : "Incorrect value or range."
+	},
+	"R251" : {
+		"section" : "Common",
+		"message" : "The year in NO_DOC_EXT and the year in DATE_DISPATCH_NOTICE should be the same."
+	},
+	"R252" : {
+		"section" : "Common",
+		"message" : "Text size limit exceeded."
+	},
+	"R300" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03: The Communication section: not foreseen if it is an award notice."
+	},
+	"R301" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Procurement documents: not foreseen if prior information notice only."
+	},
+	"R302" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Procurement documents: not foreseen if periodic indicative notice only."
+	},
+	"R303" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Procurement documents: not foreseen if this notice is not a call for competition."
+	},
+	"R304" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Additional information: mandatory for the notice other than an award notice."
+	},
+	"R305" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Tenders or requests to participate must be submitted: not foreseen if prior information only."
+	},
+	"R306" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Tenders or requests to participate must be submitted: not foreseen if periodic indicative notice only."
+	},
+	"R307" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Tenders or requests to participate must be submitted: mandatory if this notice aims reducing time limits for receipt of tenders."
+	},
+	"R308" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Tenders or requests to participate must be submitted: mandatory if this notice is a call for competition."
+	},
+	"R309" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Tenders or requests to participate must be submitted: mandatory  if Qualification system only."
+	},
+	"R310" : {
+		"section" : "S1-03-00",
+		"message" : "S1-03-00: Applications or requests must be submitted: mandatory if prior information notice."
+	},
+	"R311" : {
+		"section" : "S1-04-00",
+		"message" : "S1-04-00: Type of the contracting authority (in case of a notice published by a contracting authority): not foreseen if Directive 2014/25/EU."
+	},
+	"R312" : {
+		"section" : "S1-05-00",
+		"message" : "S1-05-00: main activity (in case of a notice published by a contracting authority): not foreseen if Directive 2014/25/EU."
+	},
+	"R313" : {
+		"section" : "S1-06-00",
+		"message" : "S1-06-00: main activity (in case of a notice published by a contracting entity): not foreseen if Directive 2014/24/EU."
+	},
+	"R314" : {
+		"section" : "S2",
+		"message" : "S2: The section could be repeated if prior information only."
+	},
+	"R315" : {
+		"section" : "S2",
+		"message" : "S2: The section could be repeated if periodic indicative notice only."
+	},
+	"R316" : {
+		"section" : "S2-01-03",
+		"message" : "S2-01-03: Type of contract: Supplies is not foreseen if Directive 2014/23/EU."
+	},
+	"R317" : {
+		"section" : "S2-01-04",
+		"message" : "S2-01-04: Short description: not foreseen if qualification system."
+	},
+	"R370" : {
+		"section" : "S2-01-04",
+		"message" : "S2-01-04: Short description: mandatory."
+	},
+	"R318" : {
+		"section" : "S2-01-05",
+		"message" : "S2-01-05: Estimated total value: not foreseen if contract award notice."
+	},
+	"R319" : {
+		"section" : "S2-01-05",
+		"message" : "S2-01-05: Estimated total value: not foreseen if  qualification system."
+	},
+	"R320" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: Information about lots: not foreseen if  qualification system."
+	},
+	"R321" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: Tenders may be submitted for one lot only / maximum number of lots / all lots: not foreseen if prior information notice only."
+	},
+	"R322" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: Tenders may be submitted for one lot only / maximum number of lots / all lots: not foreseen if periodic indicative notice only."
+	},
+	"R323" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: Tenders may be submitted for one lot only / maximum number of lots / all lots: not foreseen if contract award notice."
+	},
+	"R324" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: Tenders may be submitted for one lot only/maximum number of lots: not foreseen if Concession award notice."
+	},
+	"R325" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: maximum number of lots that may be awarded to one tenderer: not foreseen if contract award notice."
+	},
+	"R326" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: maximum number of lots that may be awarded to one tenderer: not foreseen if concession award notice."
+	},
+	"R327" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: The contracting authority reserves the right to award contracts combining the following lots or goups of lots: not foreseen if contract award notice."
+	},
+	"R328" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: The contracting authority reserves the right to award contracts combining the following lots or goups of lots: not foreseen if concession award notice."
+	},
+	"R372" : {
+		"section" : "S2-01-06",
+		"message" : "S2-01-06: The contracting authority reserves the right to award contracts combining the following lots or goups of lots: if affirmative, the description is mandatory."
+	},
+	"R329" : {
+		"section" : "S2-01-07",
+		"message" : "S2-01-07: Total value of the procurement: not foreseen if it is not a contract award notice."
+	},
+	"R330" : {
+		"section" : "S2-01-07",
+		"message" : "S2-01-07: Total value of the procurement: not foreseen if prior information notice."
+	},
+	"R331" : {
+		"section" : "S2-01-07",
+		"message" : "S2-01-07: Total value of the procurement: not foreseen if no contract has been awarded."
+	},
+	"R332" : {
+		"section" : "S2-01-07",
+		"message" : "S2-01-07: Total value of the procurement: mandatory if at least one contract has been awarded."
+	},
+	"R333" : {
+		"section" : "S2-02",
+		"message" : "S2-02: Description: The section could not be repeated if it is about a qualification system. "
+	},
+	"R368" : {
+		"section" : "S2-02-01",
+		"message" : "S2-02-01: Title and Lot No: not foreseen in case of the non-division into lots."
+	},
+	"R369" : {
+		"section" : "S2-02-01",
+		"message" : "S2-02-01: Lot No: mandatory in case of the division into lots."
+	},
+	"R334" : {
+		"section" : "S2-02-02",
+		"message" : "S2-02-02: Additional CPV code(s): at least, one additional CPV is required in case of the division into lots."
+	},
+	"R371" : {
+		"section" : "S2-02-04",
+		"message" : "S2-02-04: Description of the procurement: mandatory."
+	},
+	"R335" : {
+		"section" : "S2-02-05",
+		"message" : "S2-02-05: Award criteria: not foreseen if prior information notice only."
+	},
+	"R336" : {
+		"section" : "S2-02-05",
+		"message" : "S2-02-05: Award criteria: not foreseen if periodic indicative notice only."
+	},
+	"R337" : {
+		"section" : "S2-02-05",
+		"message" : "S2-02-05: Award criteria: Bad use of criteria according to the given directive."
+	},
+	"R373" : {
+		"section" : "S2-02-05",
+		"message" : "S2-02-05: Award criteria:  the weighting of the price is not  foreseen if 'Quality criterion' has not been checked ."
+	},
+	"R338" : {
+		"section" : "S2-02-06",
+		"message" : "S2-02-06: Estimated value: not foreseen if prior information notice only."
+	},
+	"R339" : {
+		"section" : "S2-02-06",
+		"message" : "S2-02-06: Estimated value: not foreseen if periodic indicative notice only."
+	},
+	"R340" : {
+		"section" : "S2-02-06",
+		"message" : "S2-02-06: Estimated value: not foreseen if contract award notice."
+	},
+	"R341" : {
+		"section" : "S2-02-06",
+		"message" : "S2-02-06: Estimated value: not foreseen if qualification system."
+	},
+	"R342" : {
+		"section" : "S2-02-06",
+		"message" : "S2-02-06: Estimated value: not foreseen if concession award notice."
+	},
+	"R343" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the contract, framework agreement or dynamic purchasing system: not foreseen if prior information notice only."
+	},
+	"R344" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the contract, framework agreement or dynamic purchasing system: not foreseen if periodic indicative notice only."
+	},
+	"R345" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the contract or framework agreement: not foreseen if prior information notice only."
+	},
+	"R346" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the contract or framework agreement: not foreseen if periodic indicative notice only."
+	},
+	"R347" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the contract or framework agreement: not foreseen for a qualification system."
+	},
+	"R348" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the contract or framework agreement: not foreseen if contract award notice."
+	},
+	"R349" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: Duration of the concession: mandatory if concession award notice."
+	},
+	"R374" : {
+		"section" : "S2-02-07",
+		"message" : "S2-02-07: This contract is subject to renewal: if affirmative, the description of renewals is mandatory."
+	},
+	"R350" : {
+		"section" : "S2-02-08",
+		"message" : "S2-02-08: Duration of the qualification system: foreseen for a qualification system. "
+	},
+	"R351" : {
+		"section" : "S2-02-08",
+		"message" : "S2-02-08: Duration of the qualification system: mandatory if it is about a qualification system. "
+	},
+	"R352" : {
+		"section" : "S2-02-09",
+		"message" : "S2-02-09: Information about the limits on the number of candidates to be invited: not foreseen if open procedure."
+	},
+	"R353" : {
+		"section" : "S2-02-10",
+		"message" : "S2-02-10: Information about variants: not foreseen if prior information notice only."
+	},
+	"R354" : {
+		"section" : "S2-02-10",
+		"message" : "S2-02-10: Information about variants: not foreseen if periodic indicative notice only."
+	},
+	"R355" : {
+		"section" : "S2-02-11",
+		"message" : "S2-02-11: Information about options: not foreseen if prior information notice only."
+	},
+	"R356" : {
+		"section" : "S2-02-11",
+		"message" : "S2-02-11: Information about options: not foreseen if periodic indicative notice only."
+	},
+	"R375" : {
+		"section" : "S2-02-11",
+		"message" : "S2-02-11: Information about options:  If affirmative, the description of options is mandatory ."
+	},
+	"R357" : {
+		"section" : "S2-02-13",
+		"message" : "S2-02-13: Information about European Union funds: not foreseen if prior information notice only."
+	},
+	"R358" : {
+		"section" : "S2-02-13",
+		"message" : "S2-02-13: Information about European Union funds: not foreseen if periodic indicative notice only."
+	},
+	"R359" : {
+		"section" : "S2-02-13",
+		"message" : "S2-02-13: Information about European Union funds: mandatory if the notice aims at reducing time limits."
+	},
+	"R360" : {
+		"section" : "S2-02-13",
+		"message" : "S2-02-13: Information about European Union funds: mandatory if the notice is a call for competition."
+	},
+	"R361" : {
+		"section" : "S2-02-13",
+		"message" : "S2-02-13: Information about European Union funds: mandatory if contract award notice."
+	},
+	"R362" : {
+		"section" : "S2-03",
+		"message" : "S2-03: Estimated date of publication of contract notice: not foreseen if the notice is a call for competition."
+	},
+	"R363" : {
+		"section" : "S2-03",
+		"message" : "S2-03: Estimated date of publication of contract notice: not foreseen if contract award notice."
+	},
+	"R364" : {
+		"section" : "S2-03",
+		"message" : "S2-03: Estimated date of publication of contract notice: not foreseen if qualification system."
+	},
+	"R365" : {
+		"section" : "S2-03",
+		"message" : "S2-03: Estimated date of publication of contract notice: mandatory if prior information notice only."
+	},
+	"R366" : {
+		"section" : "S2-03",
+		"message" : "S2-03: Estimated date of publication of contract notice: mandatory if periodic indicative notice only."
+	},
+	"R367" : {
+		"section" : "S2-03",
+		"message" : "S2-03: Estimated date of publication of contract notice: mandatory if the notice aims at reducing time limits."
+	},
+	"R400" : {
+		"section" : "S3",
+		"message" : "S3: Legal, economic, financial and technical information: not foreseen if prior information notice only."
+	},
+	"R401" : {
+		"section" : "S3",
+		"message" : "S3: Legal, economic, financial and technical information: not foreseen if periodic indicative notice only."
+	},
+	"R402" : {
+		"section" : "S3",
+		"message" : "S3: Legal, economic, financial and technical information: not foreseen if contract award notice. "
+	},
+	"R403" : {
+		"section" : "S3",
+		"message" : "S3: Legal, economic, financial and technical information: not foreseen if concession award notice. "
+	},
+	"R404" : {
+		"section" : "S3-01-04",
+		"message" : "S3-01-04: Objective rules and criteria for participation: not foreseen if Qualification system."
+	},
+	"R405" : {
+		"section" : "S3-01-09",
+		"message" : "S3-01-09: Qualification for the system: foreseen only for Qualification system."
+	},
+	"R406" : {
+		"section" : "S3-01-07",
+		"message" : "S3-01-07: Criteria for the selection of participants: not foreseen in the case of a open contest."
+	},
+	"R407" : {
+		"section" : "S3-02-01",
+		"message" : "S3-02-01: Information about a particular profession: foreseen only for service contracts."
+	},
+	"R500" : {
+		"section" : "S4",
+		"message" : "S4: Procedure: not foreseen if prior information notice only."
+	},
+	"R501" : {
+		"section" : "S4",
+		"message" : "S4: Procedure: not foreseen if periodic indicative notice only."
+	},
+	"R502" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Type of procedure: not foreseen if prior information notice only."
+	},
+	"R503" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Type of procedure: not foreseen if periodic indicative notice only."
+	},
+	"R504" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Type of procedure: not foreseen if the notice aims at reducing time limits."
+	},
+	"R505" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: form of procedure: not foreseen if it is about a qualification system."
+	},
+	"R506" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: form of procedure: Award of a contract without prior publication of a call for competition in the OJSEU: foreseen only for contract award notices."
+	},
+	"R507" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Type of procedure: The given procedure type is not consistent with the given directive or there is a mismatch between XML elements ."
+	},
+	"R508" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Type of procedure: mandatory if this notice is a call for competition."
+	},
+	"R509" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Type of procedure: mandatory if concession award notice."
+	},
+	"R553" : {
+		"section" : "S4-01-01",
+		"message" : "S4-01-01: Accelerated procedure: the justification is mandatory."
+	},
+	"R510" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: Information about a framework agreement or a dynamic purchasing system: not foreseen if prior information notice only."
+	},
+	"R511" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: Information about a framework agreement or a dynamic purchasing system: not foreseen if periodic indicative notice only."
+	},
+	"R512" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: The procurement involves the setting up of a dynamic purchasing system: foreseen only for restricted procedures."
+	},
+	"R513" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: The dynamic purchasing system might be used by additional purchasers: not foreseen if 'S1-01-02: The contract is awarded by a central purchasing body' has not been checked."
+	},
+	"R514" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: A dynamic purchasing system was set up: foreseen only for restricted procedures."
+	},
+	"R515" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: Information about a framework agreement - justification for any duration exceeding some years: not foreseen if contract award notice."
+	},
+	"R516" : {
+		"section" : "S4-01-03",
+		"message" : "S4-01-03: Information about a framework agreement - justification for any duration exceeding some years: not foreseen if it is about a qualification system."
+	},
+	"R517" : {
+		"section" : "S4-01-04",
+		"message" : "S4-01-04: Information about reduction of the number of solutions or tenders during negotiation or dialogue: not foreseen if open procedure."
+	},
+	"R518" : {
+		"section" : "S4-01-04",
+		"message" : "S4-01-04: Information about reduction of the number of solutions or tenders during negotiation or dialogue: not foreseen if restricted procedure."
+	},
+	"R519" : {
+		"section" : "S4-01-05",
+		"message" : "S4-01-05: Information about negotiation: foreseen only for competitive procedures with negotiation."
+	},
+	"R520" : {
+		"section" : "S4-01-06",
+		"message" : "S4-01-06: Information about electronic auction: not foreseen if prior information notice only."
+	},
+	"R521" : {
+		"section" : "S4-01-06",
+		"message" : "S4-01-06: Information about electronic auction: not foreseen if periodic indicative notice only."
+	},
+	"R522" : {
+		"section" : "S4-01-08",
+		"message" : "S4-01-08: Information about Government Procurement Agreement (GPA): not foreseen if services contract."
+	},
+	"R523" : {
+		"section" : "S4-01-08",
+		"message" : "S4-01-08: Information about Government Procurement Agreement (GPA): mandatory if works contract."
+	},
+	"R554" : {
+		"section" : "S4-01-09",
+		"message" : "S4-01-09: Criteria for the evaluation of projects: mandatory"
+	},
+	"R524" : {
+		"section" : "S4-01-10",
+		"message" : "S4-01-10: Identification of the national rules applicable to the procedure: not foreseen if it is about a qualification system."
+	},
+	"R525" : {
+		"section" : "S4-01-11",
+		"message" : "S4-01-11: main features of the award procedure: not foreseen if it is about a qualification system."
+	},
+	"R526" : {
+		"section" : "S4-01-11",
+		"message" : "S4-01-11: main features of the award procedure: not foreseen if prior information notice."
+	},
+	"R527" : {
+		"section" : "S4-02",
+		"message" : "S4-02: Administrative information: not foreseen if prior information notice only."
+	},
+	"R528" : {
+		"section" : "S4-02",
+		"message" : "S4-02: Administrative information: not foreseen if periodic indicative notice only."
+	},
+	"R529" : {
+		"section" : "S4-02-01",
+		"message" : "S4-02-01: Previous publication...: not foreseen if prior information notice."
+	},
+	"R530" : {
+		"section" : "S4-02-02",
+		"message" : "S4-02-02: Time limit for receipt of expressions of interest: not foreseen if the notice aims at reducing time limits."
+	},
+	"R531" : {
+		"section" : "S4-02-02",
+		"message" : "S4-02-02: Time limit for receipt of expressions of interest: not foreseen if contract award notice."
+	},
+	"R532" : {
+		"section" : "S4-02-02",
+		"message" : "S4-02-02: Time limit for receipt of expressions of interest: not foreseen if it is about a qualification system."
+	},
+	"R533" : {
+		"section" : "S4-02-02",
+		"message" : "S4-02-02: Time limit for submission of applications or receipt of tenders: not foreseen if concession award notice."
+	},
+	"R534" : {
+		"section" : "S4-02-02",
+		"message" : "S4-02-02: Time limit for receipt of expressions of interest: mandatory if this notice is a call for competition."
+	},
+	"R535" : {
+		"section" : "S4-02-02",
+		"message" : "S4-02-02: Time limit for submission of applications or receipt of tenders: mandatory if prior information notice."
+	},
+	"R555" : {
+		"section" : "S5-02-01",
+		"message" : "S4-02-02: Time limit for receipt of expressions of interest, of tenders (projects) or requests to participate / Time limit for submission of applications or receipt of tenders: the date should be after the date of dispach of the notice."
+	},
+	"R536" : {
+		"section" : "S4-02-03",
+		"message" : "S4-02-03: Estimated date of dispatch of invitations to tenders...: not foreseen if open procedure."
+	},
+	"R537" : {
+		"section" : "S4-02-03",
+		"message" : "S4-02-03: Date of dispatch of invitations to participate to selected candidates: not foreseen if open contest."
+	},
+	"R538" : {
+		"section" : "S4-02-04",
+		"message" : "S4-02-04: Languages...: not foreseen if the notice aims at reducing time limits."
+	},
+	"R539" : {
+		"section" : "S4-02-04",
+		"message" : "S4-02-04: Languages...: not foreseen if contract award notice."
+	},
+	"R540" : {
+		"section" : "S4-02-04",
+		"message" : "S4-02-04: Languages...: not foreseen if it is about a qualification system."
+	},
+	"R541" : {
+		"section" : "S4-02-04",
+		"message" : "S4-02-04: Languages...: not foreseen if concession award notice."
+	},
+	"R542" : {
+		"section" : "S4-02-04",
+		"message" : "S4-02-04: Languages...: mandatory if this notice is a call for competition."
+	},
+	"R543" : {
+		"section" : "S4-02-04",
+		"message" : "S4-02-04: Languages...: mandatory if prior information notice."
+	},
+	"R544" : {
+		"section" : "S4-02-05",
+		"message" : "S4-02-05: Scheduled date for start of award procedures: not foreseen if contract notice."
+	},
+	"R545" : {
+		"section" : "S4-02-05",
+		"message" : "S4-02-05: Scheduled date for start of award procedures: not foreseen if contract award notice."
+	},
+	"R546" : {
+		"section" : "S4-02-05",
+		"message" : "S4-02-05: Scheduled date for start of award procedures: not foreseen if it is about a qualification system."
+	},
+	"R547" : {
+		"section" : "S4-02-07",
+		"message" : "S4-02-07: Conditons for opening of tenders: foreseen only for open procedures."
+	},
+	"R548" : {
+		"section" : "S4-02-07",
+		"message" : "S4-02-07: Conditons for opening of tenders: mandatory if open procedure."
+	},
+	"R549" : {
+		"section" : "S4-02-08",
+		"message" : "S4-02-08: The notice involves the termination of the dynamic purchasing system published by the above contract notices: not foreseen if 'S4-01-03: A dynamic purchasing system was set up' has not been checked."
+	},
+	"R550" : {
+		"section" : "S4-02-09",
+		"message" : "S4-02-09: Information about termination of call for competition in the form of a prior information notice: not foreseen if this notice is a call for competition."
+	},
+	"R551" : {
+		"section" : "S4-02-09",
+		"message" : "S4-02-09: Information about termination of call for competition in the form of a periodic indicative notice: not foreseen if this notice is a call for competition."
+	},
+	"R552" : {
+		"section" : "S4-02-09",
+		"message" : "S4-02-09: Information about termination of call for competition in the form of a periodic indicative notice: not foreseen if it is about a qualification system."
+	},
+	"R600" : {
+		"section" : "S5",
+		"message" : "S5: Award of the contract: foreseen for the contract award notice."
+	},
+	"R601" : {
+		"section" : "S5",
+		"message" : "S5: Award of the contract: foreseen for the concession award notice."
+	},
+	"R608" : {
+		"section" : "S5",
+		"message" : "S5: Award of the contract: mandatory if award notice."
+	},
+	"R602" : {
+		"section" : "S5-02-01",
+		"message" : "S5-02-01:V.2.1) Date of conclusion of the contract / Date of concession award decision: the date should be before or on the date of dispach of the notice."
+	},
+  "R603" : {
+    "section" : "AWARD_CONTRACT",
+    "message" : "S2-01-06:II.1.6) Lotto n .: non previsto in caso di non divisione in lotti."
+  },
+	"R604" : {
+		"section" : "S5-02-05",
+		"message" : "S5-02-05: All or certain subcontracts will be awarded through a competitive procedure: only in case of a notice covered by Directive 2009/81/EC."
+	},
+	"R605" : {
+		"section" : "S5-02-05",
+		"message" : "S5-02-05: A share of the contract will be subcontracted through a competitive procedure: only in case of a notice covered by Directive 2009/81/EC."
+	},
+	"R606" : {
+		"section" : "S5-02-05",
+		"message" : "S5-02-05: Maximum percentage: may not exceed 30% of the value of the contract."
+	},
+	"R607" : {
+		"section" : "S5-03-01",
+		"message" : "S5-03-01: Date of the jury decision: the date should be before the date of dispach of the notice."
+	},
+	"R700" : {
+		"section" : "S6-02",
+		"message" : "S6-02: Information about electronic workflows: not foreseen if prior information notice only."
+	},
+	"R701" : {
+		"section" : "S6-02",
+		"message" : "S6-02: Information about electronic workflows: not foreseen if periodic indicative notice only ."
+	},
+	"R702" : {
+		"section" : "S6-02",
+		"message" : "S6-02: Information about electronic workflows: not foreseen if contract award notice."
+	},
+	"R703" : {
+		"section" : "S6-02",
+		"message" : "S6-02: Information about electronic workflows: not foreseen if qualification system."
+	},
+	"R704" : {
+		"section" : "S6-02",
+		"message" : "S6-02: Information about electronic workflows: not foreseen if concession award notice."
+	},
+	"R705" : {
+		"section" : "S6-04",
+		"message" : "S6-04: Procedures for review: not foreseen if prior information notice only."
+	},
+	"R706" : {
+		"section" : "S6-04",
+		"message" : "S6-04: Procedures for review: not foreseen if periodic indicative notice only."
+	},
+	"R707" : {
+		"section" : "S6-04-01",
+		"message" : "S6-04-01: Review body: mandatory."
+	},
+	"R708" : {
+		"section" : "S6-06",
+		"message" : "S6-06: Date of dispatch of the original notice: the date should be before the date of dispach of the notice."
+	},
+	"R800" : {
+		"section" : "S7-01-02",
+		"message" : "S7-01-02: Text to be corrected in the original notice: In the case of a change of information, the new value and the old value should be of the same type."
+	},
+	"R801" : {
+		"section" : "S7-01-02",
+		"message" : "S7-01-02: Text to be corrected in the original notice: Both the old main CPV and the new main CPV must be indicated. "
+	},
+	"R802" : {
+		"section" : "S7-01-02",
+		"message" : "S7-01-02: Text to be corrected in the original notice: Lot No and dates: a change of the deadline date per lot is not allowed."
+	},
+	"R803" : {
+		"section" : "S7-01-04",
+		"message" : "S7-01-04: Description of the procurement: mandatory."
+	},
+	"R804" : {
+		"section" : "S7-02-01",
+		"message" : "S7-02-01: Nature and extent of the modifications (with indication of possible earlier changes to the contract): mandatory."
+	},
+	"R805" : {
+		"section" : "S7-02-02",
+		"message" : "S7-02-02: Description of the economic or technical reasons and the inconvenience or duplication of cost preventing a change of contractor: mandatory."
+	},
+	"R806" : {
+		"section" : "S7-02-02",
+		"message" : "S7-02-02: Description of the circumstances which rendered the modification necessary and explanation of the unforeseen nature of these circumstances: mandatory."
+	},
+	"R900" : {
+		"section" : "Annex D-1",
+		"message" : "Annex D-1: Justification: mandatory."
+	},
+	"R901" : {
+		"section" : "Annex D-1",
+		"message" : "Annex D-1: Justification: inconsistency with the contract type."
+	},
+	"R902" : {
+		"section" : "Annex D-3",
+		"message" : "Annex D-3: Explanation: mandatory."
+	},
+	"R999" : {
+		"section" : "S2-1-1",
+		"message" : "TITLE exceeds 200: Text size limit exceeded."
+	}
+}

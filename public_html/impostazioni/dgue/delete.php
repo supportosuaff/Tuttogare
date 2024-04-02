@@ -1,0 +1,35 @@
+<?
+	session_start();
+	include_once("../../../config.php");
+	include_once($root."/inc/funzioni.php");
+
+	$edit = false;
+	if (isset($_SESSION["codice_utente"])) {
+		$edit = check_permessi("impostazioni",$_SESSION["codice_utente"]);
+		if (!$edit) {
+			die();
+		}
+	} else {
+		die();
+	}
+
+	if (!$edit) {
+		die();
+	} else {
+		if (isset($_POST["codice"]) && $_SESSION["gerarchia"]==0) {
+			$codice = $_POST["codice"];
+			$bind = array();
+			$bind[":codice"] = $codice;
+			$strsql = "DELETE FROM b_dgue_settings WHERE codice = :codice";
+			$risultato = $pdo->bindAndExec($strsql,$bind);
+			scrivilog("b_dgue_settings","DELETE",$pdo->getSQL(),$_SESSION["codice_utente"]);
+			
+			?>
+			if ($("#form_<? echo $codice ?>").length > 0){
+            	$("#form_<? echo $codice ?>").slideUp().remove();
+            }
+			<?
+		}
+	}
+
+?>

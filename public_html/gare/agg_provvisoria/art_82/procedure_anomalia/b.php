@@ -1,0 +1,98 @@
+<?
+  if ($edit) {
+    if (strtotime($record_gara["data_pubblicazione"]) < strtotime('2017-05-20')) {
+      $num_soglia = ceil($numero_partecipanti * 10 /100);
+    } else {
+      $num_soglia = ceil($numero_partecipanti * 20 /100);
+    }
+    // Codici partecipanti per le offerte più alte
+
+    $bind = array();
+    $bind[":codice_gara"] = $_POST["codice_gara"];
+    $bind[":codice_lotto"] = $_POST["codice_lotto"];
+
+    $sql = "SELECT r_partecipanti.codice, SUM(r_punteggi_gare.punteggio) as totale_punteggio FROM r_partecipanti JOIN r_punteggi_gare ON r_partecipanti.codice = ";
+    $sql.= " r_punteggi_gare.codice_partecipante WHERE r_punteggi_gare.codice_gara = :codice_gara
+             AND r_punteggi_gare.codice_lotto = :codice_lotto AND r_partecipanti.codice_capogruppo = 0 AND r_partecipanti.ammesso = 'S' AND (r_partecipanti.conferma = TRUE OR r_partecipanti.conferma IS NULL)";
+    $sql.= " GROUP BY r_punteggi_gare.codice_partecipante, r_punteggi_gare.codice_gara, r_punteggi_gare.codice_lotto ORDER BY totale_punteggio DESC";
+    $ris = $pdo->bindAndExec($sql,$bind);
+    $i=0;
+    $codici_taglio_ali = array();
+    $punteggio_attuale = "";
+    while ($rec=$ris->fetch(PDO::FETCH_ASSOC)) {
+      if ($rec["totale_punteggio"] != $punteggio_attuale) {
+        $i++;
+        $punteggio_attuale = $rec["totale_punteggio"];
+      }
+      if ($i<=$num_soglia) {
+        $codici_taglio_ali[] = $rec["codice"];
+      } else {
+        break;
+      }
+    }
+
+    $bind = array();
+    $bind[":codice_gara"] = $_POST["codice_gara"];
+    $bind[":codice_lotto"] = $_POST["codice_lotto"];
+
+    // Codici partecipanti per le offerte più basse
+    $sql = "SELECT r_partecipanti.codice, SUM(r_punteggi_gare.punteggio) as totale_punteggio FROM r_partecipanti JOIN r_punteggi_gare ON r_partecipanti.codice = ";
+    $sql.= " r_punteggi_gare.codice_partecipante WHERE r_punteggi_gare.codice_gara = :codice_gara AND r_punteggi_gare.codice_lotto = :codice_lotto
+             AND r_partecipanti.codice_capogruppo = 0  AND (r_partecipanti.conferma = TRUE OR r_partecipanti.conferma IS NULL) AND r_partecipanti.ammesso = 'S'";
+    $sql.= " GROUP BY r_punteggi_gare.codice_partecipante, r_punteggi_gare.codice_gara, r_punteggi_gare.codice_lotto ORDER BY totale_punteggio ASC";
+    $ris = $pdo->bindAndExec($sql,$bind);
+    $i=0;
+    $punteggio_attuale = "";
+    while ($rec=$ris->fetch(PDO::FETCH_ASSOC)) {
+      if ($rec["totale_punteggio"] != $punteggio_attuale) {
+        $i++;
+        $punteggio_attuale = $rec["totale_punteggio"];
+      }
+      if ($i<=$num_soglia) {
+        $codici_taglio_ali[] = $rec["codice"];
+      } else {
+        break;
+      }
+    }
+    $taglio_ali = implode(",",$codici_taglio_ali);
+    // Calcolo della media dei punteggi con esclusione delle offerte rientranti nel taglio delle ali
+
+    $bind = array();
+    $bind[":codice_gara"] = $_POST["codice_gara"];
+    $bind[":codice_lotto"] = $_POST["codice_lotto"];
+
+    $sql = "SELECT SUM(r_punteggi_gare.punteggio) AS somma, SUM(r_punteggi_gare.punteggio) / COUNT(DISTINCT r_punteggi_gare.codice_partecipante) as media FROM r_partecipanti JOIN r_punteggi_gare ON r_partecipanti.codice = ";
+    $sql.= " r_punteggi_gare.codice_partecipante WHERE r_punteggi_gare.codice_gara = :codice_gara
+             AND r_punteggi_gare.codice_lotto = :codice_lotto AND r_partecipanti.codice_capogruppo = 0 AND r_partecipanti.ammesso = 'S' AND (r_partecipanti.conferma = TRUE OR r_partecipanti.conferma IS NULL)";
+    if ($taglio_ali != "") $sql.= " AND r_partecipanti.codice NOT IN (" . $taglio_ali . ") ";
+    $sql.= " GROUP BY r_punteggi_gare.codice_gara, r_punteggi_gare.codice_lotto ";
+
+    $ris = $pdo->bindAndExec($sql,$bind);
+    if ($ris->rowCount()>0) {
+      $rec_media = $ris->fetch(PDO::FETCH_ASSOC);
+
+      if (strpos($rec_media["somma"],".") !== false) {
+        $decremento = explode(".",$rec_media["somma"]);
+        $decremento = (int) substr($decremento[1],0,1);
+        if ($decremento % 2 == 0) $decremento = 0;
+      }
+      $media = $rec_media["media"];
+      if ($solo_soglia == "N") {
+        if ($arrotondamento=="S") {
+          $media = number_format($media,$decimali_graduatoria);
+        } else {
+          $media = truncate($media,$decimali_graduatoria);
+        }
+      }
+      $soglia_anomalia = $media - (($media*$decremento)/100);
+      if ($arrotondamento == "S") {
+        $soglia_anomalia = number_format($soglia_anomalia,$decimali_graduatoria);
+      } else {
+        $soglia_anomalia = truncate($soglia_anomalia,$decimali_graduatoria);
+      }
+      $msg .= "lettera b) - Media: " . $media . " - Decremento: " . $decremento . "% - Soglia di anomalia: " . $soglia_anomalia . "\\n";
+    } else {
+      $errore_calcolo_soglia = true;
+    }
+  }
+?>

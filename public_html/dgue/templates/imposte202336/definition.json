@@ -1,0 +1,104 @@
+{
+  "_0": {
+    "0": {
+      "id": "974c8196-9d1c-419c-9ca9-45bb9f5fd59a",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "6c87d3d4-e8eb-4253-b385-6373020ab886",
+      "index": [
+        "ccv-cbc:Code",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "9052cc59-cfe5-41c6-a314-02a7f378ffe8",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "3": {
+      "id": "9052cc59-cfe5-41c6-a314-02a7f378ffe8",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    }
+  },
+  "_00": {
+    "0": {
+      "id": "9b4497e6-a166-46f9-8581-7fc39ff975c4",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "201f11c3-1fa2-4464-acc0-f021266fd881",
+      "index": [
+        "cbc:Description"
+      ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "08b0c984-c5e6-4143-8493-868c39745637",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "ecf40999-7b64-4e10-b960-7f8ff8674cf6",
+      "index": [
+        "cbc:Date"
+        ]
+    },
+    "2": {
+      "id": "9ca9096f-edd2-4f19-b6b1-b55c83a2d5c8",
+      "index": [
+        "cac:Period",
+        "cbc:Description"
+        ]
+    }
+  },
+  "_02": {
+    "0": {
+      "id": "70f8697b-8953-411a-a489-4ff62e5250d2",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "55905dd0-38f0-4f93-8c74-5ae05a21afc5",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "c1347b74-1872-4060-a6db-f4044edcd7c4",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "f4313bb6-21b6-499e-bdff-debe10e11d2c",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "1f1cd18e-3e01-4ca2-af4c-e2981924ba8d",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

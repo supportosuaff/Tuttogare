@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+####################################################################################
+#  XML name : validation_rule
+#  Version : R2.0.9.S03                                        
+#  Intermediate release number : 022-20180608                                         
+#  Last update : 08/06/2018                                                            
+####################################################################################
+ -->
+<VALIDATION_RULES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../validation_rule.xsd">
+	<!--schemaLocation-->
+	<!-- rules applied by esentool engine -->
+	<VALIDATION_RULE RULE="R001" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="1" ACTIVATE="true">The email subject and the attached ZIP file must have the same name.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R002" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="2" ACTIVATE="true">The name of the ZIP file must be in the format: xxxxx-XMLnnnn-yyyymmdd.zip.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R003" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="3" ACTIVATE="true">The name of the XML file must be in the format: xxxxx-yyyy-ssssss.xml.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R004" PROD_WEIGHT="INFO" QUAL_WEIGHT="WARNING" ORDER="4" ACTIVATE="true">The text body must contain the name(s) of the XML file(s) contained in the ZIP file.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R005" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING" ORDER="5" ACTIVATE="true">Please note that the text included in the body of the email is not taken into account. Communications should be addressed to op-simap-helpdesk@publications.europa.eu instead.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R006" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="6" ACTIVATE="true">Check that the XML notice contains only authorized Unicode characters.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R007" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="7" ACTIVATE="true">NO_DOC_EXT element should contain the document identification and no other text, in the format : yyyy-ssssss.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R008" PROD_WEIGHT="INFO" QUAL_WEIGHT="WARNING" ORDER="8" ACTIVATE="true">NOTICE_DISPATCH_DATE element must contain the real sending date of XML notice.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R009" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="9" ACTIVATE="true">CDATA delimiters must not be used.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R010" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="10" ACTIVATE="true">ESENDER_LOGIN element does not match the real eSender login.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R011" PROD_WEIGHT="INFO" QUAL_WEIGHT="WARNING" ORDER="11" ACTIVATE="true">No duplicate language should be present in the notice.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R012" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR" ORDER="12" ACTIVATE="true">CUSTOMER_LOGIN element does not match the real customer login.</VALIDATION_RULE>
+	<VALIDATION_RULE RULE="R013" PROD_WEIGHT="ERROR" QUAL_WEIGHT="WARNING" ORDER="13" ACTIVATE="true">Duplicate NO_DOC_EXT, a notice with the same identifier has already been received.</VALIDATION_RULE>
+	<!-- rules applied by xslt forms_validation.xsl -->
+	<XSLT_RULE RULE="R100" PROD_WEIGHT="OFF" QUAL_WEIGHT="OFF">Document under validation.</XSLT_RULE>
+	<XSLT_RULE RULE="R101" PROD_WEIGHT="OFF" QUAL_WEIGHT="OFF">Different values found in CURRENCY elements.</XSLT_RULE>
+	<XSLT_RULE RULE="R102" PROD_WEIGHT="OFF" QUAL_WEIGHT="OFF">Extraction of SENDER/USER emails.</XSLT_RULE>
+	<XSLT_RULE RULE="R103" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The year in NO_DOC_EXT and the year in DATE_DISPATCH_NOTICE should be the same.</XSLT_RULE>
+	<XSLT_RULE RULE="R104" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The ITEM value of the XML element must start with 1 and be incremented by 1.</XSLT_RULE>
+	<XSLT_RULE RULE="R105" PROD_WEIGHT="WARNING" QUAL_WEIGHT="ERROR">The email pattern requires only one @ character and accepts all characters except the punctuation signs (comma, semicolon), the separator, non-Latin and non-word characters (maximal string length is 200 char).</XSLT_RULE>
+	<XSLT_RULE RULE="R106" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The end date should be later than the start date.</XSLT_RULE>
+	<XSLT_RULE RULE="R107" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The notice number pattern must be (19|20)yy/S sss-nnnnnn, with yy for the year, sss for the OJS number between 001 and 259, and nnnnnn a six digits number.</XSLT_RULE>
+	<XSLT_RULE RULE="R113" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">NO_DOC_EXT of current notice and NO_DOC_EXT of original notice reference are identical.</XSLT_RULE>
+	<XSLT_RULE RULE="R115" PROD_WEIGHT="OFF" QUAL_WEIGHT="OFF">Statistique, presence of multiple CPV.</XSLT_RULE>
+	<XSLT_RULE RULE="R116" PROD_WEIGHT="OFF" QUAL_WEIGHT="OFF">Statistique, presence of multiple lots.</XSLT_RULE>
+	<XSLT_RULE RULE="R117" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">Presence of CPV code(s) inconsistent with the contract type: supplies corresponds to CPV code starting from 0 to 44 and with 48, Works with 45, Services from 49 to 98.</XSLT_RULE>
+	<XSLT_RULE RULE="R118" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Wrong value of the legal basis according to the given form.</XSLT_RULE>
+	<XSLT_RULE RULE="R119" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The agreement to the publication of information is required only in case of a notice covered by Directive 2014/25/EU.</XSLT_RULE>
+	<XSLT_RULE RULE="R120" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The expected date of publication is foreseen only for the DEVCO forms.</XSLT_RULE>
+	<XSLT_RULE RULE="R121" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The expected date of publication should be at least 7 days after the dispatch date (or 5 days for F14).</XSLT_RULE>
+	<XSLT_RULE RULE="R122" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The expected date of publication is mandatory for the DEVCO forms.</XSLT_RULE>
+	<XSLT_RULE RULE="R123" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Inconsistency between the esender login and the given form.</XSLT_RULE>
+	<XSLT_RULE RULE="R158" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Incorrect value or range.</XSLT_RULE>
+	<XSLT_RULE RULE="R300" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03: The Communication section: not foreseen if it is an award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R301" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Procurement documents: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R302" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Procurement documents: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R303" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Procurement documents: not foreseen if this notice is not a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R304" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Additional information: mandatory for the notice other than an award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R305" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Tenders or requests to participate must be submitted: not foreseen if prior information only.</XSLT_RULE>
+	<XSLT_RULE RULE="R306" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Tenders or requests to participate must be submitted: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R307" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Tenders or requests to participate must be submitted: mandatory if this notice aims reducing time limits for receipt of tenders.</XSLT_RULE>
+	<XSLT_RULE RULE="R308" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Tenders or requests to participate must be submitted: mandatory if this notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R309" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Tenders or requests to participate must be submitted: mandatory  if Qualification system only.</XSLT_RULE>
+	<XSLT_RULE RULE="R310" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-03-00: Applications or requests must be submitted: mandatory if prior information notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R311" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-04-00: Type of the contracting authority (in case of a notice published by a contracting authority): not foreseen if Directive 2014/25/EU.</XSLT_RULE>
+	<XSLT_RULE RULE="R312" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-05-00: Main activity (in case of a notice published by a contracting authority): not foreseen if Directive 2014/25/EU.</XSLT_RULE>
+	<XSLT_RULE RULE="R313" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-06-00: Main activity (in case of a notice published by a contracting entity): not foreseen if Directive 2014/24/EU.</XSLT_RULE>
+	<XSLT_RULE RULE="R314" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2: The section could be repeated if prior information only.</XSLT_RULE>
+	<XSLT_RULE RULE="R315" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2: The section could be repeated if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R316" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-03: Type of contract: Supplies is not foreseen if Directive 2014/23/EU.</XSLT_RULE>
+	<XSLT_RULE RULE="R317" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-04: Short description: not foreseen if qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R318" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-05: Estimated total value: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R319" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-05: Estimated total value: not foreseen if  qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R320" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Information about lots: not foreseen if  qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R321" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Tenders may be submitted for one lot only / maximum number of lots / all lots: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R322" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Tenders may be submitted for one lot only / maximum number of lots / all lots: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R323" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Tenders may be submitted for one lot only / maximum number of lots / all lots: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R324" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Tenders may be submitted for one lot only/maximum number of lots: not foreseen if Concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R325" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Maximum number of lots that may be awarded to one tenderer: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R326" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: Maximum number of lots that may be awarded to one tenderer: not foreseen if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R327" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: The contracting authority reserves the right to award contracts combining the following lots or goups of lots: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R328" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: The contracting authority reserves the right to award contracts combining the following lots or goups of lots: not foreseen if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R329" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-07: Total value of the procurement: not foreseen if it is not an award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R331" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-07: Total value of the procurement: not foreseen if no contract has been awarded.</XSLT_RULE>
+	<XSLT_RULE RULE="R332" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-07: Total value of the procurement: mandatory if at least one contract has been awarded.</XSLT_RULE>
+	<XSLT_RULE RULE="R333" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02: Description: The section could not be repeated if it is about a qualification system. </XSLT_RULE>
+	<XSLT_RULE RULE="R334" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-02: Additional CPV code(s): at least, one additional CPV is required in case of the division into lots.</XSLT_RULE>
+	<XSLT_RULE RULE="R335" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-05: Award criteria: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R336" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-05: Award criteria: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R337" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-05: Award criteria: Bad use of criteria according to the given directive.</XSLT_RULE>
+	<XSLT_RULE RULE="R338" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-06: Estimated value: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R339" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-06: Estimated value: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R340" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-06: Estimated value: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R341" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-06: Estimated value: not foreseen if qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R342" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-06: Estimated value: not foreseen if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R343" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the contract, framework agreement or dynamic purchasing system: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R344" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the contract, framework agreement or dynamic purchasing system: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R345" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the contract or framework agreement: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R346" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the contract or framework agreement: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R347" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the contract or framework agreement: not foreseen if qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R348" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the contract or framework agreement: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R349" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: Duration of the concession: mandatory if this concession/lot has been awarded.</XSLT_RULE>
+	<XSLT_RULE RULE="R350" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-08: Duration of the qualification system: foreseen for a qualification system. </XSLT_RULE>
+	<XSLT_RULE RULE="R351" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-08: Duration of the qualification system: mandatory if it is about a qualification system. </XSLT_RULE>
+	<XSLT_RULE RULE="R352" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-09: Information about the limits on the number of candidates to be invited: not foreseen if open procedure.</XSLT_RULE>
+	<XSLT_RULE RULE="R353" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-10: Information about variants: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R354" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-10: Information about variants: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R355" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-11: Information about options: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R356" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-11: Information about options: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R357" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-13: Information about European Union funds: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R358" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-13: Information about European Union funds: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R359" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-13: Information about European Union funds: mandatory if the notice aims at reducing time limits.</XSLT_RULE>
+	<XSLT_RULE RULE="R360" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-13: Information about European Union funds: mandatory if the notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R361" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-13: Information about European Union funds: mandatory if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R362" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-03: Estimated date of publication of contract notice: not foreseen if the notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R363" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-03: Estimated date of publication of contract notice: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R364" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-03: Estimated date of publication of contract notice: not foreseen if qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R365" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-03: Estimated date of publication of contract notice: mandatory if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R366" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-03: Estimated date of publication of contract notice: mandatory if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R367" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-03: Estimated date of publication of contract notice: mandatory if the notice aims at reducing time limits.</XSLT_RULE>
+	<XSLT_RULE RULE="R368" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-01: Title and Lot No: not foreseen in case of the non-division into lots.</XSLT_RULE>
+	<XSLT_RULE RULE="R369" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-01: Lot No: mandatory in case of the division into lots.</XSLT_RULE>
+	<XSLT_RULE RULE="R370" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-04: Short description: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R371" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-04: Description of the procurement: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R372" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-06: The contracting authority reserves the right to award contracts combining the following lots or goups of lots: if affirmative, the description is mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R373" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-05: Award criteria: the weighting of the price is not foreseen if Quality criterion has not been checked.</XSLT_RULE>
+	<XSLT_RULE RULE="R374" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-07: This contract is subject to renewal: if affirmative, the description of renewals is mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R375" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-11: Information about options:  If affirmative, the description of options is mandatory .</XSLT_RULE>
+	<XSLT_RULE RULE="R376" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-01: Title: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R377" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-01: Lot No: must be unique within a S2 section.</XSLT_RULE>
+	<XSLT_RULE RULE="R378" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S2-01-06: Maximum number of lots: cannot be higher than the total number of lots (S2-02).</XSLT_RULE>
+	<XSLT_RULE RULE="R379" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-04: Essential assets: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R380" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S2-01-06: Maximum number of lots that may be awarded to one tenderer: cannot be higher than Maximum number of lots or the total number of lots (S2-02).</XSLT_RULE>
+	<XSLT_RULE RULE="R381" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-04-00: Type of the contracting authority: not consistent with the given legal basis.</XSLT_RULE>
+	<XSLT_RULE RULE="R382" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-13: Information about European Union funds: if affirmative, the identification of the project is mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R383" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-04: Essential assets: in case of the extended contract duration, the description of the assets is mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R384" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-02-03: Main site or place of performance: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R385" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S2-01-03: Area(s) covered by the Public Transport Service: the selected area is not foreseen for the T02 form.</XSLT_RULE>
+	<XSLT_RULE RULE="R386" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-04-00: Type of the contracting authority: European institution/agency not foreseen for the MOVE forms.</XSLT_RULE>
+	<XSLT_RULE RULE="R387" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S1-01-00: Name and adresses: the section is not complete.</XSLT_RULE>
+	<XSLT_RULE RULE="R400" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3: Legal, economic, financial and technical information: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R401" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3: Legal, economic, financial and technical information: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R402" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3: Legal, economic, financial and technical information: not foreseen if contract award notice. </XSLT_RULE>
+	<XSLT_RULE RULE="R403" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3: Legal, economic, financial and technical information: not foreseen if concession award notice. </XSLT_RULE>
+	<XSLT_RULE RULE="R404" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-01-04: Objective rules and criteria for participation: not foreseen if Qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R405" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-01-09: Qualification for the system: foreseen only for Qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R406" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-01-07: Criteria for the selection of participants: not foreseen in the case of a open contest.</XSLT_RULE>
+	<XSLT_RULE RULE="R407" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-02-01: Information about a particular profession: foreseen only for service contracts.</XSLT_RULE>
+	<XSLT_RULE RULE="R408" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-02-01: Information about a particular profession: if affirmative, indicate the profession.</XSLT_RULE>
+	<XSLT_RULE RULE="R409" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-01-01: Cost parameters for compensation payments: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R410" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-01-02: Specification of exclusive right granted: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R411" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-01-05: Public Service Obligations: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R412" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-02-01: Description: at least, one quality target must be selected.</XSLT_RULE>
+	<XSLT_RULE RULE="R413" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-02-01: Description of the quality target: mandatory if selected.</XSLT_RULE>
+	<XSLT_RULE RULE="R414" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S3-02-02: Information on rewards and penalties: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R500" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4: Procedure: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R501" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4: Procedure: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R502" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Type of procedure: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R503" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Type of procedure: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R504" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Type of procedure: not foreseen if the notice aims at reducing time limits.</XSLT_RULE>
+	<XSLT_RULE RULE="R505" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Form of procedure: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R506" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Form of procedure: Award of a contract without prior publication of a call for competition in the OJSEU: foreseen only for contract award notices.</XSLT_RULE>
+	<XSLT_RULE RULE="R507" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Type of procedure: The given procedure type is not consistent with the given directive or there is a mismatch between XML elements .</XSLT_RULE>
+	<XSLT_RULE RULE="R508" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Type of procedure: mandatory if this notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R509" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Type of procedure: mandatory if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R510" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: Information about a framework agreement or a dynamic purchasing system: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R511" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: Information about a framework agreement or a dynamic purchasing system: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R512" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: The procurement involves the setting up of a dynamic purchasing system: foreseen only for restricted procedures.</XSLT_RULE>
+	<XSLT_RULE RULE="R513" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: The dynamic purchasing system might be used by additional purchasers: not foreseen if "S1-01-02: The contract is awarded by a central purchasing body" has not been checked.</XSLT_RULE>
+	<XSLT_RULE RULE="R514" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: A dynamic purchasing system was set up: foreseen only for restricted procedures.</XSLT_RULE>
+	<XSLT_RULE RULE="R515" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: Information about a framework agreement - justification for any duration exceeding some years: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R516" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-03: Information about a framework agreement - justification for any duration exceeding some years: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R517" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-04: Information about reduction of the number of solutions or tenders during negotiation or dialogue: not foreseen if open procedure.</XSLT_RULE>
+	<XSLT_RULE RULE="R518" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-04: Information about reduction of the number of solutions or tenders during negotiation or dialogue: not foreseen if restricted procedure.</XSLT_RULE>
+	<XSLT_RULE RULE="R519" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-05: Information about negotiation: foreseen only for competitive procedures with negotiation.</XSLT_RULE>
+	<XSLT_RULE RULE="R520" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-06: Information about electronic auction: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R521" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-06: Information about electronic auction: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R522" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-08: Information about Government Procurement Agreement (GPA): not foreseen if services contract.</XSLT_RULE>
+	<XSLT_RULE RULE="R523" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-08: Information about Government Procurement Agreement (GPA): mandatory if works contract.</XSLT_RULE>
+	<XSLT_RULE RULE="R524" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-10: Identification of the national rules applicable to the procedure: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R525" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-11: Main features of the award procedure: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R526" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-11: Main features of the award procedure: not foreseen if prior information notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R527" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02: Administrative information: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R528" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02: Administrative information: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R529" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-01: Previous publication...: not foreseen if prior information notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R530" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt of expressions of interest: not foreseen if the notice aims at reducing time limits.</XSLT_RULE>
+	<XSLT_RULE RULE="R531" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt of expressions of interest: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R532" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt of expressions of interest: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R533" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for submission of applications or receipt of tenders: not foreseen if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R534" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt of expressions of interest: mandatory if this notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R535" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for submission of applications or receipt of tenders: mandatory if prior information notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R536" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-03: Estimated date of dispatch of invitations to tenders...: not foreseen if open procedure.</XSLT_RULE>
+	<XSLT_RULE RULE="R537" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-03: Date of dispatch of invitations to participate to selected candidates: not foreseen if open contest.</XSLT_RULE>
+	<XSLT_RULE RULE="R538" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-04: Languages...: not foreseen if the notice aims at reducing time limits.</XSLT_RULE>
+	<XSLT_RULE RULE="R539" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-04: Languages...: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R540" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-04: Languages...: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R541" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-04: Languages...: not foreseen if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R542" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-04: Languages...: mandatory if this notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R543" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-04: Languages...: mandatory if prior information notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R544" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-05: Scheduled date for start of award procedures: not foreseen if contract notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R545" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-05: Scheduled date for start of award procedures: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R546" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-05: Scheduled date for start of award procedures: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R547" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-07: Conditons for opening of tenders: foreseen only for open procedures.</XSLT_RULE>
+	<XSLT_RULE RULE="R548" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-07: Conditons for opening of tenders: mandatory if open procedure.</XSLT_RULE>
+	<XSLT_RULE RULE="R549" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-08: The notice involves the termination of the dynamic purchasing system published by the above contract notices: not foreseen if "S4-01-03: A dynamic purchasing system was set up" has not been checked.</XSLT_RULE>
+	<XSLT_RULE RULE="R550" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-09: Information about termination of call for competition in the form of a prior information notice: not foreseen if this notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R551" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-09: Information about termination of call for competition in the form of a periodic indicative notice: not foreseen if this notice is a call for competition.</XSLT_RULE>
+	<XSLT_RULE RULE="R552" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-09: Information about termination of call for competition in the form of a periodic indicative notice: not foreseen if it is about a qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R553" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-01: Accelerated procedure: the justification is mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R554" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-01-09: Criteria for the evaluation of projects: mandatory</XSLT_RULE>
+	<XSLT_RULE RULE="R555" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt of expressions of interest, of tenders (projects) or requests to participate / Time limit for submission of applications or receipt of tenders: the date should be after the date of dispach of the notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R556" PROD_WEIGHT="INFO" QUAL_WEIGHT="WARNING">S4-02-01: Notice number in previous publication: please make sure that year 19xx is correct.</XSLT_RULE>
+	<XSLT_RULE RULE="R557" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt tenders or requests to participate...: date pattern should be 20YY-MM-DD.</XSLT_RULE>
+	<XSLT_RULE RULE="R558" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-07: Conditions for opening of tenders: date pattern should be 20YY-MM-DD.</XSLT_RULE>
+	<XSLT_RULE RULE="R559" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4-02-02: Time limit for receipt of expressions of interest: mandatory if the notice aims at reducing time limits.</XSLT_RULE>
+	<XSLT_RULE RULE="R560" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S4-02-01: Previous publication: mandatory except in case of Award of a contract without prior publication.</XSLT_RULE>
+	<XSLT_RULE RULE="R561" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S4: Procedure: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R600" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5: Award of the contract: foreseen for the contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R601" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5: Award of the contract: foreseen for the concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R602" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5-02-01: Date of conclusion of the contract / Date of concession award decision: the date should be before or on the date of dispach of the notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R603" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S5: Lot No: not foreseen in case of the non-division into lots.</XSLT_RULE>
+	<XSLT_RULE RULE="R604" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5-02-05: All or certain subcontracts will be awarded through a competitive procedure: only in case of a notice covered by Directive 2009/81/EC.</XSLT_RULE>
+	<XSLT_RULE RULE="R605" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5-02-05: A share of the contract will be subcontracted through a competitive procedure: only in case of a notice covered by Directive 2009/81/EC.</XSLT_RULE>
+	<XSLT_RULE RULE="R606" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5-02-05: Maximum percentage: may not exceed 30% of the value of the contract.</XSLT_RULE>
+	<XSLT_RULE RULE="R607" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5-03-01: Date of the jury decision: the date should be before the date of dispach of the notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R608" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S5: Award of the contract: mandatory if award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R609" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S5: Lot No: not listed as one of the lot numbers from the S2 section.</XSLT_RULE>
+	<XSLT_RULE RULE="R610" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S5: Award of the contract (concession): at most one award per contrat/concession/lot is allowed if the procedure is not an innovation partnership or if  there is neither a framework agreement nor a dynamic purchasing system.</XSLT_RULE>
+	<XSLT_RULE RULE="R611" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">S5: Award of the contract (concession): at most one award per contrat/concession/lot is allowed if the procedure is not an innovation partnership or if there is neither a framework agreement nor a dynamic purchasing system nor a previous publication.</XSLT_RULE>
+	<XSLT_RULE RULE="R700" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-02: Information about electronic workflows: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R701" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-02: Information about electronic workflows: not foreseen if periodic indicative notice only .</XSLT_RULE>
+	<XSLT_RULE RULE="R702" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-02: Information about electronic workflows: not foreseen if contract award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R703" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-02: Information about electronic workflows: not foreseen if qualification system.</XSLT_RULE>
+	<XSLT_RULE RULE="R704" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-02: Information about electronic workflows: not foreseen if concession award notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R705" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-04: Procedures for review: not foreseen if prior information notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R706" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-04: Procedures for review: not foreseen if periodic indicative notice only.</XSLT_RULE>
+	<XSLT_RULE RULE="R707" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-04-01: Review body: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R708" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6-06: Date of dispatch of the original notice: the date should be before or on the date of dispach of the notice.</XSLT_RULE>
+	<XSLT_RULE RULE="R709" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S6: Date of dispatch of the original notice: date pattern must be 20YY-MM-DD.</XSLT_RULE>
+	<XSLT_RULE RULE="R800" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-01-02: Text to be corrected in the original notice: In the case of a change of information, the new value and the old value should be of the same type.</XSLT_RULE>
+	<XSLT_RULE RULE="R801" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-01-02: Text to be corrected in the original notice: Both the old main CPV and the new main CPV must be indicated. </XSLT_RULE>
+	<XSLT_RULE RULE="R802" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-01-02: Corrections in the original notice: a change to section "III.", "IV.", "VI." or "VII." cannot be linked to a lot number.</XSLT_RULE>
+	<XSLT_RULE RULE="R803" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-01-04: Description of the procurement: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R804" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-02-01: Nature and extent of the modifications (with indication of possible earlier changes to the contract): mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R805" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-02-02: Description of the economic or technical reasons and the inconvenience or duplication of cost preventing a change of contractor: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R806" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-02-02: Description of the circumstances which rendered the modification necessary and explanation of the unforeseen nature of these circumstances: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R807" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-02: The notice must contain at least one change (VII.1.2) or other additional information (VII.2).</XSLT_RULE>
+	<XSLT_RULE RULE="R808" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">S7-01-02: Corrections in the original notice: correction on section VII is not allowed.</XSLT_RULE>
+	<XSLT_RULE RULE="R900" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Annex D-1: Justification: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R901" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Annex D-1: Justification: inconsistency with the contract type.</XSLT_RULE>
+	<XSLT_RULE RULE="R902" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Annex D-3: Explanation: mandatory.</XSLT_RULE>
+	<XSLT_RULE RULE="R996" PROD_WEIGHT="WARNING" QUAL_WEIGHT="WARNING">Information (resp. xml element) is mandatory for the given form.</XSLT_RULE>
+	<XSLT_RULE RULE="R997" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">Information (resp. xml element) not foreseen for the given form.</XSLT_RULE>
+	<XSLT_RULE RULE="R998" PROD_WEIGHT="ERROR" QUAL_WEIGHT="ERROR">The xsi:schemaLocation attribute of the XML root must have even number of URI's, separated by a space.</XSLT_RULE>
+	<XSLT_RULE RULE="R999" PROD_WEIGHT="WARNING" QUAL_WEIGHT="ERROR">Text size limit exceeded.</XSLT_RULE>
+</VALIDATION_RULES>

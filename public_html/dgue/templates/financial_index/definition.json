@@ -1,0 +1,105 @@
+{
+  "_00": {
+    "0": {
+      "id": "ab05ff3b-f3e1-4441-9b43-ee9912e29e92",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "5461b973-7067-457e-93cc-8338da2c3eef",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "927def36-1fa3-4018-8b45-7ee2c5b1e0af",
+      "index": [
+        "cbc:Description",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "295d82b7-5ee6-4977-8aea-bac4acf6ecdf",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_02": {
+    "0": {
+      "id": "e6ca4034-cfee-499a-9a47-c4f2862ef4d0",
+      "index": [
+        "cbc:Description",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "2b792afb-87ba-47b5-a80c-aee76a6f2cc8",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_03": {
+    "0": {
+      "id": "b1640c24-b405-443e-bf5e-d7771f66aab6",
+      "index": [
+        "cbc:Description",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "22dc4bef-182d-4b81-bddc-cc30b218f9bb",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_04": {
+    "0": {
+      "id": "587129bc-a5e1-43be-94ac-6e5366d30c67",
+      "index": [
+        "cbc:Description",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "990eef0a-14c6-41af-8bf2-b8311332d152",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "9dae5670-cb75-4c97-901b-96ddac5a633a",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "03bb1954-13ae-47d8-8ef8-b7fe0f22d700",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "e2d863a0-60cb-4e58-8c14-4c1595af48b7",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_0": {
+    "0": {
+      "id": "974c8196-9d1c-419c-9ca9-45bb9f5fd59a",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "e098da8e-4717-4500-965f-f882d5b4e1ad",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "2": {
+      "id": "4e3f468a-86c4-4c99-bd15-c8b221229348",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "3": {
+      "id": "PERS_VIOLAZIONI_ELECTRONIC_3",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "4": {
+      "id": "PERS_VIOLAZIONI_ELECTRONIC_4",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "5": {
+      "id": "PERS_VIOLAZIONI_ELECTRONIC_5",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "c1347b74-1872-4060-a6db-f4044edcd7c4",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "f4313bb6-21b6-499e-bdff-debe10e11d2c",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "1f1cd18e-3e01-4ca2-af4c-e2981924ba8d",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

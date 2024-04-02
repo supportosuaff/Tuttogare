@@ -1,0 +1,28 @@
+{
+  "_0": {
+    "0": {
+      "id": "974c8196-9d1c-419c-9ca9-45bb9f5fd59a",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "e098da8e-4717-4500-965f-f882d5b4e1ad",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "2": {
+      "id": "PERS_ID_BANKRUPTCY_1",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "3": {
+      "id": "PERS_ID_BANKRUPTCY_2",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  }
+}

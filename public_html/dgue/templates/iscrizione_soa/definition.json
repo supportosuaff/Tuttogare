@@ -1,0 +1,36 @@
+{
+  "_0": {
+    "0": {
+      "id": "7f18c64e-ae09-4646-9400-f3666d50af51",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "30064ad3-fc11-4579-8528-fdd0b9a5ba75",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "2": {
+      "id": "b3403349-cbc0-4d84-879e-fc0f2d90ecbd",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "3": {
+      "id": "792ff522-6f3f-4a62-ab6e-a8b272bc290e",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "d9996ef5-49f9-4cf8-a2f5-31c9f4efd894",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    }
+  }
+}

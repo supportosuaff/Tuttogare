@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+####################################################################################
+#  XSD name : TED_ESENDERS  (.xsd) 
+#  RELEASE : "R2.0.8.S03"
+#  Intermediate release number 002-20161216
+#  Last update :10/11/2016
+####################################################################################
+ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="ted/R2.0.8.S03/reception" targetNamespace="ted/R2.0.8.S03/reception" elementFormDefault="qualified" attributeFormDefault="unqualified" version="R2.0.8.S03">
+	<!-- *********************************** -->
+	<!-- include schemas                    -->
+	<!-- *********************************** -->
+	<xs:include schemaLocation="TED_ESENDERS.xd"/>
+</xs:schema>

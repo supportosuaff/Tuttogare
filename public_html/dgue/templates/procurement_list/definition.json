@@ -1,0 +1,196 @@
+{
+  "_00": {
+    "0": {
+      "id": "ab05ff3b-f3e1-4441-9b43-ee9912e29e92",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "42db0eaa-d2dd-48cb-83ac-38d73cab9b50",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "42db0eaa-d2dd-48cb-83ac-38d73cab9b50",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    },
+    "3": {
+      "id": "42ec8116-31a7-4118-8612-5b04f5c8bde7",
+      "index": [
+        "cbc:Date"
+        ]
+    },
+    "4": {
+      "id": "a92536ab-6783-40bb-a037-5d31f421fd85",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "927def36-1fa3-4018-8b45-7ee2c5b1e0af",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "4acd0a02-c267-4d05-b456-c0565c2ffd46",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "4acd0a02-c267-4d05-b456-c0565c2ffd46",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    },
+    "3": {
+      "id": "8d0e5e16-85ed-4730-a784-d4db8f439c0c",
+      "index": [
+        "cbc:Date"
+        ]
+    },
+    "4": {
+      "id": "c8babafa-b6fa-4e14-8749-d913d8f1d33b",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_02": {
+    "0": {
+      "id": "e6ca4034-cfee-499a-9a47-c4f2862ef4d0",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "28fb4b41-5178-4b79-ba24-d9a62fa4a658",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "28fb4b41-5178-4b79-ba24-d9a62fa4a658",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    },
+    "3": {
+      "id": "c953e635-580b-4d7c-a30c-2edbde3b8fdf",
+      "index": [
+        "cbc:Date"
+        ]
+    },
+    "4": {
+      "id": "5157e1ff-d272-4382-98a9-6953f5a15300",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_03": {
+    "0": {
+      "id": "b1640c24-b405-443e-bf5e-d7771f66aab6",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "9f278e42-aa1d-4b2e-97cd-832248aa5393",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "9f278e42-aa1d-4b2e-97cd-832248aa5393",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    },
+    "3": {
+      "id": "9b263b45-fc63-4b01-a3dc-cb9c95dda449",
+      "index": [
+        "cbc:Date"
+        ]
+    },
+    "4": {
+      "id": "a84ea948-cf03-47b5-b4cf-a35f49910d10",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_04": {
+    "0": {
+      "id": "587129bc-a5e1-43be-94ac-6e5366d30c67",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "cc1a0b1e-dbfd-4313-a4fb-2e543b05549b",
+      "index": [
+        "cbc:Amount",
+        "$"
+        ]
+    },
+    "2": {
+      "id": "cc1a0b1e-dbfd-4313-a4fb-2e543b05549b",
+      "index": [
+        "cbc:Amount",
+        "@currencyID"
+        ]
+    },
+    "3": {
+      "id": "056cba1d-986b-4164-92b6-26a1cbdf0690",
+      "index": [
+        "cbc:Date"
+        ]
+    },
+    "4": {
+      "id": "38a4802f-0b93-4e78-ad4e-2a057e1aa578",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "9dae5670-cb75-4c97-901b-96ddac5a633a",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "03bb1954-13ae-47d8-8ef8-b7fe0f22d700",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "e2d863a0-60cb-4e58-8c14-4c1595af48b7",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

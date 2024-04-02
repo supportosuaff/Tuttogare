@@ -1,0 +1,74 @@
+{
+  "_00": {
+    "0": {
+      "id": "5aacceb3-280e-42f1-b2da-3d8ac7877fe9",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "42037f41-53af-44df-b6b8-2395cee98087",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_01": {
+    "0": {
+      "id": "49a57870-7fb8-451f-a7af-fa0e7f8b97e7",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "0bb2d3bf-160f-4904-a4e8-ee672bd5cb30",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_02": {
+    "0": {
+      "id": "9d0cf1cb-27bc-4747-8579-47dce4d8d490",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    },
+    "1": {
+      "id": "668dbc0d-2a3a-49b9-b8e1-8ebbeccd712a",
+      "index": [
+        "cbc:Quantity",
+        "$"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "9dae5670-cb75-4c97-901b-96ddac5a633a",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "03bb1954-13ae-47d8-8ef8-b7fe0f22d700",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "e2d863a0-60cb-4e58-8c14-4c1595af48b7",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

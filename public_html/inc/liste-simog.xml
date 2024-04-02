@@ -1,0 +1,3946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:simog="xmlbeans.massload.simog.avlp.it" targetNamespace="xmlbeans.massload.simog.avlp.it" elementFormDefault="unqualified" attributeFormDefault="qualified">
+	<xsd:simpleType name="ModoGaraType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Offerta economicamente pi&#249; vantaggiosa: miglior rapporto qualit&#224; / prezzo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Offerta economicamente pi&#249; vantaggiosa: criterio del minor prezzo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Offerta economicamente pi&#249; vantaggiosa: competizione solo in base a criteri qualitativi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="RuoloAggiudicatarioType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Mandataria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Mandante</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipoAggiudicatarioType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>ATI (raggruppamenti temporanei di concorrenti: consorzi ordinari di concorrenti)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Consorzio (consorzi tra societa&apos;cooperative di produzione e lavoro; consorzi tra imprese artigiane; consorzi stabili)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Impresa singola (imprenditori individuali, anche artigiani, societa&apos; commerciali, societa&apos; cooperative)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>GEIE (soggetti che hanno stipulato il contratto di gruppo europeo di interesse economico)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="RuoloResponsabileType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Progettista interno alla S.A.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>Collaudatore statico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>Redattore del certificato di regolare esecuzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>Presidente Commissione di Collaudo/Collaudatore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>Componente Commissione di Collaudo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>Responsabile Unico del procedimento</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>Responsabile fase progettazione/predisposizione documentazione tecnico-amministrativa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>Responsabile fase di affidamento</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>Responsabile fase di esecuzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>Referente della Stazione Appaltante</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Progettista esterno alla S.A.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicatario qualificato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Progettista qualificato incaricato dall&apos;aggiudicatario</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Direttore Lavori</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Coordinatore della sicurezza in fase di progettazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Coordinatore della sicurezza in corso d&apos;opera</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Direttore dell&apos;esecuzione del contratto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>Responsabile subfase del procedimento</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SceltaContraenteType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Procedura aperta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>Procedura negoziata senza previa indizione di gara (settori speciali)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento diretto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento diretto a societa&apos; in house</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento diretto a societa&apos; raggruppate/consorziate o controllate nelle concessioni e nei partenariati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento diretto in adesione ad accordo quadro/convenzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="19">
+				<xsd:annotation>
+					<xsd:documentation>Confronto competitivo in adesione ad accordo quadro/convenzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Procedura ristretta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="20">
+				<xsd:annotation>
+					<xsd:documentation>Procedura ai sensi dei regolamenti degli organi costituzionali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="21">
+				<xsd:annotation>
+					<xsd:documentation>* Procedura aperta art.18 c.1 a) L.R. 14/2002 - (valida solo per codice regione: 006)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="22">
+				<xsd:annotation>
+					<xsd:documentation>* Procedura ristretta art.18 c.1 b) L.R. 14/20026 - (valida solo per codice regione: 006)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="23">
+				<xsd:annotation>
+					<xsd:documentation>* Procedura ristretta semplificata art.18 c.1 c) L.R. 14/2002 - (valida solo per codice regione: 006)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="24">
+				<xsd:annotation>
+					<xsd:documentation>* Procedura negoziata senza previa pubblicazione art.18 c.1 e) L.R. 14/2002 - (valida solo per codice regione: 006)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="28">
+				<xsd:annotation>
+					<xsd:documentation>Procedura negoziata per affidamenti sotto soglia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="29">
+				<xsd:annotation>
+					<xsd:documentation>Procedura competitiva con negoziazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="30">
+				<xsd:annotation>
+					<xsd:documentation>Procedura negoziata con previa indizione di gara (settori speciali)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="31">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento diretto per variante superiore al 20% dell&apos;importo contrattuale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="32">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento riservato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="33">
+				<xsd:annotation>
+					<xsd:documentation>Procedura art.16 comma 2-bis DPR 380/2001 per opere urbanizzazione a scomputo primarie sotto soglia comunitaria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation>Parternariato per l&#8217;innovazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Procedura negoziata senza previa pubblicazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Sistema dinamico di acquisizione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Dialogo competitivo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CategSAType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="01">
+				<xsd:annotation>
+					<xsd:documentation>ORGANI COSTITUZIONALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="02">
+				<xsd:annotation>
+					<xsd:documentation>MINISTERI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="03">
+				<xsd:annotation>
+					<xsd:documentation>ORGANI GIURISDIZIONALI E AVVOCATURA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="04">
+				<xsd:annotation>
+					<xsd:documentation>AMMINISTRAZIONI INDIPENDENTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="05">
+				<xsd:annotation>
+					<xsd:documentation>REGIONI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="06">
+				<xsd:annotation>
+					<xsd:documentation>AZIENDE SPECIALI REGIONALIZZATE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="07">
+				<xsd:annotation>
+					<xsd:documentation>PROVINCE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="08">
+				<xsd:annotation>
+					<xsd:documentation>AZIENDE SPECIALI PROVINCIALIZZATE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="09">
+				<xsd:annotation>
+					<xsd:documentation>COMUNI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>ENTI DI PREVIDENZA E PREVENZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>ENTI PREPOSTI AD ATTIVITA&apos; SPORTIVE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>ENTI SCIENTIFICI DI RICERCA E DI SPERIMENTAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>ENTI DI PROMOZIONE CULTURALE E ARTISTICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>AZIENDE SPECIALI MUNICIPALIZZATE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>ISTITUTI AUTONOMI CASE POPOLARI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>AZIENDE DEL SERVIZIO SANITARIO NAZIONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>AUTORITA&apos; DI BACINO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>COMUNITA&apos; MONTANE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="19">
+				<xsd:annotation>
+					<xsd:documentation>ENTI DI BONIFICA E DI SVILUPPO AGRICOLO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="20">
+				<xsd:annotation>
+					<xsd:documentation>CONSORZI DI INDUSTRIALIZZAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="21">
+				<xsd:annotation>
+					<xsd:documentation>CONSORZI AUTONOMI DI REGIONI, PROVINCE E COMUNI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="22">
+				<xsd:annotation>
+					<xsd:documentation>CONSORZI ENTI ED AUTORITA&apos; PORTUALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="23">
+				<xsd:annotation>
+					<xsd:documentation>UNIVERSITA&apos; ED ALTRI ENTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="24">
+				<xsd:annotation>
+					<xsd:documentation>ISTITUZIONI EUROPEE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="25">
+				<xsd:annotation>
+					<xsd:documentation>ISTITUTI BANCARI E FINANZIARI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="26">
+				<xsd:annotation>
+					<xsd:documentation>ENTI ED ISTITUTI RELIGIOSI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="27">
+				<xsd:annotation>
+					<xsd:documentation>CONCESSIONARI E IMPRESE DI GESTIONE RETI E INFRASTRUTTURE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="28">
+				<xsd:annotation>
+					<xsd:documentation>ASSOCIAZIONE DI IMPRESE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="29">
+				<xsd:annotation>
+					<xsd:documentation>IMPRESE A PARTECIPAZIONE PUBBLICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="30">
+				<xsd:annotation>
+					<xsd:documentation>CONSORZI DI IMPRESE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="31">
+				<xsd:annotation>
+					<xsd:documentation>IMPRESE ED ALTRI SOGGETTI PRIVATI NON IN FORMA ASSOCIATA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="32">
+				<xsd:annotation>
+					<xsd:documentation>ASSOCIAZIONI DI CATEGORIA E ORGANIZZAZIONI SINDACALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="33">
+				<xsd:annotation>
+					<xsd:documentation>CAMERE DI COMMERCIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation>SOGGETTI ESTERI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="35">
+				<xsd:annotation>
+					<xsd:documentation>PROVVEDITORATO REGIONALE ALLE OPERE PUBBLICHE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="36">
+				<xsd:annotation>
+					<xsd:documentation>Organismi di diritto pubblico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CondizioneAggType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="33">
+				<xsd:annotation>
+					<xsd:documentation>Procedura a seguito di precedente gara annullata o deserta o senza esito</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, beni e Servizi infungibili per opera d&apos;arte</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="35">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, beni e Servizi infungibili per motivi tecnici</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="36">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, beni e Servizi infungibili per diritti esclusivi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="37">
+				<xsd:annotation>
+					<xsd:documentation>Estrema urgenza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="38">
+				<xsd:annotation>
+					<xsd:documentation>Scopo di ricerca</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="39">
+				<xsd:annotation>
+					<xsd:documentation>Consegne complementari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="40">
+				<xsd:annotation>
+					<xsd:documentation>Forniture quotate e acquistate sul mercato delle materie prime</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="41">
+				<xsd:annotation>
+					<xsd:documentation>Condizioni particolarmente vantaggiose</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="42">
+				<xsd:annotation>
+					<xsd:documentation>II fase Concorso di progettazione e idee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="43">
+				<xsd:annotation>
+					<xsd:documentation>Ripetizione lavori o servizi analoghi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="44">
+				<xsd:annotation>
+					<xsd:documentation>Procedura di affidamento a contraente vincolato da disposizioni sovraordinate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CategoriaType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="AA">
+				<xsd:annotation>
+					<xsd:documentation>ALTRO (Stazioni appaltanti con sistema di qualificazione proprio)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FB">
+				<xsd:annotation>
+					<xsd:documentation>FORNITURA DI BENI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FS">
+				<xsd:annotation>
+					<xsd:documentation>FORNITURA DI SERVIZI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 1">
+				<xsd:annotation>
+					<xsd:documentation>OG 1 - EDIFICI CIVILI E INDUSTRIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 10">
+				<xsd:annotation>
+					<xsd:documentation>OG 10 - IMPIANTI PER LA TRASFORMAZIONE ALTA/MEDIA TENSIONE E PER LA DISTRIBUZIONE DI ENERGIA ELETTRICA IN CORRENTE ALTERNATA E CONTINUA ED IMPIANTI DI PUBBLICA ILLUMINAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 11">
+				<xsd:annotation>
+					<xsd:documentation>OG 11 - IMPIANTI TECNOLOGICI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 12">
+				<xsd:annotation>
+					<xsd:documentation>OG 12 - OPERE ED IMPIANTI DI BONIFICA E PROTEZIONE AMBIENTALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 13">
+				<xsd:annotation>
+					<xsd:documentation>OG 13 - OPERE DI INGEGNERIA NATURALISTICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 2">
+				<xsd:annotation>
+					<xsd:documentation>OG 2 - RESTAURO E MANUTENZIONE DEI BENI IMMOBILI SOTTOPOSTI A TUTELA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 3">
+				<xsd:annotation>
+					<xsd:documentation>OG 3 - STRADE, AUTOSTRADE, PONTI, VIADOTTI, FERROVIE, METROPOLITANE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 4">
+				<xsd:annotation>
+					<xsd:documentation>OG 4 - OPERE D&#8217;ARTE NEL SOTTOSUOLO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 5">
+				<xsd:annotation>
+					<xsd:documentation>OG 5 - DIGHE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 6">
+				<xsd:annotation>
+					<xsd:documentation>OG 6 - ACQUEDOTTI, GASDOTTI , OLEODOTTI, OPERE DI IRRIGAZIONE E DI EVACUAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 7">
+				<xsd:annotation>
+					<xsd:documentation>OG 7 - OPERE MARITTIME E LAVORI DI DRAGAGGIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 8">
+				<xsd:annotation>
+					<xsd:documentation>OG 8 - OPERE FLUVIALI, DI DIFESA, DI SISTEMAZIONE IDRAULICA E DI BONIFICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OG 9">
+				<xsd:annotation>
+					<xsd:documentation>OG 9 - IMPIANTI PER LA PRODUZIONE DI ENERGIA ELETTRICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 1">
+				<xsd:annotation>
+					<xsd:documentation>OS 1 - LAVORI IN TERRA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 10">
+				<xsd:annotation>
+					<xsd:documentation>OS 10 - SEGNALETICA STRADALE NON LUMINOSA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 11">
+				<xsd:annotation>
+					<xsd:documentation>OS 11 - APPARECCHIATURE STRUTTURALI SPECIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 12-A">
+				<xsd:annotation>
+					<xsd:documentation>OS 12-A - BARRIERE STRADALI DI SICUREZZA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 12-B">
+				<xsd:annotation>
+					<xsd:documentation>OS 12-B - BARRIERE PARAMASSI, FERMANEVE E SIMILI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 13">
+				<xsd:annotation>
+					<xsd:documentation>OS 13 - STRUTTURE PREFABBRICATE IN CEMENTO ARMATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 14">
+				<xsd:annotation>
+					<xsd:documentation>OS 14 - IMPIANTI DI SMALTIMENTO E RECUPERO RIFIUTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 15">
+				<xsd:annotation>
+					<xsd:documentation>OS 15 - PULIZIA DI ACQUE MARINE, LACUSTRI, FLUVIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 16">
+				<xsd:annotation>
+					<xsd:documentation>OS 16 - IMPIANTI PER CENTRALI PRODUZIONE ENERGIA ELETTRICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 17">
+				<xsd:annotation>
+					<xsd:documentation>OS 17 - LINEE TELEFONICHE ED IMPIANTI DI TELEFONIA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 18-A">
+				<xsd:annotation>
+					<xsd:documentation>OS 18-A - COMPONENTI STRUTTURALI IN ACCIAIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 18-B">
+				<xsd:annotation>
+					<xsd:documentation>OS 18-B - COMPONENTI PER FACCIATE CONTINUE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 19">
+				<xsd:annotation>
+					<xsd:documentation>OS 19 - IMPIANTI DI RETI DI TELECOMUNICAZIONE E DI TRASMISSIONI E TRATTAMENTO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 20-A">
+				<xsd:annotation>
+					<xsd:documentation>OS 20-A - RILEVAMENTI TOPOGRAFICI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 20-B">
+				<xsd:annotation>
+					<xsd:documentation>OS 20-B - INDAGINI GEOGNOSTICHE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 21">
+				<xsd:annotation>
+					<xsd:documentation>OS 21 - OPERE STRUTTURALI SPECIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 22">
+				<xsd:annotation>
+					<xsd:documentation>OS 22 - IMPIANTI DI POTABILIZZAZIONE E DEPURAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 23">
+				<xsd:annotation>
+					<xsd:documentation>OS 23 - DEMOLIZIONE DI OPERE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 24">
+				<xsd:annotation>
+					<xsd:documentation>OS 24 - VERDE E ARREDO URBANO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 25">
+				<xsd:annotation>
+					<xsd:documentation>OS 25 - SCAVI ARCHEOLOGICI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 26">
+				<xsd:annotation>
+					<xsd:documentation>OS 26 - PAVIMENTAZIONI E SOVRASTRUTTURE SPECIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 27">
+				<xsd:annotation>
+					<xsd:documentation>OS 27 - IMPIANTI PER LA TRAZIONE ELETTRICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 28">
+				<xsd:annotation>
+					<xsd:documentation>OS 28 - IMPIANTI TERMICI E DI CONDIZIONAMENTO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 29">
+				<xsd:annotation>
+					<xsd:documentation>OS 29 - ARMAMENTO FERROVIARIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 2-A">
+				<xsd:annotation>
+					<xsd:documentation>OS 2-A - SUPERFICI DECORATE DI BENI IMMOBILI DEL PATRIMONIO CULTURALE E BENI CULTURALI MOBILI DI INTERESSE STORICO, ARTISTICO, ARCHEOLOGICO ED ETNOANTROPOLOGICO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 2-B">
+				<xsd:annotation>
+					<xsd:documentation>OS 2-B - BENI CULTURALI MOBILI DI INTERESSE ARCHIVISTICO E LIBRARIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 3">
+				<xsd:annotation>
+					<xsd:documentation>OS 3 - IMPIANTI IDRICO-SANITARIO, CUCINE, LAVANDERIE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 30">
+				<xsd:annotation>
+					<xsd:documentation>OS 30 - IMPIANTI INTERNI ELETTRICI, TELEFONICI, RADIOTELEFONICI E TELEVISIVI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 31">
+				<xsd:annotation>
+					<xsd:documentation>OS 31 - IMPIANTI PER LA MOBILIT&#192; SOSPESA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 32">
+				<xsd:annotation>
+					<xsd:documentation>OS 32 - STRUTTURE IN LEGNO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 33">
+				<xsd:annotation>
+					<xsd:documentation>OS 33 - COPERTURE SPECIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 34">
+				<xsd:annotation>
+					<xsd:documentation>OS 34 - SISTEMI ANTIRUMORE PER INFRASTRUTTURE DI MOBILIT&#192;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 35">
+				<xsd:annotation>
+					<xsd:documentation>OS 35 - INTERVENTI A BASSO IMPATTO AMBIENTALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 4">
+				<xsd:annotation>
+					<xsd:documentation>OS 4 - IMPIANTI ELETTROMECCANICI TRASPORTATORI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 5">
+				<xsd:annotation>
+					<xsd:documentation>OS 5 - IMPIANTI PNEUMATICI E ANTINTRUSIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 6">
+				<xsd:annotation>
+					<xsd:documentation>OS 6 - FINITURE DI OPERE GENERALI IN MATERIALI LIGNEI, PLASTICI, METALLICI E VETROSI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 7">
+				<xsd:annotation>
+					<xsd:documentation>OS 7 - FINITURE DI OPERE GENERALI DI NATURA EDILE E TECNICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 8">
+				<xsd:annotation>
+					<xsd:documentation>OS 8 - OPERE DI IMPERMEABILIZZAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OS 9">
+				<xsd:annotation>
+					<xsd:documentation>OS 9 - IMPIANTI PER LA SEGNALETICA LUMINOSA E LA SICUREZZA DEL TRAFFICO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ClasseImportoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>I (0.001 - 258000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>II (258000.001 - 516000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>III (516000.001 - 1033000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>III-BIS (1033000.001 - 1500000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>IV (1500000.001 - 2582000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>IV-BIS (2582000.001 - 3500000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>V (3500000.001 - 5165000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>VI (5165000.001 - 10329000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>VII (10329000.001 - 15494000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="19">
+				<xsd:annotation>
+					<xsd:documentation>VIII (15494000.001 - 1000000000000.000)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipoPrestazioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Sola esecuzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Progettazione ed esecuzione (su progetto definitivo)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Progettazione ed esecuzione (su progetto preliminare)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipoAppaltoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Acquisto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Leasing</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Noleggio</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Acquisto a riscatto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Costruzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Demolizione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Recupero</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>Ristrutturazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>Restauro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>Manutenzione ordinaria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>Manutenzione straordinaria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipoFinanziamentoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="A">
+				<xsd:annotation>
+					<xsd:documentation>Fondi di bilancio della stazione appaltante</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B">
+				<xsd:annotation>
+					<xsd:documentation>Fondi di bilancio dell&apos;amministrazione competente</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C01">
+				<xsd:annotation>
+					<xsd:documentation>Entrate con dest.vincolata - PUBBLICA COMUNITARIA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C02">
+				<xsd:annotation>
+					<xsd:documentation>Entrate con dest.vincolata - PUBBLICA NAZIONALE CENTRALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C03">
+				<xsd:annotation>
+					<xsd:documentation>Entrate con dest.vincolata - PUBBLICA NAZIONALE REGIONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C04">
+				<xsd:annotation>
+					<xsd:documentation>Entrate con dest.vincolata - PUBBLICA NAZIONALE LOCALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C05">
+				<xsd:annotation>
+					<xsd:documentation>Entrate con dest.vincolata - PUBBLICA NAZIONALE ALTRI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C06">
+				<xsd:annotation>
+					<xsd:documentation>Entrate con dest.vincolata - PRIVATI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D">
+				<xsd:annotation>
+					<xsd:documentation>Mutuo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E">
+				<xsd:annotation>
+					<xsd:documentation>Trasferimento di immobili</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="F">
+				<xsd:annotation>
+					<xsd:documentation>Economia su stanziamenti non vincolati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="G">
+				<xsd:annotation>
+					<xsd:documentation>Apporto di capitali privati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="H">
+				<xsd:annotation>
+					<xsd:documentation>Sfruttamento economico e funzionale del bene</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="I">
+				<xsd:annotation>
+					<xsd:documentation>Altro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipologiaSAType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>S.I.I.T.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Amministrazione provinciale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Altro soggetto di cui all&apos;art. 32 del D.lgs 163/2006</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Centrale di committenza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Altra stazione appaltante</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ModoIndizioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante avviso periodico indicativo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante avviso sull&apos;esistenza di un sistema di qualificazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante bando di gara</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Procedura che non prevede indizione di gara</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotivoInterruzioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Revoca dell&apos;aggiudicazione definitiva</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Risoluzione contrattuale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Recesso della stazione appaltante</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Recesso dell&apos;appaltatore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Recesso dal contratto (codice antimafia)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell&apos;appaltatore)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Dichiarazione giudiziale di inefficacia del contratto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotivoRisoluzioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Accordo consensuale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Grave inosservanza alle norme in materia di sicurezza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Reati accertati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Grave inadempimento, grave irregolarita&apos; o grave ritardo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Superamento delle soglie delle modifiche contrattuali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Modifica sostanziale del contratto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Carenza dei requisiti al momento dell&#8217;aggiudicazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>Violazione degli obblighi derivanti dai trattati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>Decadenza dell&#8217;attestazione di qualificazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotivoSospensioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Cause di forza maggiore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Interferenze di natura tecnica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Interferenze di natura amministrativa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Redazione di varianti in corso di esecuzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Intervento Autorita&apos; giudiziaria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Avverse condizioni climatiche</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Pubblico interesse o necessita&apos;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotivoVarianteType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Sopravvenute esigenze normative e regolamentari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Altre cause impreviste ed imprevedibili</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>Errori o omissioni nel progetto esecutivo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, servizi o forniture supplementari non inclusi nell&#8217;appalto iniziale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>Altre modifiche di importo inferiore alla soglia comunitaria e al 10% del valore contrattuale per servizi e forniture o al 15% per lavori</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>Modifiche previste dai documenti di gara iniziali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>Proroga tecnica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipoStrumentoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="A01">
+				<xsd:annotation>
+					<xsd:documentation>A01 - PNI - ALTRI PROGRAMMI DI INFRASTRUTTURE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A02">
+				<xsd:annotation>
+					<xsd:documentation>A02 - PNI - INTESA ISTITUZIONALE DI PROGRAMMA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A03">
+				<xsd:annotation>
+					<xsd:documentation>A03 - PNI - CONTRATTI DI PROGRAMMA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A04">
+				<xsd:annotation>
+					<xsd:documentation>A04 - PNI - PATTI TERRITORIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A05">
+				<xsd:annotation>
+					<xsd:documentation>A05 - PNI - CONTRATTI D&apos;AREA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="A06">
+				<xsd:annotation>
+					<xsd:documentation>A06 - PNI - RICOSTRUZIONE DI AREE TERREMOTATE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B01">
+				<xsd:annotation>
+					<xsd:documentation>B01 - PNS - AGEVOLAZIONI ALLE ATTIVITA&apos; PRODUTTIVE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B02">
+				<xsd:annotation>
+					<xsd:documentation>B02 - PNS - PROGRAMMA SANITARIO NAZIONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B03">
+				<xsd:annotation>
+					<xsd:documentation>B03 - PNS - PROGRAMMI RELATIVI AI TRASPORTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B04">
+				<xsd:annotation>
+					<xsd:documentation>B04 - PNS - PROGRAMMI DI TUTELA DELL&apos;AMBIENTE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B05">
+				<xsd:annotation>
+					<xsd:documentation>B05 - PNS - RICERCA ED INNOVAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B06">
+				<xsd:annotation>
+					<xsd:documentation>B06 - PNS - PIANI PER L&apos;OCCUPAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B07">
+				<xsd:annotation>
+					<xsd:documentation>B07 - PNS - PROGRAMMI DI EDILIZIA PUBBLICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B09">
+				<xsd:annotation>
+					<xsd:documentation>B09 - PNS - PROTEZIONE CIVILE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B10">
+				<xsd:annotation>
+					<xsd:documentation>B10 - PNS - PROGRAMMI PER SCUOLA, UNIVERSITA&apos;, ISTRUZIONE E FORMAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B11">
+				<xsd:annotation>
+					<xsd:documentation>B11 - PNS - PROGRAMMI PER L&apos;AGRICOLTURA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B12">
+				<xsd:annotation>
+					<xsd:documentation>B12 - PNS - PROGRAMMI PER LA SICUREZZA E LA DIFESA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B13">
+				<xsd:annotation>
+					<xsd:documentation>B13 - PNS - CICLO INTEGRATO DELLE ACQUE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B14">
+				<xsd:annotation>
+					<xsd:documentation>B14 - PNS - TUTELA DEL PATRIMONIO CULTURALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="B15">
+				<xsd:annotation>
+					<xsd:documentation>B15 - PNS - PROGRAMMI ENERGETICI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C01">
+				<xsd:annotation>
+					<xsd:documentation>C01 - PCO - PROGRAMMI OPERATIVI QCS OB.1</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C02">
+				<xsd:annotation>
+					<xsd:documentation>C02 - PCO - DOCUMENTI UNICI DI PROGRAMMAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C03">
+				<xsd:annotation>
+					<xsd:documentation>C03 - PCO - SOVVENZIONI GLOBALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C04">
+				<xsd:annotation>
+					<xsd:documentation>C04 - PCO - PROGRAMMI DI INIZIATIVA COMUNITARIA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C05">
+				<xsd:annotation>
+					<xsd:documentation>C05 - PCO - ALTRI PROGRAMMI OPERATIVI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C06">
+				<xsd:annotation>
+					<xsd:documentation>C06 - PCO - GRANDI PROGETTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C07">
+				<xsd:annotation>
+					<xsd:documentation>C07 - PCO - COMPLEMENTI DI PROGRAMMAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D01">
+				<xsd:annotation>
+					<xsd:documentation>D01 - PRE - PROGRAMMI REGIONALI DI SVILUPPO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="D02">
+				<xsd:annotation>
+					<xsd:documentation>D02 - PRE - INTERVENTI DI SOSTEGNO ALL&apos;ARTIGIANATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="E01">
+				<xsd:annotation>
+					<xsd:documentation>E01 - PIL - STRUMENTI DI PROGRAMMAZIONE LOCALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StatoEsteroType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="">
+				<xsd:annotation>
+					<xsd:documentation>*** VALORE ASSENTE ***</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AD">
+				<xsd:annotation>
+					<xsd:documentation>Andorra</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AE">
+				<xsd:annotation>
+					<xsd:documentation>Emirati Arabi Uniti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AF">
+				<xsd:annotation>
+					<xsd:documentation>Afghanistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AG">
+				<xsd:annotation>
+					<xsd:documentation>Antigua e Barbuda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AI">
+				<xsd:annotation>
+					<xsd:documentation>Anguilla</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AL">
+				<xsd:annotation>
+					<xsd:documentation>Albania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AM">
+				<xsd:annotation>
+					<xsd:documentation>Armenia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AN">
+				<xsd:annotation>
+					<xsd:documentation>Antille Olandesi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AO">
+				<xsd:annotation>
+					<xsd:documentation>Angola</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AQ">
+				<xsd:annotation>
+					<xsd:documentation>Antartico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AR">
+				<xsd:annotation>
+					<xsd:documentation>Argentina</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AS">
+				<xsd:annotation>
+					<xsd:documentation>Samoa Americane</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AT">
+				<xsd:annotation>
+					<xsd:documentation>Austria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AU">
+				<xsd:annotation>
+					<xsd:documentation>Australia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AW">
+				<xsd:annotation>
+					<xsd:documentation>Aruba</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AX">
+				<xsd:annotation>
+					<xsd:documentation>Isole Aland</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="AZ">
+				<xsd:annotation>
+					<xsd:documentation>Azerbaigian</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BA">
+				<xsd:annotation>
+					<xsd:documentation>Bosnia-Erzegovina</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BB">
+				<xsd:annotation>
+					<xsd:documentation>Barbados</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BD">
+				<xsd:annotation>
+					<xsd:documentation>Bangladesh</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BE">
+				<xsd:annotation>
+					<xsd:documentation>Belgio</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BF">
+				<xsd:annotation>
+					<xsd:documentation>Burkina Faso</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BG">
+				<xsd:annotation>
+					<xsd:documentation>Bulgaria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BH">
+				<xsd:annotation>
+					<xsd:documentation>Bahrain</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BI">
+				<xsd:annotation>
+					<xsd:documentation>Burundi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BJ">
+				<xsd:annotation>
+					<xsd:documentation>Benin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BL">
+				<xsd:annotation>
+					<xsd:documentation>Saint-Barthelemy</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BM">
+				<xsd:annotation>
+					<xsd:documentation>Bermuda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BN">
+				<xsd:annotation>
+					<xsd:documentation>Brunei</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BO">
+				<xsd:annotation>
+					<xsd:documentation>Bolivia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BR">
+				<xsd:annotation>
+					<xsd:documentation>Brasile</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BS">
+				<xsd:annotation>
+					<xsd:documentation>Bahamas</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BT">
+				<xsd:annotation>
+					<xsd:documentation>Bhutan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BV">
+				<xsd:annotation>
+					<xsd:documentation>Isola Bouvet</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BW">
+				<xsd:annotation>
+					<xsd:documentation>Botswana</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BY">
+				<xsd:annotation>
+					<xsd:documentation>Bielorussia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="BZ">
+				<xsd:annotation>
+					<xsd:documentation>Belize</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CA">
+				<xsd:annotation>
+					<xsd:documentation>Canada</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CC">
+				<xsd:annotation>
+					<xsd:documentation>Isole Cocos</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CD">
+				<xsd:annotation>
+					<xsd:documentation>Repubblica Democratica del Congo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CF">
+				<xsd:annotation>
+					<xsd:documentation>Repubblica Centrafricana</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CG">
+				<xsd:annotation>
+					<xsd:documentation>Repubblica del Congo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CH">
+				<xsd:annotation>
+					<xsd:documentation>Svizzera</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CI">
+				<xsd:annotation>
+					<xsd:documentation>Costa d&apos;Avorio</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CK">
+				<xsd:annotation>
+					<xsd:documentation>Isole Cook</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CL">
+				<xsd:annotation>
+					<xsd:documentation>Cile</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CM">
+				<xsd:annotation>
+					<xsd:documentation>Camerun</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CN">
+				<xsd:annotation>
+					<xsd:documentation>Cina</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CO">
+				<xsd:annotation>
+					<xsd:documentation>Colombia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CR">
+				<xsd:annotation>
+					<xsd:documentation>Costa Rica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CU">
+				<xsd:annotation>
+					<xsd:documentation>Cuba</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CV">
+				<xsd:annotation>
+					<xsd:documentation>Capo Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CX">
+				<xsd:annotation>
+					<xsd:documentation>Isola Christmas</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CY">
+				<xsd:annotation>
+					<xsd:documentation>Cipro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="CZ">
+				<xsd:annotation>
+					<xsd:documentation>Repubblica Ceca</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DE">
+				<xsd:annotation>
+					<xsd:documentation>Germania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DJ">
+				<xsd:annotation>
+					<xsd:documentation>Gibuti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DK">
+				<xsd:annotation>
+					<xsd:documentation>Danimarca</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DM">
+				<xsd:annotation>
+					<xsd:documentation>Dominica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DO">
+				<xsd:annotation>
+					<xsd:documentation>Repubblica Dominicana</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="DZ">
+				<xsd:annotation>
+					<xsd:documentation>Algeria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EC">
+				<xsd:annotation>
+					<xsd:documentation>Ecuador</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EE">
+				<xsd:annotation>
+					<xsd:documentation>Estonia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EG">
+				<xsd:annotation>
+					<xsd:documentation>Egitto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="EH">
+				<xsd:annotation>
+					<xsd:documentation>Sahara Occidentale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ER">
+				<xsd:annotation>
+					<xsd:documentation>Eritrea</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ES">
+				<xsd:annotation>
+					<xsd:documentation>Spagna</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ET">
+				<xsd:annotation>
+					<xsd:documentation>Etiopia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FI">
+				<xsd:annotation>
+					<xsd:documentation>Finlandia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FJ">
+				<xsd:annotation>
+					<xsd:documentation>Figi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FK">
+				<xsd:annotation>
+					<xsd:documentation>Isole Falkland</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FM">
+				<xsd:annotation>
+					<xsd:documentation>Stati Federati di Micronesia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FO">
+				<xsd:annotation>
+					<xsd:documentation>Isole Faorer</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="FR">
+				<xsd:annotation>
+					<xsd:documentation>Francia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GA">
+				<xsd:annotation>
+					<xsd:documentation>Gabon</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GB">
+				<xsd:annotation>
+					<xsd:documentation>Regno Unito</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GD">
+				<xsd:annotation>
+					<xsd:documentation>Grenada</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GE">
+				<xsd:annotation>
+					<xsd:documentation>Georgia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GF">
+				<xsd:annotation>
+					<xsd:documentation>Guyana Francese</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GG">
+				<xsd:annotation>
+					<xsd:documentation>Guernsey</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GH">
+				<xsd:annotation>
+					<xsd:documentation>Ghana</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GI">
+				<xsd:annotation>
+					<xsd:documentation>Gibilterra</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GL">
+				<xsd:annotation>
+					<xsd:documentation>Groenlandia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GM">
+				<xsd:annotation>
+					<xsd:documentation>Gambia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GN">
+				<xsd:annotation>
+					<xsd:documentation>Guinea</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GP">
+				<xsd:annotation>
+					<xsd:documentation>Guadalupa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GQ">
+				<xsd:annotation>
+					<xsd:documentation>Guinea Equatoriale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GR">
+				<xsd:annotation>
+					<xsd:documentation>Grecia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GS">
+				<xsd:annotation>
+					<xsd:documentation>Georgia del Sud e isole Sandwich meridionali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GT">
+				<xsd:annotation>
+					<xsd:documentation>Guatemala</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GU">
+				<xsd:annotation>
+					<xsd:documentation>Guam</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GW">
+				<xsd:annotation>
+					<xsd:documentation>Guinea-Bissau</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="GY">
+				<xsd:annotation>
+					<xsd:documentation>Guyana</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HK">
+				<xsd:annotation>
+					<xsd:documentation>Hong Kong</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HM">
+				<xsd:annotation>
+					<xsd:documentation>Isole Heard e McDonald</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HN">
+				<xsd:annotation>
+					<xsd:documentation>Honduras</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HR">
+				<xsd:annotation>
+					<xsd:documentation>Croazia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HT">
+				<xsd:annotation>
+					<xsd:documentation>Haiti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="HU">
+				<xsd:annotation>
+					<xsd:documentation>Ungheria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ID">
+				<xsd:annotation>
+					<xsd:documentation>Indonesia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IE">
+				<xsd:annotation>
+					<xsd:documentation>Irlanda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IL">
+				<xsd:annotation>
+					<xsd:documentation>Israele</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IM">
+				<xsd:annotation>
+					<xsd:documentation>Isola di Man</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IN">
+				<xsd:annotation>
+					<xsd:documentation>India</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IO">
+				<xsd:annotation>
+					<xsd:documentation>Territori Britannici dell&apos;Oceano Indiano</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IQ">
+				<xsd:annotation>
+					<xsd:documentation>Iraq</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IR">
+				<xsd:annotation>
+					<xsd:documentation>Iran</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="IS">
+				<xsd:annotation>
+					<xsd:documentation>Islanda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JE">
+				<xsd:annotation>
+					<xsd:documentation>Jersey</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JM">
+				<xsd:annotation>
+					<xsd:documentation>Giamaica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JO">
+				<xsd:annotation>
+					<xsd:documentation>Giordania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="JP">
+				<xsd:annotation>
+					<xsd:documentation>Giappone</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KE">
+				<xsd:annotation>
+					<xsd:documentation>Kenya</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KG">
+				<xsd:annotation>
+					<xsd:documentation>Kirghizistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KH">
+				<xsd:annotation>
+					<xsd:documentation>Cambogia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KI">
+				<xsd:annotation>
+					<xsd:documentation>Kiribati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KM">
+				<xsd:annotation>
+					<xsd:documentation>Comore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KN">
+				<xsd:annotation>
+					<xsd:documentation>Saint Kitts e Nevis</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KP">
+				<xsd:annotation>
+					<xsd:documentation>Corea del Nord</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KR">
+				<xsd:annotation>
+					<xsd:documentation>Corea del Sud</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KW">
+				<xsd:annotation>
+					<xsd:documentation>Kuwait</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KY">
+				<xsd:annotation>
+					<xsd:documentation>Isole Cayman</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="KZ">
+				<xsd:annotation>
+					<xsd:documentation>Kazakistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LA">
+				<xsd:annotation>
+					<xsd:documentation>Laos</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LB">
+				<xsd:annotation>
+					<xsd:documentation>Libano</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LC">
+				<xsd:annotation>
+					<xsd:documentation>Santa Lucia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LI">
+				<xsd:annotation>
+					<xsd:documentation>Liechtenstein</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LK">
+				<xsd:annotation>
+					<xsd:documentation>Sri Lanka</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LR">
+				<xsd:annotation>
+					<xsd:documentation>Liberia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LS">
+				<xsd:annotation>
+					<xsd:documentation>Lesotho</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LT">
+				<xsd:annotation>
+					<xsd:documentation>Lituania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LU">
+				<xsd:annotation>
+					<xsd:documentation>Lussemburgo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LV">
+				<xsd:annotation>
+					<xsd:documentation>Lettonia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="LY">
+				<xsd:annotation>
+					<xsd:documentation>Libia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MA">
+				<xsd:annotation>
+					<xsd:documentation>Marocco</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MC">
+				<xsd:annotation>
+					<xsd:documentation>Monaco</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MD">
+				<xsd:annotation>
+					<xsd:documentation>Moldavia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ME">
+				<xsd:annotation>
+					<xsd:documentation>Montenegro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MF">
+				<xsd:annotation>
+					<xsd:documentation>Saint-Martin</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MG">
+				<xsd:annotation>
+					<xsd:documentation>Madagascar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MH">
+				<xsd:annotation>
+					<xsd:documentation>Isole Marshall</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MK">
+				<xsd:annotation>
+					<xsd:documentation>Macedonia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ML">
+				<xsd:annotation>
+					<xsd:documentation>Mali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MM">
+				<xsd:annotation>
+					<xsd:documentation>Birmania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MN">
+				<xsd:annotation>
+					<xsd:documentation>Mongolia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MO">
+				<xsd:annotation>
+					<xsd:documentation>Macao</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MP">
+				<xsd:annotation>
+					<xsd:documentation>Isole Marianne Settentrionali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MQ">
+				<xsd:annotation>
+					<xsd:documentation>Martinica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MR">
+				<xsd:annotation>
+					<xsd:documentation>Mauritania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MS">
+				<xsd:annotation>
+					<xsd:documentation>Montserrat</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MT">
+				<xsd:annotation>
+					<xsd:documentation>Malta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MU">
+				<xsd:annotation>
+					<xsd:documentation>Mauritius</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MV">
+				<xsd:annotation>
+					<xsd:documentation>Maldive</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MW">
+				<xsd:annotation>
+					<xsd:documentation>Malawi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MX">
+				<xsd:annotation>
+					<xsd:documentation>Messico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MY">
+				<xsd:annotation>
+					<xsd:documentation>Malesia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MZ">
+				<xsd:annotation>
+					<xsd:documentation>Mozambico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NA">
+				<xsd:annotation>
+					<xsd:documentation>Namibia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NC">
+				<xsd:annotation>
+					<xsd:documentation>Nuova Caledonia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NE">
+				<xsd:annotation>
+					<xsd:documentation>Niger</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NF">
+				<xsd:annotation>
+					<xsd:documentation>Isola Norfolk</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NG">
+				<xsd:annotation>
+					<xsd:documentation>Nigeria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NI">
+				<xsd:annotation>
+					<xsd:documentation>Nicaragua</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NL">
+				<xsd:annotation>
+					<xsd:documentation>Olanda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NO">
+				<xsd:annotation>
+					<xsd:documentation>Norvegia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NP">
+				<xsd:annotation>
+					<xsd:documentation>Nepal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NR">
+				<xsd:annotation>
+					<xsd:documentation>Nauru</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NU">
+				<xsd:annotation>
+					<xsd:documentation>Niue</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="NZ">
+				<xsd:annotation>
+					<xsd:documentation>Nuova Zelanda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="OM">
+				<xsd:annotation>
+					<xsd:documentation>Oman</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PA">
+				<xsd:annotation>
+					<xsd:documentation>Panama</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PE">
+				<xsd:annotation>
+					<xsd:documentation>Peru&apos;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PF">
+				<xsd:annotation>
+					<xsd:documentation>Polinesia Francese</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PG">
+				<xsd:annotation>
+					<xsd:documentation>Papua Nuova Guinea</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PH">
+				<xsd:annotation>
+					<xsd:documentation>Filippine</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PK">
+				<xsd:annotation>
+					<xsd:documentation>Pakistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PL">
+				<xsd:annotation>
+					<xsd:documentation>Polonia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PM">
+				<xsd:annotation>
+					<xsd:documentation>Saint Pierre e Miquelon</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PN">
+				<xsd:annotation>
+					<xsd:documentation>Isole Pitcairn</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PR">
+				<xsd:annotation>
+					<xsd:documentation>Porto Rico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PS">
+				<xsd:annotation>
+					<xsd:documentation>Territori Palestinesi Occupati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PT">
+				<xsd:annotation>
+					<xsd:documentation>Portogallo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PW">
+				<xsd:annotation>
+					<xsd:documentation>Palau</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PY">
+				<xsd:annotation>
+					<xsd:documentation>Paraguay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="QA">
+				<xsd:annotation>
+					<xsd:documentation>Qatar</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RE">
+				<xsd:annotation>
+					<xsd:documentation>Reunion</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RO">
+				<xsd:annotation>
+					<xsd:documentation>Romania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RS">
+				<xsd:annotation>
+					<xsd:documentation>Serbia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RU">
+				<xsd:annotation>
+					<xsd:documentation>Russia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RW">
+				<xsd:annotation>
+					<xsd:documentation>Ruanda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SA">
+				<xsd:annotation>
+					<xsd:documentation>Arabia Saudita</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SB">
+				<xsd:annotation>
+					<xsd:documentation>Isole Salomone</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SC">
+				<xsd:annotation>
+					<xsd:documentation>Seychelles</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SD">
+				<xsd:annotation>
+					<xsd:documentation>Sudan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SE">
+				<xsd:annotation>
+					<xsd:documentation>Svezia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SG">
+				<xsd:annotation>
+					<xsd:documentation>Singapore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SH">
+				<xsd:annotation>
+					<xsd:documentation>Sant&apos;Elena</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SI">
+				<xsd:annotation>
+					<xsd:documentation>Slovenia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SJ">
+				<xsd:annotation>
+					<xsd:documentation>Svalbard</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SK">
+				<xsd:annotation>
+					<xsd:documentation>Slovacchia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SL">
+				<xsd:annotation>
+					<xsd:documentation>Sierra Leone</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SM">
+				<xsd:annotation>
+					<xsd:documentation>San Marino</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SN">
+				<xsd:annotation>
+					<xsd:documentation>Senegal</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SO">
+				<xsd:annotation>
+					<xsd:documentation>Somalia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SR">
+				<xsd:annotation>
+					<xsd:documentation>Suriname</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ST">
+				<xsd:annotation>
+					<xsd:documentation>Sao Tome&apos; e Principe</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SV">
+				<xsd:annotation>
+					<xsd:documentation>El Salvador</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SY">
+				<xsd:annotation>
+					<xsd:documentation>Siria</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="SZ">
+				<xsd:annotation>
+					<xsd:documentation>Swaziland</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TC">
+				<xsd:annotation>
+					<xsd:documentation>Isole Turks e Caicos</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TD">
+				<xsd:annotation>
+					<xsd:documentation>Ciad</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TF">
+				<xsd:annotation>
+					<xsd:documentation>Territori Francesi del Sud</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TG">
+				<xsd:annotation>
+					<xsd:documentation>Togo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TH">
+				<xsd:annotation>
+					<xsd:documentation>Thailandia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TJ">
+				<xsd:annotation>
+					<xsd:documentation>Tagikistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TK">
+				<xsd:annotation>
+					<xsd:documentation>Tokelau</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TL">
+				<xsd:annotation>
+					<xsd:documentation>Timor Est</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TM">
+				<xsd:annotation>
+					<xsd:documentation>Turkmenistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TN">
+				<xsd:annotation>
+					<xsd:documentation>Tunisia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TO">
+				<xsd:annotation>
+					<xsd:documentation>Tonga</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TR">
+				<xsd:annotation>
+					<xsd:documentation>Turchia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TT">
+				<xsd:annotation>
+					<xsd:documentation>Trinidad e Tobago</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TV">
+				<xsd:annotation>
+					<xsd:documentation>Tuvalu</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TW">
+				<xsd:annotation>
+					<xsd:documentation>Repubblica di Cina</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TZ">
+				<xsd:annotation>
+					<xsd:documentation>Tanzania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UA">
+				<xsd:annotation>
+					<xsd:documentation>Ucraina</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UG">
+				<xsd:annotation>
+					<xsd:documentation>Uganda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UM">
+				<xsd:annotation>
+					<xsd:documentation>Isole minori esterne degli Stati Uniti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="US">
+				<xsd:annotation>
+					<xsd:documentation>Stati Uniti d&apos;America</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UY">
+				<xsd:annotation>
+					<xsd:documentation>Uruguay</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="UZ">
+				<xsd:annotation>
+					<xsd:documentation>Uzbekistan</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VA">
+				<xsd:annotation>
+					<xsd:documentation>Citta&apos; del Vaticano</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VC">
+				<xsd:annotation>
+					<xsd:documentation>Saint Vincent e Grenadine</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VE">
+				<xsd:annotation>
+					<xsd:documentation>Venezuela</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VG">
+				<xsd:annotation>
+					<xsd:documentation>Isole Vergini Britanniche</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VI">
+				<xsd:annotation>
+					<xsd:documentation>Isole Vergini Americane</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VN">
+				<xsd:annotation>
+					<xsd:documentation>Vietnam</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="VU">
+				<xsd:annotation>
+					<xsd:documentation>Vanuatu</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="WF">
+				<xsd:annotation>
+					<xsd:documentation>Wallis e Futuna</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="WS">
+				<xsd:annotation>
+					<xsd:documentation>Samoa</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="YE">
+				<xsd:annotation>
+					<xsd:documentation>Yemen</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="YT">
+				<xsd:annotation>
+					<xsd:documentation>Mayotte</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ZA">
+				<xsd:annotation>
+					<xsd:documentation>Sudafrica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ZM">
+				<xsd:annotation>
+					<xsd:documentation>Zambia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ZW">
+				<xsd:annotation>
+					<xsd:documentation>Zimbabwe</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ModoRealizzazioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Contratto d&apos;appalto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Contratto d&apos;appalto discendente da Accordo quadro/Convenzione con successivo confronto competitivo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Contratto di concessione di lavori</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Contratto di concessione di servizi e/o forniture</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Finanza di progetto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento a contraente generale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Locazione finanziaria di opere pubbliche o di pubblica utilita&apos;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>Concorsi di progettazione/Concorsi di idee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>Contratto d&apos;appalto discendente da Accordo quadro/Convenzione senza successivo confronto competitivo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>Scelta del socio privato nella societa&apos; mista</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>Contratto di disponibilit&#224;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>Interventi di sussidiariet&#224; orizzontale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>Contratti di parternariato sociale (baratto amministrativo)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>Co-progettazione di servizi sociali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>Accordo quadro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>Convenzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ArtEsclusioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>Contratti nel settore dell&apos;acqua, dell&apos;energia e dei trasporti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>Contratti nei settori dei servizi postali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>Contratti nei settori delle comunicazioni elettroniche</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>Contratti nei settori media audiovisi o radiofonici</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>Servizi legali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="19">
+				<xsd:annotation>
+					<xsd:documentation>Acquisto titoli e strumenti finanziari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="20">
+				<xsd:annotation>
+					<xsd:documentation>Prestiti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="21">
+				<xsd:annotation>
+					<xsd:documentation>Servizi di difesa e protezione civile forniti da organizzazioni e associazioni senza scopo di lucro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="22">
+				<xsd:annotation>
+					<xsd:documentation>Servizi di trasporto pubblico di passeggeri per ferrovia o metropolitana</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="23">
+				<xsd:annotation>
+					<xsd:documentation>Servizi connessi a campagne politiche aggiudicati da un partito politico nel contesto di una campagna elettorale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="24">
+				<xsd:annotation>
+					<xsd:documentation>Contratti di sponsorizzazione tecnica</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="25">
+				<xsd:annotation>
+					<xsd:documentation>Opera pubblica realizzata a spese del privato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="29">
+				<xsd:annotation>
+					<xsd:documentation>Contratti di servizi aggiudicati ad un&apos;altra amministrazione aggiudicatrice in base a un diritto esclusivo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="30">
+				<xsd:annotation>
+					<xsd:documentation>Appalti aggiudicati da particolari enti aggiudicatori per l&apos;acquisto di acqua e per la fornitura di energia o di combustibili destinati alla produzione di energia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="31">
+				<xsd:annotation>
+					<xsd:documentation>Concessioni nel settore idrico escluse dall&apos;applicazione del codice dei contratti pubblici</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="32">
+				<xsd:annotation>
+					<xsd:documentation>Servizi di arbitrato e di conciliazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation>Concessioni di servizi di trasporto aereo a norma del regolamento CE n. 1008/2008 del parlamento europeo e concessioni di servizi di trasporto pubblico di passeggeri ai sensi del regolamento n. 1370/2007</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="35">
+				<xsd:annotation>
+					<xsd:documentation>Concessioni di servizi di lotterie aggiudicate sulla base di un diritto esclusivo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="36">
+				<xsd:annotation>
+					<xsd:documentation>Opere a scomputo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="37">
+				<xsd:annotation>
+					<xsd:documentation>Servizi sociali e altri servizi specifici di cui all&apos;allegato IX esclusi gli appalti di cui agli artt.143 e 144</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="38">
+				<xsd:annotation>
+					<xsd:documentation>Concorsi di progettazione nei settori speciali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="39">
+				<xsd:annotation>
+					<xsd:documentation>Appalti riservati per determinati servizi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="40">
+				<xsd:annotation>
+					<xsd:documentation>Servizi di ristorazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="41">
+				<xsd:annotation>
+					<xsd:documentation>Appalti nel settore dei beni culturali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="42">
+				<xsd:annotation>
+					<xsd:documentation>Concorsi di progettazione e di idee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="43">
+				<xsd:annotation>
+					<xsd:documentation>Servizi di ricerca e sviluppo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="44">
+				<xsd:annotation>
+					<xsd:documentation>Appalti nei settori della Difesa e della Sicurezza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="45">
+				<xsd:annotation>
+					<xsd:documentation>Contratti misti concernenti aspetti di difesa e sicurezza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="46">
+				<xsd:annotation>
+					<xsd:documentation>Contratti secretati</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="47">
+				<xsd:annotation>
+					<xsd:documentation>Appalti nei settori speciali aggiudicati a scopo di rivendita o di locazione a terzi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotiviCancellazioneType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>CIG duplicato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>CIG richesto per errore materiale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Decisione dell&apos;Amministrazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Altro (specificare)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Gara duplicata</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Gara creata per errore materiale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Decisione dell&apos;Amministrazione (prima della pubblicazione)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Altro (specificare)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TipologiaProceduraType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Accordo quadro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Convenzione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicazione di appalti pubblici destinati ad amministrazioni aggiudicatrici o ad altri enti aggiudicatari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicazione e realizzazione/acquisto di lavori, forniture o servizi destinati ad amministrazioni aggiudicatrici o ad altri enti aggiudicatari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Proposta di aggiudicazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StatoCigType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>In Definizione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Confermato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Richiesta Di Annullamento</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Annullato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Eliminato</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Presa in carico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>Cancellato da verificare</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ModoRiaggiudType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Fallimento, liquidazione coatta o concordato preventivo, insolvenza concorsuale o liquidazione dell&apos;appaltatore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Risoluzione del contratto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Recesso dal contratto (codice antimafia)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Recesso dal contratto su richiesta dell&apos;appaltatore</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Dichiarazione giudiziale di inefficacia del contratto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Revoca dell&apos;aggiudicazione definitiva</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotiviVariazioneCOType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>ATI con piu&apos; di due partecipanti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>cessione di azienda, trasformazione, fusione e scissione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>trasferimento e affitto di azienda</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>errore materiale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Costituzione societa&apos; di progetto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotiviVariazioneSAType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Altro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Errore materiale nella imputazione della competenza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Subentro nei rapporti esistenti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Subentro nella gestione del contratto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CodTipoDocType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>VISOSIT - VISURA PRESSO IL CASELLARIO INFORMATICO DELL&apos;ANAC</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>CCGI - CERTIFICATO DEL CASELLARIO GIUDIZIARIO (INTEGRALE)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>CREGFIS - COMUNICAZIONE REGOLARITA&apos; FISCALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>DURC - DOCUMENTO UNICO DI REGOLARITA&apos; CONTRIBUTIVA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>AUTOCIMP - AUTOCERTIFICAZIONE DELL&apos;IMPRESA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>CUPL - DICHIARAZIONE DI CUI ALL&apos;ARTICOLO 17 L 12 MARZO 1999, n. 68</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>VRI - VISURA AL REGISTRO DELLE IMPRESE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="20">
+				<xsd:annotation>
+					<xsd:documentation>CASA - CERTIFICATO DELL&apos;ANAGRAFE DELLE SANZIONI AMMINISTRATIVE DIPENDENTI DA REATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="23">
+				<xsd:annotation>
+					<xsd:documentation>999 - NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="25">
+				<xsd:annotation>
+					<xsd:documentation>RICPAG - RICEVUTA DI PAGAMENTO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="31">
+				<xsd:annotation>
+					<xsd:documentation>CSOA - ATTESTAZIONE SOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="32">
+				<xsd:annotation>
+					<xsd:documentation>AREL - CERTIFICATO ESECUZIONE LAVORI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="33">
+				<xsd:annotation>
+					<xsd:documentation>CONTR - CONTRATTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation>BIL - BILANCIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="35">
+				<xsd:annotation>
+					<xsd:documentation>VERSIIC - CERTIFICATO DI REGOLARITA&apos; CONTRIBUTIVA INARCASSA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="36">
+				<xsd:annotation>
+					<xsd:documentation>DICREDD - DICHIARAZIONE DEI REDDITI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="38">
+				<xsd:annotation>
+					<xsd:documentation>ABEL - ATTESTAZIONE DI BUON ESITO DELL&apos;ESECUZIONE DEI LAVORI PRIVATI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="41">
+				<xsd:annotation>
+					<xsd:documentation>DPL - DIPLOMA E/O CERTIFICATO DI LAUREA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="43">
+				<xsd:annotation>
+					<xsd:documentation>CERQAU - CERTIFICAZIONE DI QUALITA&apos; E/O AUTENTICITA&apos;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="44">
+				<xsd:annotation>
+					<xsd:documentation>CERISO9 - CERTIFICAZIONE DEL SISTEMA DI QUALITA&apos; UNI EN ISO 9000 - NON EA28</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="46">
+				<xsd:annotation>
+					<xsd:documentation>CERISO14 - CERTIFICATO ISO 14001</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="47">
+				<xsd:annotation>
+					<xsd:documentation>CMP - CONSISTENZA MEDIA PERSONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="48">
+				<xsd:annotation>
+					<xsd:documentation>CCP - COSTO COMPLESSIVO PERSONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="49">
+				<xsd:annotation>
+					<xsd:documentation>COEE - CERTIFICAZIONE OPERATORE ECONOMICO ESTERO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="51">
+				<xsd:annotation>
+					<xsd:documentation>AVV - AVVALIMENTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="52">
+				<xsd:annotation>
+					<xsd:documentation>CIP - RICHIESTA CIP</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/9999</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="53">
+				<xsd:annotation>
+					<xsd:documentation>ISO-EA28 - CERTIFICATO QUALITA ISO-EA28</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/9999</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CodRequisitoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation> USO: SISTEMA RISCOSSIONE</xsd:documentation>
+					<xsd:documentation>31 - DIMOSTRAZIONE DEL VERSAMENTO DEL CONTRIBUTO AD ANAC</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="35">
+				<xsd:annotation>
+					<xsd:documentation> USO: SISTEMA ANNOTAZIONI</xsd:documentation>
+					<xsd:documentation>32 - ASSENZA DI ISCRIZIONI NEL CASELLARIO INFORMATICO DEI CONTRATTI PUBBLICI CHE COMPORTANO L&apos;ESCLUSIONE DALLA PROCEDURA DI AFFIDAMENTO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="36">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE SPECIALE-PER AGGIUDICAZIONE ED ESECUZIONE LAVORI-NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="37">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE SPECIALE-TECNICO-PROFESSIONALI-NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="38">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE SPECIALE-IDONEITA&apos; PROFESSIONALE-NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="39">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE SPECIALE-ECONOMICO-FINANZIARI-NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="40">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE SPECIALE-GARANZIA DI QUALITA&apos; - NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="41">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE SPECIALE-SISTEMA DI GESTIONE AMBIENTALE - NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="42">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>39 - IDONEITA&apos; PROFESSIONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="43">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>40 - ISCRIZIONE AD ORDINI PROFESSIONALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="53">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>50 - TITOLI DI STUDIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="54">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>51 - TITOLI PROFESSIONALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="55">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>52 - POSSESSO DI UN SISTEMA DI QUALITA&apos; CONFORME ALLA NORMATIVA UNI EN ISO 9000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="57">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>54 - POSSESSO DI UN ADEGUATO SISTEMA DI GESTIONE AMBIENTALE (SGA)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="58">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>999 - REQUISITO DI ORDINE GENERALE - NON CLASSIFICATO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="59">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>01 - ASSENZA DI STATO DI FALLIMENTO, LIQUIDAZIONE COATTA O CONCORDATO PREVENTIVO O DI PROCEDIMENTO PER LA DICHIARAZIONE DI TALI SITUAZIONI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="60">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>04 - ASSENZA DI PROCEDIMENTI PER L&apos;APPLICAZIONE DI UNA DELLE MISURE DI PREVENZIONE O DI UNA DELLE CAUSE OSTATIVE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="61">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>05 - ASSENZA DI SENTENZE DI CONDANNA PASSATE IN GIUDICATO, O DI DECRETI PENALI DI CONDANNA IRREVOCABILI, O DI SENTENZE PER REATI GRAVI IN DANNO DELLO STATO O DELLA COMUNIT&#192; CHE INCIDONO SULLA MORALIT&#192; PROFESSIONALE, NONCH&#200; DI CONDANNE, CON SENTENZE PASSATE IN GIUDICATO, PER UNO O PI&#217; REATI DI PARTECIPAZIONE A UN&apos;ORGANIZZAZIONE CRIMINALE, CORRUZIONE, FRODE, RICICLAGGIO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="62">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>06 - INSUSSISTENZA DI VIOLAZIONI DEL DIVIETO DI INTESTAZIONE FIDUCIARIA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="63">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>07 - ASSENZA DI ISCRIZIONI RELATIVE A GRAVI INFRAZIONI DEBITAMENTE ACCERTATE ALLE NORME IN MATERIA DI SICUREZZA E A OGNI ALTRO OBBLIGO DERIVANTE DAI RAPPORTI DI LAVORO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="64">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>08 - ASSENZA DI ISCRIZIONI RELATIVE ALLA PRESENTAZIONE DI FALSA DICHIARAZIONE O FALSA DOCUMENTAZIONE IN MERITO A REQUISITI E CONDIZIONI RILEVANTI PER LA PARTECIPAZIONE A PROCEDURE DI GARA E PER L&apos;AFFIDAMENTO DEI SUBAPPALTI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="65">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>09 - ASSENZA DI ISCRIZIONI RELATIVE ALLA PRESENTAZIONE DI FALSA DICHIARAZIONE O FALSA DOCUMENTAZIONE AI FINI DEL RILASCIO DELL&apos;ATTESTAZIONE SOA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="66">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>10 - ASSENZA DI SOGGETTI CHE ABBIANO OMESSO DENUNCIA DEI REATI AGGRAVATI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="67">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>11 - ASSENZA DI EPISODI DI GRAVE NEGLIGENZA O MALAFEDE NELL&apos;ESECUZIONE DELLE PRESTAZIONI AFFIDATE DALLA STAZIONE APPALTANTE CHE BANDISCE LA GARA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="68">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>12 - ASSENZA DI EPISODI DI ERRORE GRAVE NELL&apos;ESERCIZIO DELL&apos;ATTIVITA&apos; PROFESSIONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="69">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>13 - INSUSSISTENZA DI VIOLAZIONI GRAVI, DEFINITIVAMENTE ACCERTATE, RISPETTO AGLI OBBLIGHI RELATIVI AL PAGAMENTO DELLE IMPOSTE E DELLE TASSE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="70">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>14 - INSUSSISTENZA DI VIOLAZIONI GRAVI, DEFINITIVAMENTE ACCERTATE, ALLE NORME IN MATERIA DI CONTRIBUTI PREVIDENZIALI E ASSISTENZIALI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="71">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>16 - REGOLARITA&apos; DELL&apos;IMPRESA RISPETTO ALLE NORME CHE DISCIPLINANO IL DIRITTO AL LAVORO DEI DISABILI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="72">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>19 - ASSENZA DELLA SANZIONE INTERDITTIVA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="73">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>20 - ASSENZA DI SANZIONI COMPORTANTI IL DIVIETO DI CONTRARRE CON LA PUBBLICA AMMINISTRAZIONE COMPRESI I PROVVEDIMENTI INTERDITTIVI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="74">
+				<xsd:annotation>
+					<xsd:documentation> USO: OBBLIGATORIO</xsd:documentation>
+					<xsd:documentation>21 - ASSENZA DI DIVIETO A  CONTRARRE CON LA PUBBLICA AMMINISTRAZIONE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="75">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>22 - ASSENZA DI UNA SITUAZIONE DI CONTROLLO O DI ALTRA RELAZIONE, ANCHE DI FATTO, SE LA SITUAZIONE DI CONTROLLO O LA RELAZIONE COMPORTINO L&apos;IMPUTABILITA&apos; DELLE OFFERTE AD UN UNICO CENTRO DECISIONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="76">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>24 - ASSENZA DI ATTI O COMPORTAMENTI DISCRIMINATORI PER MOTIVI RAZZIALI, ETNICI, NAZIONALI O RELIGIOSI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="77">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>46 - IMPORTO DEI LAVORI ANALOGHI ESEGUITI DIRETTAMENTE NEL QUINQUENNIO ANTECEDENTE LA DATA DI PUBBLICAZIONE DEL BANDO</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="78">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>47 - COSTO COMPLESSIVO SOSTENUTO PER IL PERSONALE</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="79">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>48 - POSSESSO DI ADEGUATA ATTREZZATURA TECNICA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="80">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>51 - CAPACITA ECONOMICA E FINANZIARIA</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="81">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>55 - CAPACITA&apos; TECNICA E PROFESSIONALE DIMOSTRATA MEDIANTE ELENCO DEI PRINCIPALI SERVIZI O DELLE PRINCIPALI FORNITURE PRESTATI NEGLI ULTIMI TRE ANNI</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="82">
+				<xsd:annotation>
+					<xsd:documentation> USO: FACOLTATIVO</xsd:documentation>
+					<xsd:documentation>55 - QUALIFICAZIONE PER ESEGUIRE LAVORI PUBBLICI DI IMPORTO SUPERIORE AD &#8364; 150.000</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StatoAVCPASSType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="0">
+				<xsd:annotation>
+					<xsd:documentation>Perfezionato - Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Commissione - Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Lotto deserto - Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Acquisizione partecipante - Rosso</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Fine Acquisizione partecipante - Rosso</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Graduatoria - Rosso</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicazione - Rosso</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicato - Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Annullato - Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>Archiviato - Verde</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotiviRichiestaCigType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>1 - Stazione appaltante non soggetta agli obblighi di cui al dPCM 24 dicembre 2015</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>2 - Acquisto espletato mediante adesione a contratto di soggetto aggregatore iscritto nell&apos;elenco di cui alla delibera dell&apos;Autorita&apos;Nazionale Anticorruzione n. 784 del 20 luglio 2016</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>3 - Soggetto aggregatore iscritto nell&apos;elenco di cui alla delibera dell&apos;Autorita&apos; Nazionale Anticorruzione n. 784 del 20 luglio 2016</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>4 - Soglie massime annuali di cui all&apos;art. 1 del dPCM 24 dicembre 2015 non raggiunte per la categoria merceologica d&apos;interesse</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>5 - Contratto non attivo presso il soggetto aggregatore (di cui all&apos;art. 9, commi 1 e 2 del DL 66/2014) di riferimento o Consip e mancanza di accordi di collaborazione tra questi al momento della richiesta del rilascio del CIG</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>6 - Il fornitore non ha accettato ordinativi di importi minimi previsti dai contratti attivi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>7 - Procedura avviata prima dell&apos;entrata in vigore del DPCM 24 dicembre 2015</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CategorieMerceologicheType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>1 - Farmaci</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>2 - Vaccini</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>3 - Stent</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>4 - Ausili per incontinenza (ospedalieri e territoriali)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>5 - Protesi d&apos;anca</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>6 - Medicazioni generali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>7 - Defibrillatori</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>8 - Pace-maker</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>9 - Aghi e siringhe</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>10 - Servizi integrati per la gestione delle apparecchiature elettromedicali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="11">
+				<xsd:annotation>
+					<xsd:documentation>11 - Servizi di pulizia per gli enti del Servizio Sanitario Nazionale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="12">
+				<xsd:annotation>
+					<xsd:documentation>12 - Servizi di ristorazione per gli enti del Servizio Sanitario Nazionale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="13">
+				<xsd:annotation>
+					<xsd:documentation>13 - Servizi di lavanderia per gli enti del Servizio Sanitario Nazionale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="14">
+				<xsd:annotation>
+					<xsd:documentation>14 - Servizi di smaltimento rifiuti sanitari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="15">
+				<xsd:annotation>
+					<xsd:documentation>15 - Vigilanza armata</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="16">
+				<xsd:annotation>
+					<xsd:documentation>16 - Facility management immobili</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="17">
+				<xsd:annotation>
+					<xsd:documentation>17 - Pulizia immobili</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="18">
+				<xsd:annotation>
+					<xsd:documentation>18 - Guardiania</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="19">
+				<xsd:annotation>
+					<xsd:documentation>19 - Manutenzione immobili e impianti</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="20">
+				<xsd:annotation>
+					<xsd:documentation>20 - Guanti (chirurgici e non)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="21">
+				<xsd:annotation>
+					<xsd:documentation>21 - Suture</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="22">
+				<xsd:annotation>
+					<xsd:documentation>22 - Ossigenoterapia</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="23">
+				<xsd:annotation>
+					<xsd:documentation>23 - Diabetologia territoriale</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="24">
+				<xsd:annotation>
+					<xsd:documentation>24 - Servizio di trasporto scolastico</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="25">
+				<xsd:annotation>
+					<xsd:documentation>25 - Manutenzione strade (servizi e forniture)</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="999">
+				<xsd:annotation>
+					<xsd:documentation>999 - Lavori oppure beni e servizi non elencati nell&apos;art. 1 dPCM 24 dicembre 2015</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotiviRichiestaCigComuniType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Si intende procedere all&amp;apos;acquisizione secondo le modalit&amp;agrave; indicate dall&amp;apos;art.9, comma 4, del D.L.n.66/2014, convertito, con modifiche, dalla Legge n.89/2014 oppure dall&amp;apos;art. 23-ter D.L. 90/2014, convertito, con modifiche, dalla Legge n. 114/2014 e successive modifiche ed integrazioni</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Il territorio ricade in una regione a statuto speciale o in una provincia autonoma, che non ha ancora recepito nel proprio ordinamento le disposizioni di cui all&amp;apos;art.9. comma 4, del D.L.n.66/2014, convertito, con modifiche, dalla Legge n.89/2014</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StrumentoSvolgimentoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Procedura svolta in modalit&#224; tradizionale o &quot;cartacea&quot;</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Asta elettronica Art.56</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Catalogo elettronico Art.57: acquisto diretto</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Catalogo elettronico Art.57: richiesta di offerta</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Procedure svolte attraverso piattaforme telematiche di negoziazione Art.58</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Accordo quadro</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ArtEstremaUrgenzaType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Somma urgenza beni culturali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Somma urgenza e protezione civile</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Estrema urgenza settori speciali</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Procedura negoziata per estrema urgenza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Estrema urgenza per vincolo idrogeologico, normativa antisismica e messa in sicurezza edifici scolastici</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AllegatoIXType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante avviso di gara</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante avviso periodico indicativo</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante avviso sull&#8217;esistenza di un sistema di qualificazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante bando di gara</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Gara indetta mediante avviso di preinformazione</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Procedura negoziata senza previo avviso di gara conformemente all&apos;art.63</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Procedura che non prevede indizione di gara</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AffidamentiRiservatiType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Art. 5 L. 381/1991</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Art. 112 D.Lgs. 50/2016</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Art. 143 D.Lgs. 50/2016</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Art. 56 D. Lgs 117/2017</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CondizioneLottoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="33">
+				<xsd:annotation>
+					<xsd:documentation>Procedura a seguito di precedente gara annullata o deserta o senza esito</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="34">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, beni e Servizi infungibili per opera d&apos;arte</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="35">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, beni e Servizi infungibili per motivi tecnici</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="36">
+				<xsd:annotation>
+					<xsd:documentation>Lavori, beni e Servizi infungibili per diritti esclusivi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="37">
+				<xsd:annotation>
+					<xsd:documentation>Estrema urgenza</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="38">
+				<xsd:annotation>
+					<xsd:documentation>Scopo di ricerca</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="39">
+				<xsd:annotation>
+					<xsd:documentation>Consegne complementari</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="40">
+				<xsd:annotation>
+					<xsd:documentation>Forniture quotate e acquistate sul mercato delle materie prime</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="41">
+				<xsd:annotation>
+					<xsd:documentation>Condizioni particolarmente vantaggiose</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="42">
+				<xsd:annotation>
+					<xsd:documentation>II fase Concorso di progettazione e idee</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="43">
+				<xsd:annotation>
+					<xsd:documentation>Ripetizione lavori o servizi analoghi</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="44">
+				<xsd:annotation>
+					<xsd:documentation>Procedura di affidamento a contraente vincolato da disposizioni sovraordinate</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MotivoCollegamentoType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Ripetizione di lavori o servizi analoghi</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Consegne complementari</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Procedura a seguito di precedente revoca di aggiudicazione o di rescissione contrattuale, senza scorrimento graduatoria</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="5">
+				<xsd:annotation>
+					<xsd:documentation>Procedura a seguito di precedente gara annullata o deserta (senza esito)</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="6">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento dell&#8217;esecuzione o della progettazione dei lavori successiva a progettazione o livello inferiore di progettazione</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="7">
+				<xsd:annotation>
+					<xsd:documentation>Affidamento da parte di aggiudicatari di contratti di concessione o di project financing</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="8">
+				<xsd:annotation>
+					<xsd:documentation>Modifiche contrattuali o varianti per le quali e&apos; necessaria una nuova procedura di affidamento</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="9">
+				<xsd:annotation>
+					<xsd:documentation>II fase Concorso di progettazione e idee</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="10">
+				<xsd:annotation>
+					<xsd:documentation>No, nessuna ipotesi di collegamento</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="FunzioniDelegateType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1">
+				<xsd:annotation>
+					<xsd:documentation>Solo aggiudicazione</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="2">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicazione e stipula del contratto</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="3">
+				<xsd:annotation>
+					<xsd:documentation>Aggiudicazione, stipula ed esecuzione del contratto</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="4">
+				<xsd:annotation>
+					<xsd:documentation>Proposta di aggiudicazione</xsd:documentation>
+					<xsd:documentation>*** ATTENZIONE *** codice annullato dal 31/12/2099</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

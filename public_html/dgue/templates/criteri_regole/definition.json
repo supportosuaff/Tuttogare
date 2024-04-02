@@ -1,0 +1,40 @@
+{
+  "_0": {
+    "0": {
+      "id": "7f18c64e-ae09-4646-9400-f3666d50af51",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "323f19b5-3308-4873-b2d1-767963cc81e9",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  },
+  "_1":{
+    "0": {
+      "id": "0622bbd1-7378-45e1-8fb9-25429740ac22",
+      "index": [
+        "ccv-cbc:Indicator"
+      ]
+    },
+    "1": {
+      "id": "ee1ee1cd-3791-4855-8b8b-28d4f4c5c007",
+      "index": [
+        "cev:Evidence",
+        "cev:EvidenceDocumentReference",
+        "cac:Attachment",
+        "cac:ExternalReference",
+        "cbc:URI"
+      ]
+    },
+    "2": {
+      "id": "1e55ff14-c643-4abc-91d7-2f4dfcdf2409",
+      "index": [
+        "ccv-cbc:Code"
+      ]
+    }
+  }
+}

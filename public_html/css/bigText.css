@@ -1,0 +1,53 @@
+body {
+	font-size:1.2em;
+}
+
+h1{
+	font-size:2em;
+	line-height: normal;
+}
+h2{
+	font-size:1.8em;
+}
+h3{
+	font-size:1.6em;
+}
+h4 {
+	font-size:1.4em;
+}
+.note {
+	font-size:1.0em;
+}
+
+label {
+	font-size:1.0em;
+}
+
+.txt_oggetto {
+	font-size: 1.2em;
+}
+
+.btn-primary,
+.btn-default,
+.btn-warning,
+.btn-danger,
+.submit_big {
+	font-size:1.4em;
+}
+
+.opzioni {
+	font-size:1em;
+}
+
+
+.tiles {
+	font-size:1em;
+}
+
+.note_errore {
+	font-size:1em;
+}
+
+.etichetta {
+	font-size:1.2em;
+}

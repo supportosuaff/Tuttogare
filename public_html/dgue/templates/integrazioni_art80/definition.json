@@ -1,0 +1,28 @@
+{
+  "_0": {
+    "0": {
+      "id": "PERS_GROUP_ART80_RESP_0",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "1": {
+      "id": "PERS_GROUP_ART80_RESP_1",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "2": {
+      "id": "PERS_GROUP_ART80_RESP_2",
+      "index": [
+        "cbc:Description"
+        ]
+    },
+    "3": {
+      "id": "PERS_GROUP_ART80_RESP_3",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    }
+  }
+}

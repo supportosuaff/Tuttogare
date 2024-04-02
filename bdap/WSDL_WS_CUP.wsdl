@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:types="http://serviziCUP.mef.it/types/"
+		  xmlns:ref="http://ws-i.org/profiles/basic/1.1/xsd"
+		  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		  xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+		  xmlns:tns="http://serviziCUP.mef.it"
+		  xmlns:ns="http://schemas.xmlsoap.org/soap/encoding/"
+		  targetNamespace="http://serviziCUP.mef.it/">
+
+	<!-- TIPI -->
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://serviziCUP.mef.it/types/" schemaLocation="Types.xsd">
+			</xsd:import>
+		</xsd:schema>
+	</wsdl:types>
+
+	<!-- MESSAGGI -->
+	<wsdl:message name="richiesta_RichiestaRispostaSincrona_RichiestaDettaglioCUP_Msg">
+	    <wsdl:part name="parameters" element="types:richiesta_RichiestaRispostaSincrona_RichiestaDettaglioCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="risposta_RichiestaRispostaSincrona_RisultatoDettaglioCUP_Msg">
+	    <wsdl:part name="parameters" element="types:risposta_RichiestaRispostaSincrona_RisultatoDettaglioCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="richiesta_RichiestaRispostaSincrona_RichiestaListaCUP_Msg">
+	    <wsdl:part name="parameters" element="types:richiesta_RichiestaRispostaSincrona_RichiestaListaCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="risposta_RichiestaRispostaSincrona_ListaCUP_Msg">
+	    <wsdl:part name="parameters" element="types:risposta_RichiestaRispostaSincrona_ListaCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="richiesta_RichiestaRispostaSincrona_RichiestaGenerazioneCUP_Msg">
+	    <wsdl:part name="parameters" element="types:richiesta_RichiestaRispostaSincrona_RichiestaGenerazioneCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="risposta_RichiestaRispostaSincrona_EsitoGenerazioneCUP_Msg">
+	    <wsdl:part name="parameters" element="types:risposta_RichiestaRispostaSincrona_EsitoGenerazioneCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="richiesta_RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP_Msg">
+	    <wsdl:part name="parameters" element="types:richiesta_RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP"/>
+
+	</wsdl:message>
+
+	<wsdl:message name="risposta_RichiestaRispostaSincrona_RisultatoChiusuraRevocaCUP_Msg">
+	    <wsdl:part name="parameters" element="types:risposta_RichiestaRispostaSincrona_RisultatoChiusuraRevocaCUP"/>
+
+	</wsdl:message>
+	<!-- PORT TYPE -->
+ 	<wsdl:portType name="ElaborazioniCUP">
+ 	   <wsdl:operation name="RichiestaRispostaSincrona_RichiestaDettaglioCUP">
+ 	     <wsdl:input message="tns:richiesta_RichiestaRispostaSincrona_RichiestaDettaglioCUP_Msg"/>
+ 	     <wsdl:output message="tns:risposta_RichiestaRispostaSincrona_RisultatoDettaglioCUP_Msg"/>
+ 	   </wsdl:operation>
+ 	   <wsdl:operation name="RichiestaRispostaSincrona_ListaCUP">
+ 	     <wsdl:input message="tns:richiesta_RichiestaRispostaSincrona_RichiestaListaCUP_Msg"/>
+ 	     <wsdl:output message="tns:risposta_RichiestaRispostaSincrona_ListaCUP_Msg"/>
+ 	   </wsdl:operation>
+  	   <wsdl:operation name="RichiestaRispostaSincrona_RichiestaGenerazioneCUP">
+ 	     <wsdl:input message="tns:richiesta_RichiestaRispostaSincrona_RichiestaGenerazioneCUP_Msg"/>
+ 	     <wsdl:output message="tns:risposta_RichiestaRispostaSincrona_EsitoGenerazioneCUP_Msg"/>
+ 	   </wsdl:operation>
+  	   <wsdl:operation name="RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP">
+ 	     <wsdl:input message="tns:richiesta_RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP_Msg"/>
+ 	     <wsdl:output message="tns:risposta_RichiestaRispostaSincrona_RisultatoChiusuraRevocaCUP_Msg"/>
+ 	   </wsdl:operation>
+ 	</wsdl:portType>
+
+	<!-- BINDING -->
+	<wsdl:binding name="ElaborazioniCUPSoap" type="tns:ElaborazioniCUP">
+	   <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+	     <wsdl:operation name="RichiestaRispostaSincrona_RichiestaDettaglioCUP">
+	      <soap:operation soapAction="RichiestaRispostaSincrona_RichiestaDettaglioCUP"/>
+	       <wsdl:input>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	  	</wsdl:input>
+	       <wsdl:output>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	  	</wsdl:output>
+	      </wsdl:operation>
+
+	  <wsdl:operation name="RichiestaRispostaSincrona_ListaCUP">
+	      <soap:operation soapAction="RichiestaRispostaSincrona_ListaCUP"/>
+	       <wsdl:input>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	  	</wsdl:input>
+	       <wsdl:output>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	  	</wsdl:output>
+	      </wsdl:operation>
+
+         <wsdl:operation name="RichiestaRispostaSincrona_RichiestaGenerazioneCUP">
+	  <soap:operation soapAction="RichiestaRispostaSincrona_RichiestaGenerazioneCUP"/>
+	       <wsdl:input>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	  	</wsdl:input>
+	       <wsdl:output>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	 </wsdl:output>
+	 </wsdl:operation>
+
+         <wsdl:operation name="RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP">
+	  <soap:operation soapAction="RichiestaRispostaSincrona_RichiestaChiusuraRevocaCUP"/>
+	       <wsdl:input>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	  	</wsdl:input>
+	       <wsdl:output>
+	         <mime:multipartRelated>
+	           <mime:part>
+	             <soap:body parts="parameters" use="literal"/>
+	           </mime:part>
+	         </mime:multipartRelated>
+	 </wsdl:output>
+	 </wsdl:operation>
+
+	 </wsdl:binding>
+
+	<!-- SERVIZIO -->
+	 <wsdl:service name="ElaborazioniCUP">
+	    <wsdl:port name="ElaborazioniCUPPort" binding="tns:ElaborazioniCUPSoap">
+	       <soap:address location="http://cupwebwscoll.tesoro.it/CUPServicesCollaudo"/>
+	    </wsdl:port>
+	 </wsdl:service>
+
+</wsdl:definitions>

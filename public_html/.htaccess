@@ -1,0 +1,22 @@
+Header set X-Frame-Options DENY
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+Options All -Indexes
+php_value post_max_size 30M
+php_value max_input_vars 5000
+RewriteEngine On
+
+RewriteRule ^documenti/(.+)$ /allegati/downloadPublic.php?ref=$1 [L]
+
+RewriteRule ^(.+)/pag([0-9]+)/$	/$1/index.php?Pag=$2&modulo=$1 [L]
+RewriteRule ^(.+)/id([0-9]+)\-edit$ /$1/edit.php?cod=$2&modulo=$1	[L]
+RewriteRule ^(.+)/id([0-9]+)\-(.+)$ /$1/dettaglio.php?cod=$2&modulo=$1&titolo=$3	[L]
+RewriteRule ^(.+)/$	/$1/index.php?modulo=$1	[L]
+
+#RewriteRule ^confrontoacoppie/([0-9]+)/([A-Z0-9]{64})/?$ /confrontoacoppie/confronto.php?token=$2&codice=$1 [NC,L]
+#RewriteCond %{REQUEST_URI}  ^confrontoacoppie/([^/]+)/?([^/]*)?/?([^/]*)?/?([^/]*)?/?   [NC,L]
+#RewriteRule ^confrontoacoppie/confronto.php?codice=%1&lotto=%2&partecipante=%3&criterio=%4  [L]
+
+#RewriteRule ^confrontoacoppie/([0-9]+)/([A-Z0-9]{64})/?$ /confrontoacoppie/confronto.php?token=$2&codice=$1 [NC,L]
+#RewriteRule ^confrontoacoppie/([0-9]+)/?$ /confrontoacoppie/confronto.php?&codice=$1 [NC,L]
+#RewriteRule ^confrontoacoppie/([0-9]+)/([0-9]+)/?$ /confrontoacoppie/confronto.php?&codice=$1&lotto=$2 [NC,L]
+#RewriteRule ^confrontoacoppie/([0-9]+)/([0-9]+)/([0-9]+)/([0-9]+)/?$ /confrontoacoppie/confronto.php?&codice=$1&lotto=$2&partecipante=$3&criterio=$4 [NC,L]

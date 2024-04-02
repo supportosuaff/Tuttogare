@@ -1,0 +1,22 @@
+{
+  "_0": {
+    "0": {
+      "id": "7f18c64e-ae09-4646-9400-f3666d50af51",
+      "index": [
+        "ccv-cbc:Indicator"
+        ]
+    },
+    "1": {
+      "id": "4e552658-d532-4770-943b-b90efcc9788d",
+      "index": [
+        "cbc:Percent"
+        ]
+    },
+    "2": {
+      "id": "e01d0929-c7a9-455a-aaf9-e1f7cd966336",
+      "index": [
+        "cbc:Description"
+        ]
+    }
+  }
+}
